@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <meta charset="UTF-8" />
+        <script src="test.js"></script>
+        <script src="jquery-1.7.1.min.js"></script>
+        <script src="jquery.imagemapster.min.js"></script>
+    </head>
+    <body>
+        <div style="display:flex">
+            <div id="boundList">
+                <p id="al2" class="imgal2" data-id="al2">epoſſolho faʒ͛ muȷ cōraʒō</p>
+                <p id="al3" class="imgal3">mais ꝺiʒē logo q̄ mal ſen farey</p>
+                <p id="al4" class="imgal4">mhas amıgas mays hūa couſa ſey</p>
+                <p id="al5" class="imgal5" data-id="al5">Poys meu</p>
+                <p></p>
+                <p></p>
+                <p id="al8" class="imgal8">Eulhı farey bē e elas ueır#a02</p>
+                <p id="al9" class="imgal9">#p06g#u02tar m#a02te uos #p03 q̄o fıʒ</p>
+                <p>e ꝺırey eu qual est aq̄o ꝺiʒ</p>
+                <p>epoyſ moyrē outorgarmho an</p>
+                <p>calhis ꝺireı mhas amıgas ꝺe pr#a02</p>
+                <p>Poys meu amıgo mo</p>
+                <p></p>
+                <p></p>
+                <p>Eantelhı q̄ralg#u02 bē faʒer</p>
+                <p>cao leixar como moıre moırer</p>
+                <p>#p03lhı falar bē ou polo ueer</p>
+                <p>nōlhı q̄reu leıxar morte #p06nꝺer</p>
+            </div>
+            <div style="width:80%">
+                <img src="B158v.jpg" usemap="#image-map" alt="folio" id="folio" />
+                <map name="image-map">
+                    <area alt="column a, l2" data-id="al2" title="column a, l2" id="imgal2" href="#"
+                        coords="343,233,716,265" shape="rect" />
+                    <area alt="column a, l5" title="column a, l5" href="#" id="imgal5" data-id="al5"
+                        coords="321,347,501,380" shape="rect" />
+                </map>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                var img = $('img'),
+                list = $('#boundList');
+                
+                
+                // bind selection of a data-id to the UL we created. The "listSelectedClass"
+                // option causes the class "selected" to be added or removed
+                // from the element in "boundList" whose "data-id" attribute has a value
+                // matching the mapKey for the selected area.
+                
+                img.mapster({
+                    mapKey: 'data-id',
+                    boundList: list.find('p'),
+                    listKey: 'data-id',
+                    listSelectedClass: 'selected',
+                    fillColor: 'ffffff',
+                    stroke: true,
+                    singleSelect: true
+                });
+                
+                // bind click event
+                
+                $(document).on('mouseenter', '#boundList p', function (e) {
+                    
+                    var el = $(e.target);
+                    el.toggleClass('selected');
+                    //debugger;
+                    img.mapster('set', null, el.attr('data-id'));
+                    // changing selections manually doesn't result in the boundList
+                    // being fired, we still have to set the data-id on the list item
+                }).on('mouseleave', '.selected', function (e) {
+                    e.preventDefault();
+                    
+                    img.mapster('set', false, img.mapster('get'));
+                });
+            });</script>
+    </body>
+</html>
