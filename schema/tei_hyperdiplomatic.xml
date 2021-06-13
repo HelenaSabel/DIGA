@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>hyperdiplomatic edition prototype</title>
+                <author>Helena Berm&#xFA;dez Sabel</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>for use by whoever wants it</p>
+            </publicationStmt>
+            <notesStmt>
+                <note type="ns">https://helenasabel.github.io/ns/hyperdiplomatic</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>created on Saturday 12th June 2021 11:47:16 AM</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p>Schema for the development of hyperdiplomatic editions</p>
+            <schemaSpec ident="hyperdiplomatic" docLang="en" prefix="tei_" xml:lang="en">
+                <moduleRef key="core" except=""/>
+                <moduleRef key="tei" except=""/>
+                <moduleRef key="header" except=""/>
+                <moduleRef key="textstructure" except=""/>
+                <moduleRef key="transcr" except=""/>
+                <moduleRef key="gaiji" except=""/>
+                <moduleRef key="msdescription" except=""/>
+                <moduleRef key="textcrit" except=""/>
+                <moduleRef key="linking" except=""/>
+                <elementSpec ident="surface" module="transcr" mode="change">
+                    <attList>
+                        <attDef ident="coords" mode="add">
+                            <desc>Equivalent to HTML @coords attribute: used to specify the
+                                coordinates of each area in the image map</desc>
+                        </attDef>
+                        <attDef ident="shape" mode="add">
+                            <desc>Equivalent to HTML @shape attribute. The shape attribute specifies
+                                the shape of an area. The shape attribute is used together with the
+                                coords attribute to specify the size, shape, and placement of an
+                                area.</desc>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="zone" module="transcr" mode="change">
+                    <attList>
+                        <attDef ident="coords" mode="add">
+                            <desc>Equivalent to HTML @coords attribute: used to specify the
+                                coordinates of each area in the image map</desc>
+                        </attDef>
+                        <attDef ident="shape" mode="add">
+                            <desc>Equivalent to HTML @shape attribute. The shape attribute specifies
+                                the shape of an area. The @shape attribute is used together with the
+                                @coords attribute to specify the size, shape, and placement of an
+                                area.</desc>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>
