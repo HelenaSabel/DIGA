@@ -313,7 +313,7 @@
    <text>
       <body>
          <pb n="158v"/>
-         <div>
+         <div type="column">
             <cb n="a"/>
             <l n="01"/>
             <l n="02" facs="#cal02"><choice>
@@ -470,7 +470,7 @@
                <seg facs="#cal36">Que fa.</seg>
             </l>
          </div>
-         <div>
+         <div type="column">
             <cb n="b"/>
             <l n="01"/>
             <l n="02" facs="#cbl02"><choice>
@@ -602,7 +602,7 @@
          </div>
          <div>
             <ab>
-               <catchwords facs="reclame">Mha madre</catchwords>
+               <catchwords facs="#reclame">Mha madre</catchwords>
             </ab>
          </div>
       </body>
