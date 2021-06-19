@@ -12,61 +12,176 @@
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                     <link rel="stylesheet" type="text/css" href="css/main.css"/>
                     <script src="js/highlight.js"/>
+                    <script src="js/form_radio.js"/>
+                    <script src="js/form_checkboxes.js"/>
                     <script src="js/jquery-1.7.1.min.js"/>
                     <script src="js/jquery.imagemapster.min.js"/>
                 </head>
                 <body>
                     <main>
-                        <div class="edition">
+                        <form id="criteria">
+                            <fieldset>
+                                <input type="radio" name="abbreviation" value="ex" id="ex"/>
+                                <label for="ex">Abréviations développées</label>
+                                <input type="radio" checked="checked" name="abbreviation"
+                                    value="abb" id="abb"/>
+                                <label for="abb">Marques d’abréviation</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" id="reg" value="reg" name="unite"/>
+                                <label for="reg">Union / séparation des éléments selon les unités
+                                    lexicales</label>
+                                <input checked="checked" type="radio" value="orig" id="orig" name="unite"/>
+                                <label for="orig">Disposition originale</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="checkbox" value="cod" id="cod" checked="checked"
+                                    /><label for="cod">Visualiser notices techniques</label>                                
+                                <input type="checkbox" value="metamark" id="metamark" checked="checked"
+                                /><label for="metamark">Visualiser éléments fonctionnels de la
+                                    copie</label>
+                                <input type="checkbox" value="marginalia" id="marginalia" checked="checked"
+                                /><label for="marginalia">Visualiser annotations</label>         
+                            </fieldset>
+                        </form>
+                        <div id="edition">
                             <div id="boundList">
                                 <xsl:apply-templates select="//body/div"/>
                             </div>
+                            <img src="{descendant::graphic/@url}" usemap="#158v" alt="f. 158v"/>
+                            <button id="refresh">Effacer</button>
                         </div>
+                        
+                        <map name="158v">
+                            <xsl:apply-templates select="//zone"></xsl:apply-templates>
+                        </map>
                     </main>
+                    <script>
+                        $(document).ready(function () {
+                        var img = $('img'),
+                        list = $('#boundList');
+                        
+                        
+                        // bind selection of a data-id to the UL we created. The "listSelectedClass"
+                        // option causes the class "selected" to be added or removed
+                        // from the element in "boundList" whose "data-id" attribute has a value
+                        // matching the mapKey for the selected area.
+                        
+                        img.mapster({
+                        mapKey: 'data-id',
+                        boundList: list.find('*'),
+                        listKey: 'data-id',
+                        listSelectedClass: 'selected',
+                        fillColor: 'ffffff',
+                        stroke: true,
+                        singleSelect: true
+                        });
+                        
+                        // bind click event
+                        
+                        $(document).on('mouseenter', '#boundList *[data-id]', function (e) {
+                        
+                        var el = $(e.target);
+                        el.toggleClass('selected');
+                        //debugger;
+                        img.mapster('set', null, el.attr('data-id'));
+                        // changing selections manually doesn't result in the boundList
+                        // being fired, we still have to set the data-id on the list item
+                        }).on('mouseleave', '.selected', function (e) {
+                        e.preventDefault();
+                        
+                        img.mapster('set', false, img.mapster('get'));
+                        });
+                        });</script>
+                    <script>
+                        $('#refresh').click(function() {
+                        location.reload(true);
+                        });
+                    </script>
                 </body>
             </html>
         </xsl:result-document>
     </xsl:template>
     <xsl:template match="div">
-        <div>
-            <xsl:if test="@type">
-                <xsl:attribute name="class" select="@type"></xsl:attribute>
-            </xsl:if>
+        <div class="{@type}">
+                    <ol class="lines">
+                        <xsl:apply-templates select="l|lb"/>
+                    </ol>
+                <xsl:apply-templates select="ab"/>
+            
+        </div>
+    </xsl:template>
+    <xsl:template match="ab">
+        <div id="outside">
             <xsl:apply-templates/>
         </div>
     </xsl:template>
     <xsl:template match="l">
-        <xsl:choose>
-            <xsl:when test="string-length(.) eq 0">
-                <p> </p>
-            </xsl:when>
-            <xsl:otherwise>
-                <p>
-                    <xsl:if test="@facs">
-                        <xsl:attribute name="data-ref" select="@facs"/>
-                        <xsl:attribute name="id" select="replace(@facs, '#', 'tr_')"/>
-                    </xsl:if>
-                    <xsl:apply-templates/>
-                </p>
-            </xsl:otherwise>
-        </xsl:choose>
+        <li>
+            <xsl:if test="@facs">
+                <xsl:attribute name="data-id" select="substring(@facs, 2)"/>
+            </xsl:if>
+            <xsl:if test="add/@place eq 'right'">
+                <xsl:attribute name="class">hasRight</xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </li>
     </xsl:template>
-    <xsl:template match="seg | metamark">
-        <span data-ref="{@facs}" id="{replace(@facs, '#', 'tr_')}">
+    <xsl:template match="lb">
+        <li>&#8199;</li>
+    </xsl:template>
+    <xsl:template match="seg">
+        <span data-id="{substring(@facs, 2)}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>    
+    <xsl:template match="metamark">
+        <span data-id="{substring(@facs, 2)}" class="metamark">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
     <xsl:template match="choice">
-        <span class="orig"><xsl:apply-templates select="orig"/></span>
-        <span class="reg"><xsl:apply-templates select="reg"/></span>
+        <span class="orig">
+            <xsl:apply-templates select="orig"/>
+        </span>
+        <span class="reg">
+            <xsl:apply-templates select="reg"/>
+        </span>
     </xsl:template>
-    <xsl:template match="am|ex|expan">
-        <span class="{name()}"><xsl:apply-templates/></span>
+    <xsl:template match="am | ex">
+        <span class="{name()}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    <xsl:template match="expan">
+        <span class="ex">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
     <xsl:template match="add">
-        <ins class="{@place}" data-ref="{@facs}"><xsl:apply-templates/></ins>
+        <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}">
+            <xsl:apply-templates/>
+        </ins>
     </xsl:template>
     <xsl:template match="catchwords">
-        <span class="reclame"><xsl:apply-templates/></span>
+        <span class="cod" data-id="{substring(@facs,2)}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    <xsl:template match="zone">
+        <area href="#"
+            shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}" data-id="{@xml:id}">
+            <xsl:choose>
+                <xsl:when test="@type eq 'rect'">
+                    <xsl:attribute name="coords" select="@ulx || ',' || @uly || ',' || @lrx || ',' || @lry"></xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="coords" select="replace(@points, '\s+', ',')"></xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
+        </area>
+        <xsl:text>
+            
+        </xsl:text>
     </xsl:template>
 </xsl:stylesheet>
