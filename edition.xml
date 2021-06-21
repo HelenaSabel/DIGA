@@ -36,12 +36,15 @@
                      <msItem>
                         <title>O meu amigo non á de mí al</title>
                         <idno>B728</idno>
+                        <bibl>
+                           <link target="m"/>
+                        </bibl>
                      </msItem>
                      <msItem>
                         <title/>
                      </msItem>
                   </msContents>
-               </msPart>
+               </msPart>               
             </msDesc>
             <bibl>
                <ref target="https://purl.pt/15000/1/index.html#/348/html"/>
@@ -279,7 +282,7 @@
                ſen farey</l>
             <l n="04" facs="#cal04">mhas amıgas mays hu<am>̄</am><ex>̃</ex>a couſa ſey</l>
             <l n="05">
-               <metamark facs="#ang1">꜒</metamark><seg facs="#cal05">Poys meu</seg>
+               <pc facs="#ang1">꜒</pc><seg facs="#cal05">Poys meu</seg>
             </l>
             <lb n="06"/>
             <lb n="07"/>
@@ -318,7 +321,7 @@
                </choice> ꝺireı mhas amıgas ꝺe pra<am>̄</am><ex>n</ex>
             </l>
             <l n="13">
-               <metamark facs="#ang2">꜒</metamark><seg facs="#cal13">Poys meu amıgo mo</seg></l>
+               <pc facs="#ang2">꜒</pc><seg facs="#cal13">Poys meu amıgo mo</seg></l>
             <lb n="14"/>
             <lb n="15"/>
             <l n="16" facs="#cal16"><choice>
@@ -350,7 +353,7 @@
                <add place="right" facs="#marg1" hand="#colocci">tōnel</add>
             </l>
             <l n="22">
-               <metamark place="margin" facs="#num1">728</metamark>
+               <num facs="#num1" hand="#colocci">728</num>
             </l>
             <l n="23" facs="#cal23">O meu amigo <choice>
                   <orig>nona</orig>
@@ -377,7 +380,7 @@
                   <reg>e q<am>̄</am><ex>ue</ex> lh eu</reg>
                </choice> faca mal</l>
             <l n="28">
-               <metamark facs="#ang3">꜒</metamark><seg facs="#cal28">Que faria <choice>
+               <pc facs="#ang3">꜒</pc><seg facs="#cal28">Que faria <choice>
                      <orig>ſelheu</orig>
                      <reg>ſe lh eu</reg>
                   </choice> feʒeſſe ben</seg>
@@ -415,7 +418,7 @@
                   <reg>p<am>᷑</am><ex>or</ex> mj</reg>
                </choice> q<am>̄</am><ex>ue</ex>r moırer</l>
             <l n="36">
-               <metamark facs="#ang4">꜒</metamark><seg facs="#cal36">Que fa.</seg>
+               <pc facs="#ang4">꜒</pc><seg facs="#cal36">Que fa.</seg>
             </l>
             <lb n="37"/>
          </div>
@@ -461,17 +464,17 @@
                   <reg>m el</reg>
                </choice> atal amor</l>
             <l n="07">
-               <metamark facs="#ang5">꜒</metamark><seg facs="#cbl07">Que faria</seg>
+               <pc facs="#ang5">꜒</pc><seg facs="#cbl07">Que faria</seg>
             </l>
             <lb n="08"/>
             <lb n="09"/>
             <lb n="10"/>
-            <l n="11" facs="#cbl11"><add place="inline" hand="colocci">Affonſo meendeʒ de beeſteryros</add></l>
+            <l n="11" facs="#cbl11"><add place="inline" hand="#colocci">Affonſo meendeʒ de beeſteryros</add></l>
             <lb n="12"/>
             <lb n="13"/>
             <lb n="14"/>
-            <l n="15" facs="#cbl15">
-               <metamark facs="#num2">729</metamark>
+            <l n="15">
+               <num facs="#num2" hand="#colocci">729</num>
             </l>
             <l n="16" facs="#cbl16">
                <add place="right" facs="#marg2" hand="#colocci">tōnel</add>
@@ -491,7 +494,7 @@
                </choice> mȷ ren</l>
             <l n="21" facs="#cbl21">no<am>̄</am><ex>n</ex> ꝺaꝺes mays poys aſſẏ e</l>
             <l n="22">
-               <metamark facs="#ang6">꜒</metamark><seg facs="#cbl22"><choice>
+               <pc facs="#ang6">꜒</pc><seg facs="#cbl22"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒeꝺe <choice>
@@ -518,7 +521,7 @@
                   <reg>q<am>̄</am><ex>ue</ex> a</reg>
                </choice> uerꝺaꝺe ſey</l>
             <l n="30">
-               <metamark facs="#ang7">꜒</metamark><seg facs="#cbl30"><choice>
+               <pc facs="#ang7">꜒</pc><seg facs="#cbl30"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒe.</seg>
@@ -539,7 +542,7 @@
                   <reg>q<am>̄</am><ex>ue</ex>ro u<am></am><ex>os</ex></reg>
                </choice> eu ꝺeſenganar</l>
             <l n="37">
-               <metamark facs="#ang8">꜒</metamark><seg facs="#cbl37"><choice>
+               <pc facs="#ang8">꜒</pc><seg facs="#cbl37"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒeꝺe</seg>
