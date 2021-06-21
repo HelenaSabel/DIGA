@@ -264,7 +264,7 @@
    <text>
       <body>
          <pb n="158v"/>
-         <div type="column-a">
+         <div type="column-a" hand="#b">
             <cb n="a"/>
            <lb n="01"/>
             <l n="02" facs="#cal02"><choice>
@@ -347,7 +347,7 @@
                </choice> leıxar morte p<am>͛</am><ex>re</ex>nꝺer</l>
             <lb n="20"/>
             <l n="21">
-               <add place="right" facs="#marg1">tōnel</add>
+               <add place="right" facs="#marg1" hand="#colocci">tōnel</add>
             </l>
             <l n="22">
                <metamark place="margin" facs="#num1">728</metamark>
@@ -419,7 +419,7 @@
             </l>
             <lb n="37"/>
          </div>
-         <div type="column-b">
+         <div type="column-b" hand="#b">
             <cb n="b"/>
             <lb n="01"/>
             <l n="02" facs="#cbl02"><choice>
@@ -466,7 +466,7 @@
             <lb n="08"/>
             <lb n="09"/>
             <lb n="10"/>
-            <l n="11" facs="#cbl11"><add place="inline">Affonſo meendeʒ de beeſteryros</add></l>
+            <l n="11" facs="#cbl11"><add place="inline" hand="colocci">Affonſo meendeʒ de beeſteryros</add></l>
             <lb n="12"/>
             <lb n="13"/>
             <lb n="14"/>
@@ -474,7 +474,7 @@
                <metamark facs="#num2">729</metamark>
             </l>
             <l n="16" facs="#cbl16">
-               <add place="right" facs="#marg2">tōnel</add>
+               <add place="right" facs="#marg2" hand="#colocci">tōnel</add>
             </l>
             <lb n="17"/>
             <l n="18" facs="#cbl18"><choice>

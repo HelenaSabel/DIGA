@@ -19,6 +19,9 @@
                 </head>
                 <body>
                     <main>
+                        <h1>Prototype: édition hyperdiplomatic</h1>
+                        <h2>Édition</h2>
+                        <h3>Éxplorer</h3>
                         <form id="criteria">
                             <fieldset>
                                 <input type="radio" name="abbreviation" value="ex" id="ex"/>
@@ -31,29 +34,37 @@
                                 <input type="radio" id="reg" value="reg" name="unite"/>
                                 <label for="reg">Union / séparation des éléments selon les unités
                                     lexicales</label>
-                                <input checked="checked" type="radio" value="orig" id="orig" name="unite"/>
+                                <input checked="checked" type="radio" value="orig" id="orig"
+                                    name="unite"/>
                                 <label for="orig">Disposition originale</label>
                             </fieldset>
                             <fieldset>
-                                <input type="checkbox" value="cod" id="cod" checked="checked"
-                                    /><label for="cod">Visualiser notices techniques</label>                                
-                                <input type="checkbox" value="metamark" id="metamark" checked="checked"
-                                /><label for="metamark">Visualiser éléments fonctionnels de la
+                                <input type="checkbox" value="cod" id="cod" checked="checked"/>
+                                <label for="cod">Visualiser notices techniques</label>
+                                <input type="checkbox" value="metamark" id="metamark"
+                                    checked="checked"/>
+                                <label for="metamark">Visualiser éléments fonctionnels de la
                                     copie</label>
-                                <input type="checkbox" value="marginalia" id="marginalia" checked="checked"
-                                /><label for="marginalia">Visualiser annotations</label>         
+                                <input type="checkbox" value="marginalia" id="marginalia"
+                                    checked="checked"/>
+                                <label for="marginalia">Visualiser annotations</label>
                             </fieldset>
+                            <input type="checkbox" value="b" id="b"/><label for="b">Visualiser
+                            copiste <em>b</em> (<span class="b">magenta</span>)</label>
+                            <input type="checkbox" value="colocci" id="colocci">Visualiser
+                                la main d’A. Colocci (<span class="colocci">olive</span>)</input>
+
                         </form>
                         <div id="edition">
                             <div id="boundList">
                                 <xsl:apply-templates select="//body/div"/>
                             </div>
                             <img src="{descendant::graphic/@url}" usemap="#158v" alt="f. 158v"/>
-                            <button id="refresh">Effacer</button>
+                            <button id="refresh">Réinitialiser</button>
                         </div>
-                        
+
                         <map name="158v">
-                            <xsl:apply-templates select="//zone"></xsl:apply-templates>
+                            <xsl:apply-templates select="//zone"/>
                         </map>
                     </main>
                     <script>
@@ -73,6 +84,7 @@
                         listKey: 'data-id',
                         listSelectedClass: 'selected',
                         fillColor: 'ffffff',
+                        staticState: false,
                         stroke: true,
                         singleSelect: true
                         });
@@ -104,11 +116,11 @@
     </xsl:template>
     <xsl:template match="div">
         <div class="{@type}">
-                    <ol class="lines">
-                        <xsl:apply-templates select="l|lb"/>
-                    </ol>
-                <xsl:apply-templates select="ab"/>
-            
+            <ol class="lines">
+                <xsl:apply-templates select="l | lb"/>
+            </ol>
+            <xsl:apply-templates select="ab"/>
+
         </div>
     </xsl:template>
     <xsl:template match="ab">
@@ -120,6 +132,9 @@
         <li>
             <xsl:if test="@facs">
                 <xsl:attribute name="data-id" select="substring(@facs, 2)"/>
+            </xsl:if>
+            <xsl:if test="not(add)">
+                <xsl:attribute name="data-hand">b</xsl:attribute>
             </xsl:if>
             <xsl:if test="add/@place eq 'right'">
                 <xsl:attribute name="class">hasRight</xsl:attribute>
@@ -134,7 +149,7 @@
         <span data-id="{substring(@facs, 2)}">
             <xsl:apply-templates/>
         </span>
-    </xsl:template>    
+    </xsl:template>
     <xsl:template match="metamark">
         <span data-id="{substring(@facs, 2)}" class="metamark">
             <xsl:apply-templates/>
@@ -160,6 +175,9 @@
     </xsl:template>
     <xsl:template match="add">
         <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}">
+            <xsl:if test="@hand">
+                <xsl:attribute name="data-hand" select="@hand"/>
+            </xsl:if>
             <xsl:apply-templates/>
         </ins>
     </xsl:template>
@@ -169,14 +187,15 @@
         </span>
     </xsl:template>
     <xsl:template match="zone">
-        <area href="#"
-            shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}" data-id="{@xml:id}">
+        <area href="#" shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}"
+            data-id="{@xml:id}">
             <xsl:choose>
                 <xsl:when test="@type eq 'rect'">
-                    <xsl:attribute name="coords" select="@ulx || ',' || @uly || ',' || @lrx || ',' || @lry"></xsl:attribute>
+                    <xsl:attribute name="coords"
+                        select="@ulx || ',' || @uly || ',' || @lrx || ',' || @lry"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:attribute name="coords" select="replace(@points, '\s+', ',')"></xsl:attribute>
+                    <xsl:attribute name="coords" select="replace(@points, '\s+', ',')"/>
                 </xsl:otherwise>
             </xsl:choose>
         </area>

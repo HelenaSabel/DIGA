@@ -31,6 +31,9 @@ body {
     height:3em;
 }
 
+fieldset {
+    border:0;
+}
 
 
 /*Edition*/
@@ -126,4 +129,12 @@ justify-content:flex-end;
 
 ins.right {
     padding-right:1em;
+}
+
+.colocci{
+    color: darkolivegreen;
+}
+
+.b{
+    color:darkmagenta;
 }
