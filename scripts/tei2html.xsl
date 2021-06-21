@@ -41,18 +41,18 @@
                             <fieldset>
                                 <input type="checkbox" value="cod" id="cod" checked="checked"/>
                                 <label for="cod">Visualiser notices techniques</label>
-                                <input type="checkbox" value="metamark" id="metamark"
+                                <input type="checkbox" value="mark" id="mark"
                                     checked="checked"/>
-                                <label for="metamark">Visualiser éléments fonctionnels de la
+                                <label for="mark">Visualiser éléments fonctionnels de la
                                     copie</label>
                                 <input type="checkbox" value="marginalia" id="marginalia"
                                     checked="checked"/>
                                 <label for="marginalia">Visualiser annotations</label>
                             </fieldset>
-                            <input type="checkbox" value="b" id="b"/><label for="b">Visualiser
+                            <fieldset><input type="checkbox" value="b" id="b"/><label for="b">Visualiser
                             copiste <em>b</em> (<span class="b">magenta</span>)</label>
                             <input type="checkbox" value="colocci" id="colocci">Visualiser
-                                la main d’A. Colocci (<span class="colocci">olive</span>)</input>
+                                la main d’A. Colocci (<span class="colocci">olive</span>)</input></fieldset>
 
                         </form>
                         <div id="edition">
@@ -84,7 +84,6 @@
                         listKey: 'data-id',
                         listSelectedClass: 'selected',
                         fillColor: 'ffffff',
-                        staticState: false,
                         stroke: true,
                         singleSelect: true
                         });
@@ -150,8 +149,8 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="metamark">
-        <span data-id="{substring(@facs, 2)}" class="metamark">
+    <xsl:template match="pc|num">
+        <span data-id="{substring(@facs, 2)}" class="mark">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -176,7 +175,7 @@
     <xsl:template match="add">
         <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}">
             <xsl:if test="@hand">
-                <xsl:attribute name="data-hand" select="@hand"/>
+                <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
             </xsl:if>
             <xsl:apply-templates/>
         </ins>
