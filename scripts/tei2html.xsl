@@ -203,13 +203,13 @@
     <xsl:template match="am">
         <xsl:variable name="text" select="preceding-sibling::text()[1]"/>
         <xsl:choose>
-            <xsl:when test="not(following-sibling::expan)">                
+            <xsl:when test="not(following-sibling::*[1][name() eq 'expan'])">                
                 <span class="am">
                     <xsl:value-of select="substring($text, string-length($text), 1) || current()"/>
                 </span>
             </xsl:when>
             <xsl:otherwise>
-                <span class="am">
+                <xsl:value-of select="$text"/><span class="am">
                     <xsl:apply-templates/>
                 </span>
             </xsl:otherwise>
