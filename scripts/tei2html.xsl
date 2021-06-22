@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:functx="http://www.functx.com"
+    exclude-result-prefixes="#all"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="3.0">
     <xsl:output method="xhtml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8"
         html-version="5.0"/>
+    <xsl:function name="functx:escape-for-regex" as="xs:string">
+        <xsl:param name="arg" as="xs:string?"/>
+        
+        <xsl:sequence select="
+            replace($arg,
+            '(\.|\[|\]|\\|\||\-|\^|\$|\?|\*|\+|\{|\}|\(|\))','\\$1')
+            "/>
+        
+    </xsl:function>
+    <xsl:function name="functx:substring-before-last" as="xs:string">
+        <xsl:param name="arg" as="xs:string?"/>
+        <xsl:param name="delim" as="xs:string"/>
+        
+        <xsl:sequence select="
+            if (matches($arg, functx:escape-for-regex($delim)))
+            then replace($arg,
+            concat('^(.*)', functx:escape-for-regex($delim),'.*'),
+            '$1')
+            else ''
+            "/>        
+    </xsl:function>
     <xsl:template match="/">
-        <xsl:result-document href="../web/index.html">
+        <xsl:result-document href="../docs/index.html">
             <html>
                 <head>
                     <title>Protype</title>
@@ -19,7 +42,7 @@
                 </head>
                 <body>
                     <main>
-                        <h1>Prototype: édition hyperdiplomatic</h1>
+                        <h1>Prototype: édition hyperdiplomatique</h1>
                         <h2>Édition</h2>
                         <h3>Éxplorer</h3>
                         <form id="criteria">
@@ -132,7 +155,7 @@
             <xsl:if test="@facs">
                 <xsl:attribute name="data-id" select="substring(@facs, 2)"/>
             </xsl:if>
-            <xsl:if test="not(add)">
+            <xsl:if test="not(add|num)">
                 <xsl:attribute name="data-hand">b</xsl:attribute>
             </xsl:if>
             <xsl:if test="add/@place eq 'right'">
@@ -140,6 +163,10 @@
             </xsl:if>
             <xsl:apply-templates/>
         </li>
+    </xsl:template>
+    <xsl:template match="text()[ancestor::l][following-sibling::am]">
+        <xsl:variable name="lastCharacter" select="substring(., string-length(.), 1)" />
+        <xsl:value-of select="functx:substring-before-last(., $lastCharacter)"/>
     </xsl:template>
     <xsl:template match="lb">
         <li>&#8199;</li>
@@ -162,13 +189,20 @@
             <xsl:apply-templates select="reg"/>
         </span>
     </xsl:template>
-    <xsl:template match="am | ex">
-        <span class="{name()}">
+    <xsl:template match="ex">
+        <xsl:variable name="text" select="preceding-sibling::text()[1]"/>
+        <xsl:if test="not(parent::expan)"><span class="expan"><xsl:value-of select="substring($text, string-length($text), 1)"/></span><span class="{name()}">
             <xsl:apply-templates/>
+        </span></xsl:if>
+    </xsl:template>
+    <xsl:template match="am">
+        <xsl:variable name="text" select="preceding-sibling::text()[1]"/>
+        <span class="am">
+            <xsl:value-of select="substring($text, string-length($text), 1) || current()"/>
         </span>
     </xsl:template>
     <xsl:template match="expan">
-        <span class="ex">
+        <span class="expan">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
