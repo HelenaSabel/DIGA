@@ -74,8 +74,8 @@
                             </fieldset>
                             <fieldset><input type="checkbox" value="b" id="b"/><label for="b">Visualiser
                             copiste <em>b</em> (<span class="b">magenta</span>)</label>
-                            <input type="checkbox" value="colocci" id="colocci">Visualiser
-                                la main d’A. Colocci (<span class="colocci">olive</span>)</input></fieldset>
+                            <input type="checkbox" value="colocci" id="colocci"/><label for="colocci">Visualiser
+                                la main d’A. Colocci (<span class="colocci">olive</span>)</label></fieldset>
 
                         </form>
                         <div id="edition">
@@ -202,6 +202,18 @@
     </xsl:template>
     <xsl:template match="am">
         <xsl:variable name="text" select="preceding-sibling::text()[1]"/>
+        <xsl:choose>
+            <xsl:when test="not(following-sibling::expan)">                
+                <span class="am">
+                    <xsl:value-of select="substring($text, string-length($text), 1) || current()"/>
+                </span>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="am">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:otherwise>
+        </xsl:choose>
         <span class="am">
             <xsl:value-of select="substring($text, string-length($text), 1) || current()"/>
         </span>
