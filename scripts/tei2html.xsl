@@ -191,9 +191,14 @@
     </xsl:template>
     <xsl:template match="ex">
         <xsl:variable name="text" select="preceding-sibling::text()[1]"/>
-        <xsl:if test="not(parent::expan)"><span class="expan"><xsl:value-of select="substring($text, string-length($text), 1)"/></span><span class="{name()}">
-            <xsl:apply-templates/>
-        </span></xsl:if>
+        <xsl:choose>
+            <xsl:when test="not(parent::expan)">
+                <span class="expan"><xsl:value-of select="substring($text, string-length($text), 1)"/><span class="ex"><xsl:apply-templates/></span></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="ex"><xsl:apply-templates/></span>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="am">
         <xsl:variable name="text" select="preceding-sibling::text()[1]"/>
