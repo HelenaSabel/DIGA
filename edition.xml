@@ -263,7 +263,6 @@
             <note>Trait</note>
          </zone>
          <surface type="characters">
-            <graphic url="B158v.jpg" source="https://purl.pt/15000/1/index.html#/348/html"/>
             <zone xml:id="er_z1" ulx="427" uly="190" lrx="446" lry="209" type="rect"/>
             <zone xml:id="or_21" ulx="881" uly="182" lrx="917" lry="201" type="rect"/>
             <zone xml:id="or_22" ulx="522" uly="434" lrx="541" lry="451" type="rect"/>
