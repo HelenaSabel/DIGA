@@ -44,7 +44,7 @@
                         <title/>
                      </msItem>
                   </msContents>
-               </msPart>               
+               </msPart>
             </msDesc>
             <bibl>
                <ref target="https://purl.pt/15000/1/index.html#/348/html"/>
@@ -69,7 +69,7 @@
       </profileDesc>
    </teiHeader>
    <facsimile>
-      <surface>
+      <surface type="edition">
          <graphic url="B158v.jpg" source="https://purl.pt/15000/1/index.html#/348/html"/>
          <zone xml:id="cal02" type="rect" ulx="294" uly="194" lrx="601" lry="232">
             <note>Corps du texte: colonne a, ligne 2</note>
@@ -262,30 +262,25 @@
          <zone xml:id="metamark" type="rect" ulx="758" uly="1066" lrx="775" lry="1139">
             <note>Trait</note>
          </zone>
-         
-         <!--       
-         <img src="B158v.jpg" usemap="#image-map">
-            
-            <map name="image-map">
-               <area target="" alt="z er (one)" title="z er (one)" href="" coords="427,190,446,209" shape="rect">
-                  <area target="" alt="2 or (one)" title="2 or (one)" href="" coords="881,182,917,201" shape="rect">
-                     <area target="" alt="2 or (two)" title="2 or (two)" href="" coords="522,434,541,451" shape="rect">
-                        <area target="" alt="i ui " title="i ui " href="" coords="837,187,850,205" shape="rect">
-                           <area target="" alt="ra" title="ra" href="" coords="976,178,1014,200" shape="rect">
-                              <area target="" alt="9 os" title="9 os" href="" coords="919,1402,936,1424" shape="rect">
-                                 <area target="" alt="z er (two)" title="z er (two)" href="" coords="629,782,655,801" shape="rect">
-                                    <area target="" alt="z er (three)" title="z er (three)" href="" coords="302,435,322,452" shape="rect">
-                                       <area target="" alt="2 or (three)" title="2 or (three)" href="" coords="298,748,319,768" shape="rect">
-                                          <area target="" alt="2 or (four)" title="2 or (four)" href="" coords="553,1319,587,1339" shape="rect">
-                                             <area target="" alt="2 or (five)" title="2 or (five)" href="" coords="497,1359,541,1371" shape="rect">
-                                                <area target="" alt="9 os (two)" title="9 os (two)" href="" coords="927,1297,950,1325" shape="rect">
-                                                   <area target="" alt="ra" title="ra" href="" coords="847,1102,880,1118" shape="rect">
-                                                      <area target="" alt="per" title="per" href="" coords="752,265,776,303" shape="rect">
-                                                         <area target="" alt="9 os" title="9 os" href="" coords="1014,1039,1034,1068" shape="rect">
-                                                            <area target="" alt="ra" title="ra" href="" coords="839,1322,873,1338" shape="rect">
-            </map>-->
-         
-         
+         <surface type="characters">
+            <graphic url="B158v.jpg" source="https://purl.pt/15000/1/index.html#/348/html"/>
+            <zone xml:id="er_z1" ulx="427" uly="190" lrx="446" lry="209" type="rect"/>
+            <zone xml:id="or_21" ulx="881" uly="182" lrx="917" lry="201" type="rect"/>
+            <zone xml:id="or_22" ulx="522" uly="434" lrx="541" lry="451" type="rect"/>
+            <zone xml:id="i_ui" ulx="837" uly="187" lrx="850" lry="205" type="rect"/>
+            <zone xml:id="ra1" ulx="976" uly="178" lrx="1014" lry="200" type="rect"/>
+            <zone xml:id="os_91" ulx="919" uly="1402" lrx="936" lry="1424" type="rect"/>
+            <zone xml:id="er_z2" ulx="629" uly="782" lrx="655" lry="801" type="rect"/>
+            <zone xml:id="er_z3" ulx="302" uly="435" lrx="322" lry="452" type="rect"/>
+            <zone xml:id="or_23" ulx="298" uly="748" lrx="319" lry="768" type="rect"/>
+            <zone xml:id="or_24" ulx="553" uly="1319" lrx="587" lry="1339" type="rect"/>
+            <zone xml:id="or_25" ulx="497" uly="1359" lrx="541" lry="1371" type="rect"/>
+            <zone xml:id="os_92" ulx="927" uly="1297" lrx="950" lry="1325" type="rect"/>
+            <zone xml:id="ra2" ulx="847" uly="1102" lrx="880" lry="1118" type="rect"/>
+            <zone xml:id="per" ulx="752" uly="265" lrx="776" lry="303" type="rect"/>
+            <zone xml:id="os_93" ulx="1014" uly="1039" lrx="1034" lry="1068" type="rect"/>
+            <zone xml:id="ra3" ulx="839" uly="1322" lrx="873" lry="1338" type="rect"/>
+         </surface>
       </surface>
    </facsimile>
    <text>
@@ -293,7 +288,7 @@
          <pb n="158v"/>
          <div type="column-a" hand="#b">
             <cb n="a"/>
-           <lb n="01"/>
+            <lb n="01"/>
             <l n="02" facs="#cal02"><choice>
                   <orig>epoſſolho</orig>
                   <reg>e poſſo lho</reg>
@@ -493,7 +488,8 @@
             <lb n="08"/>
             <lb n="09"/>
             <lb n="10"/>
-            <l n="11" facs="#cbl11"><add place="inline" hand="#colocci">Affonſo meendeʒ de beeſteryros</add></l>
+            <l n="11" facs="#cbl11"><add place="inline" hand="#colocci">Affonſo meendeʒ de
+                  beeſteryros</add></l>
             <lb n="12"/>
             <lb n="13"/>
             <lb n="14"/>

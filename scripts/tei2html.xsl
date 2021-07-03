@@ -44,6 +44,7 @@
                     <main>
                         <h1>Prototype: édition hyperdiplomatique</h1>
                         <h2>Édition</h2>
+                        <p>Survolez la transcription pour voir le texte correspondant dans le fac-simil et survolez l’image pour voir sa transcription.</p>
                         <h3>Modifier les critères d’édition</h3>
                         <form id="criteria">
                             <fieldset>
@@ -214,9 +215,6 @@
                 </span>
             </xsl:otherwise>
         </xsl:choose>
-        <span class="am">
-            <xsl:value-of select="substring($text, string-length($text), 1) || current()"/>
-        </span>
     </xsl:template>
     <xsl:template match="expan">
         <span class="expan">
@@ -236,7 +234,7 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="zone">
+    <xsl:template match="zone[parent::surface/@type eq 'edition']">
         <area href="#" shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}"
             data-id="{@xml:id}">
             <xsl:choose>
