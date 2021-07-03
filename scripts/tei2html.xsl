@@ -44,7 +44,7 @@
                     <main>
                         <h1>Prototype: édition hyperdiplomatique</h1>
                         <h2>Édition</h2>
-                        <h3>Éxplorer</h3>
+                        <h3>Modifier les critères d’édition</h3>
                         <form id="criteria">
                             <fieldset>
                                 <input type="radio" name="abbreviation" value="ex" id="ex"/>
