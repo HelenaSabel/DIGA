@@ -9,18 +9,20 @@ function checkboxes() {
 function changeCriteria() {
     
     var id = this.getAttribute('value');
-    var metamarks = document.getElementsByClassName('metamark');
+    var marks = document.getElementsByClassName('mark');
     var notes = document.querySelectorAll('ins');
     var reclames = document.getElementsByClassName('cod');
+    var handbs = document.querySelectorAll("[data-hand='b']");
+    var handcols = document.querySelectorAll("[data-hand='colocci']");
     
     switch (id) {
-        case 'metamark':
+        case 'mark':
         
-        if (this.checked == true) { for (var i = 0; i < metamarks.length; i++) {
-                metamarks[i].classList.remove('hide');
+        if (this.checked == true) { for (var i = 0; i < marks.length; i++) {
+                marks[i].classList.remove('hide');
             }
-        } else { for (var i = 0; i < metamarks.length; i++) {
-                metamarks[i].classList.add('hide');
+        } else { for (var i = 0; i < marks.length; i++) {
+                marks[i].classList.add('hide');
             }
         }
         
@@ -35,6 +37,34 @@ function changeCriteria() {
             }
         } else { for (var i = 0; i < notes.length; i++) {
                 notes[i].classList.add('hide')
+            }
+        }
+        
+        break;
+        
+        case 'b':
+        
+        if (this.checked == true) {
+            
+            for (var i = 0; i < handbs.length; i++) {
+                handbs[i].style.color = 'darkmagenta';
+            }
+        } else { for (var i = 0; i < handbs.length; i++) {
+                handbs[i].style.color = 'initial';
+            }
+        }
+        
+        break;
+        
+        case 'colocci':
+        
+        if (this.checked == true) {
+            
+            for (var i = 0; i < handcols.length; i++) {
+                handcols[i].style.color = 'darkolivegreen';
+            }
+        } else { for (var i = 0; i < handcols.length; i++) {
+                handcols[i].style.color = 'initial';
             }
         }
         

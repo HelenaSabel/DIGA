@@ -9,7 +9,7 @@ function formulario() {
 function giveID() {
     var id = this.getAttribute('value');
     var ams = document.getElementsByClassName('am');
-    var expans = document.getElementsByClassName('ex');
+    var expans = document.getElementsByClassName('expan');
     var regs = document.getElementsByClassName('reg');
     var origs = document.getElementsByClassName('orig');
     

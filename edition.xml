@@ -36,12 +36,15 @@
                      <msItem>
                         <title>O meu amigo non á de mí al</title>
                         <idno>B728</idno>
+                        <bibl>
+                           <link target="m"/>
+                        </bibl>
                      </msItem>
                      <msItem>
                         <title/>
                      </msItem>
                   </msContents>
-               </msPart>
+               </msPart>               
             </msDesc>
             <bibl>
                <ref target="https://purl.pt/15000/1/index.html#/348/html"/>
@@ -259,12 +262,36 @@
          <zone xml:id="metamark" type="rect" ulx="758" uly="1066" lrx="775" lry="1139">
             <note>Trait</note>
          </zone>
+         
+         <!--       
+         <img src="B158v.jpg" usemap="#image-map">
+            
+            <map name="image-map">
+               <area target="" alt="z er (one)" title="z er (one)" href="" coords="427,190,446,209" shape="rect">
+                  <area target="" alt="2 or (one)" title="2 or (one)" href="" coords="881,182,917,201" shape="rect">
+                     <area target="" alt="2 or (two)" title="2 or (two)" href="" coords="522,434,541,451" shape="rect">
+                        <area target="" alt="i ui " title="i ui " href="" coords="837,187,850,205" shape="rect">
+                           <area target="" alt="ra" title="ra" href="" coords="976,178,1014,200" shape="rect">
+                              <area target="" alt="9 os" title="9 os" href="" coords="919,1402,936,1424" shape="rect">
+                                 <area target="" alt="z er (two)" title="z er (two)" href="" coords="629,782,655,801" shape="rect">
+                                    <area target="" alt="z er (three)" title="z er (three)" href="" coords="302,435,322,452" shape="rect">
+                                       <area target="" alt="2 or (three)" title="2 or (three)" href="" coords="298,748,319,768" shape="rect">
+                                          <area target="" alt="2 or (four)" title="2 or (four)" href="" coords="553,1319,587,1339" shape="rect">
+                                             <area target="" alt="2 or (five)" title="2 or (five)" href="" coords="497,1359,541,1371" shape="rect">
+                                                <area target="" alt="9 os (two)" title="9 os (two)" href="" coords="927,1297,950,1325" shape="rect">
+                                                   <area target="" alt="ra" title="ra" href="" coords="847,1102,880,1118" shape="rect">
+                                                      <area target="" alt="per" title="per" href="" coords="752,265,776,303" shape="rect">
+                                                         <area target="" alt="9 os" title="9 os" href="" coords="1014,1039,1034,1068" shape="rect">
+                                                            <area target="" alt="ra" title="ra" href="" coords="839,1322,873,1338" shape="rect">
+            </map>-->
+         
+         
       </surface>
    </facsimile>
    <text>
       <body>
          <pb n="158v"/>
-         <div type="column-a">
+         <div type="column-a" hand="#b">
             <cb n="a"/>
            <lb n="01"/>
             <l n="02" facs="#cal02"><choice>
@@ -279,7 +306,7 @@
                ſen farey</l>
             <l n="04" facs="#cal04">mhas amıgas mays hu<am>̄</am><ex>̃</ex>a couſa ſey</l>
             <l n="05">
-               <metamark facs="#ang1">꜒</metamark><seg facs="#cal05">Poys meu</seg>
+               <pc facs="#ang1">꜒</pc><seg facs="#cal05">Poys meu</seg>
             </l>
             <lb n="06"/>
             <lb n="07"/>
@@ -318,7 +345,7 @@
                </choice> ꝺireı mhas amıgas ꝺe pra<am>̄</am><ex>n</ex>
             </l>
             <l n="13">
-               <metamark facs="#ang2">꜒</metamark><seg facs="#cal13">Poys meu amıgo mo</seg></l>
+               <pc facs="#ang2">꜒</pc><seg facs="#cal13">Poys meu amıgo mo</seg></l>
             <lb n="14"/>
             <lb n="15"/>
             <l n="16" facs="#cal16"><choice>
@@ -347,10 +374,10 @@
                </choice> leıxar morte p<am>͛</am><ex>re</ex>nꝺer</l>
             <lb n="20"/>
             <l n="21">
-               <add place="right" facs="#marg1">tōnel</add>
+               <add place="right" facs="#marg1" hand="#colocci">tōnel</add>
             </l>
             <l n="22">
-               <metamark place="margin" facs="#num1">728</metamark>
+               <num facs="#num1" hand="#colocci">728</num>
             </l>
             <l n="23" facs="#cal23">O meu amigo <choice>
                   <orig>nona</orig>
@@ -377,7 +404,7 @@
                   <reg>e q<am>̄</am><ex>ue</ex> lh eu</reg>
                </choice> faca mal</l>
             <l n="28">
-               <metamark facs="#ang3">꜒</metamark><seg facs="#cal28">Que faria <choice>
+               <pc facs="#ang3">꜒</pc><seg facs="#cal28">Que faria <choice>
                      <orig>ſelheu</orig>
                      <reg>ſe lh eu</reg>
                   </choice> feʒeſſe ben</seg>
@@ -415,11 +442,11 @@
                   <reg>p<am>᷑</am><ex>or</ex> mj</reg>
                </choice> q<am>̄</am><ex>ue</ex>r moırer</l>
             <l n="36">
-               <metamark facs="#ang4">꜒</metamark><seg facs="#cal36">Que fa.</seg>
+               <pc facs="#ang4">꜒</pc><seg facs="#cal36">Que fa.</seg>
             </l>
             <lb n="37"/>
          </div>
-         <div type="column-b">
+         <div type="column-b" hand="#b">
             <cb n="b"/>
             <lb n="01"/>
             <l n="02" facs="#cbl02"><choice>
@@ -461,20 +488,20 @@
                   <reg>m el</reg>
                </choice> atal amor</l>
             <l n="07">
-               <metamark facs="#ang5">꜒</metamark><seg facs="#cbl07">Que faria</seg>
+               <pc facs="#ang5">꜒</pc><seg facs="#cbl07">Que faria</seg>
             </l>
             <lb n="08"/>
             <lb n="09"/>
             <lb n="10"/>
-            <l n="11" facs="#cbl11"><add place="inline">Affonſo meendeʒ de beeſteryros</add></l>
+            <l n="11" facs="#cbl11"><add place="inline" hand="#colocci">Affonſo meendeʒ de beeſteryros</add></l>
             <lb n="12"/>
             <lb n="13"/>
             <lb n="14"/>
-            <l n="15" facs="#cbl15">
-               <metamark facs="#num2">729</metamark>
+            <l n="15">
+               <num facs="#num2" hand="#colocci">729</num>
             </l>
             <l n="16" facs="#cbl16">
-               <add place="right" facs="#marg2">tōnel</add>
+               <add place="right" facs="#marg2" hand="#colocci">tōnel</add>
             </l>
             <lb n="17"/>
             <l n="18" facs="#cbl18"><choice>
@@ -491,7 +518,7 @@
                </choice> mȷ ren</l>
             <l n="21" facs="#cbl21">no<am>̄</am><ex>n</ex> ꝺaꝺes mays poys aſſẏ e</l>
             <l n="22">
-               <metamark facs="#ang6">꜒</metamark><seg facs="#cbl22"><choice>
+               <pc facs="#ang6">꜒</pc><seg facs="#cbl22"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒeꝺe <choice>
@@ -518,7 +545,7 @@
                   <reg>q<am>̄</am><ex>ue</ex> a</reg>
                </choice> uerꝺaꝺe ſey</l>
             <l n="30">
-               <metamark facs="#ang7">꜒</metamark><seg facs="#cbl30"><choice>
+               <pc facs="#ang7">꜒</pc><seg facs="#cbl30"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒe.</seg>
@@ -539,7 +566,7 @@
                   <reg>q<am>̄</am><ex>ue</ex>ro u<am></am><ex>os</ex></reg>
                </choice> eu ꝺeſenganar</l>
             <l n="37">
-               <metamark facs="#ang8">꜒</metamark><seg facs="#cbl37"><choice>
+               <pc facs="#ang8">꜒</pc><seg facs="#cbl37"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒeꝺe</seg>

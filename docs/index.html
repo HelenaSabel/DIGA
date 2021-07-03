@@ -1,79 +1,85 @@
 <!DOCTYPE html><html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <title>Protype</title>
+      <title>Prototype: édition hyperdiplomatique</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="stylesheet" type="text/css" href="css/main.css"/><script src="js/highlight.js"></script><script src="js/form_radio.js"></script><script src="js/form_checkboxes.js"></script><script src="js/jquery-1.7.1.min.js"></script><script src="js/jquery.imagemapster.min.js"></script></head>
    <body>
       <main>
+         <h1>Prototype: édition hyperdiplomatique</h1>
+         <h2>Édition</h2>
+         <h3>Éxplorer</h3>
          <form id="criteria">
             <fieldset><input type="radio" name="abbreviation" value="ex" id="ex"/><label for="ex">Abréviations développées</label><input type="radio" checked="checked" name="abbreviation" value="abb" id="abb"/><label for="abb">Marques d’abréviation</label></fieldset>
             <fieldset><input type="radio" id="reg" value="reg" name="unite"/><label for="reg">Union / séparation des éléments selon les unités
                   lexicales</label><input checked="checked" type="radio" value="orig" id="orig" name="unite"/><label for="orig">Disposition originale</label></fieldset>
-            <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="metamark" id="metamark" checked="checked"/><label for="metamark">Visualiser éléments fonctionnels de la
+            <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="mark" id="mark" checked="checked"/><label for="mark">Visualiser éléments fonctionnels de la
                   copie</label><input type="checkbox" value="marginalia" id="marginalia" checked="checked"/><label for="marginalia">Visualiser annotations</label></fieldset>
+            <fieldset><input type="checkbox" value="b" id="b"/><label for="b">Visualiser
+                  copiste <em>b</em> (<span class="b">magenta</span>)</label><input type="checkbox" value="colocci" id="colocci"/><label for="colocci">Visualiser
+                  la main d’A. Colocci (<span class="colocci">olive</span>)</label></fieldset>
          </form>
          <div id="edition">
             <div id="boundList">
                <div class="column-a">
                   <ol class="lines">
                      <li> </li>
-                     <li data-id="cal02"><span class="orig">epoſſolho</span><span class="reg">e poſſo lho</span> faʒ<span class="am">͛</span><span class="ex">er</span> muȷ <span class="orig">co<span class="am">̄</span><span class="ex">n</span>raʒo<span class="am">̄</span><span class="ex">n</span></span><span class="reg">co<span class="am">̄</span><span class="ex">n</span> raʒo<span class="am">̄</span><span class="ex">n</span></span>
+                     <li data-id="cal02" data-hand="b"><span class="orig">epoſſolho</span><span class="reg">e poſſo lho</span> fa<span class="am">ʒ͛</span><span class="expan">ʒ<span class="ex">er</span></span> muȷ <span class="orig">c<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span>raʒ<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span></span><span class="reg">c<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span> raʒ<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span></span>
                         </li>
-                     <li data-id="cal03">mais ꝺiʒe<span class="am">̄</span><span class="ex">n</span> logo q<span class="am">̄</span><span class="ex">ue</span> mal
+                     <li data-id="cal03" data-hand="b">mais ꝺiʒ<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span> logo <span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span> mal
                         ſen farey</li>
-                     <li data-id="cal04">mhas amıgas mays hu<span class="am">̄</span><span class="ex">̃</span>a couſa ſey</li>
-                     <li>
-                        <span data-id="ang1" class="metamark">꜒</span><span data-id="cal05">Poys meu</span>
+                     <li data-id="cal04" data-hand="b">mhas amıgas mays h<span class="am">ū</span><span class="expan">u<span class="ex">̃</span></span>a couſa ſey</li>
+                     <li data-hand="b">
+                        <span data-id="ang1" class="mark">꜒</span><span data-id="cal05">Poys meu</span>
                         </li>
                      <li> </li>
                      <li> </li>
-                     <li data-id="cal08"><span class="orig">Eulhı</span><span class="reg">Eu lhı</span> farey be<span class="am">̄</span><span class="ex">n</span> e elas ueıra<span class="am">̄</span><span class="ex">n</span>
+                     <li data-id="cal08" data-hand="b"><span class="orig">Eulhı</span><span class="reg">Eu lhı</span> farey b<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span> e elas ueır<span class="am">ā</span><span class="expan">a<span class="ex">n</span></span>
                         </li>
-                     <li data-id="cal09">p<span class="am">͛</span><span class="ex">re</span>gu<span class="am">̄</span><span class="ex">n</span>tar <span class="orig">ma<span class="am">̄</span><span class="ex">n</span>te</span><span class="reg">m a<span class="am">̄</span><span class="ex">n</span>te</span> uos p<span class="am">᷑</span><span class="ex">or</span>
-                        <span class="orig">q<span class="am">̄</span><span class="ex">ue</span>o</span><span class="reg">q<span class="am">̄</span><span class="ex">ue</span> o</span> fıʒ</li>
-                     <li data-id="cal10">e ꝺırey eu qual est <span class="orig">aq<span class="am">̄</span><span class="ex">ue</span>o</span><span class="reg">a q<span class="am">̄</span><span class="ex">ue</span> o</span> ꝺiʒ</li>
-                     <li data-id="cal11"><span class="orig">epoyſ</span><span class="reg">e poyſ</span>
-                        <span class="orig">moyre<span class="am">̄</span><span class="ex">n</span></span><span class="reg">m oyre<span class="am">̄</span><span class="ex">n</span></span>
+                     <li data-id="cal09" data-hand="b"><span class="am">p͛</span><span class="expan">p<span class="ex">re</span></span>g<span class="am">ū</span><span class="expan">u<span class="ex">n</span></span>tar<span class="orig">m<span class="am">ā</span><span class="expan">a<span class="ex">n</span></span>te</span><span class="reg">m <span class="am">ā</span><span class="expan">a<span class="ex">n</span></span>te</span> uos <span class="am">p᷑</span><span class="expan">p<span class="ex">or</span></span>
+                        <span class="orig"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>o</span><span class="reg"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span> o</span> fıʒ</li>
+                     <li data-id="cal10" data-hand="b">e ꝺırey eu qual est <span class="orig">a<span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>o</span><span class="reg">a <span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span> o</span> ꝺiʒ</li>
+                     <li data-id="cal11" data-hand="b"><span class="orig">epoyſ</span><span class="reg">e poyſ</span>
+                        <span class="orig">moyr<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span></span><span class="reg">m oyr<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span></span>
                         <span class="orig">outorgarmho</span><span class="reg">outorgar mh o</span> an</li>
-                     <li data-id="cal12"><span class="orig">calhis</span><span class="reg">ca lhis</span> ꝺireı mhas amıgas ꝺe pra<span class="am">̄</span><span class="ex">n</span>
+                     <li data-id="cal12" data-hand="b"><span class="orig">calhis</span><span class="reg">ca lhis</span> ꝺireı mhas amıgas ꝺe pr<span class="am">ā</span><span class="expan">a<span class="ex">n</span></span>
                         </li>
-                     <li>
-                        <span data-id="ang2" class="metamark">꜒</span><span data-id="cal13">Poys meu amıgo mo</span></li>
+                     <li data-hand="b">
+                        <span data-id="ang2" class="mark">꜒</span><span data-id="cal13">Poys meu amıgo mo</span></li>
                      <li> </li>
                      <li> </li>
-                     <li data-id="cal16"><span class="orig">Eantelhı</span><span class="reg">E ante lhı</span>
-                        <span class="orig">q<span class="am">̄</span><span class="ex">ue</span>ralgu<span class="am">̄</span><span class="ex">n</span></span><span class="reg">q<span class="am">̄</span><span class="ex">ue</span>r algu<span class="am">̄</span><span class="ex">n</span></span> be<span class="am">̄</span><span class="ex">n</span> faʒer</li>
-                     <li data-id="cal17"><span class="orig">cao</span><span class="reg">ca o</span> leixar como moıre moırer</li>
-                     <li data-id="cal18"><span class="orig">p<span class="am">᷑</span><span class="ex">or</span>lhı</span><span class="reg">p<span class="am">᷑</span><span class="ex">or</span> lhı</span> falar be<span class="am">̄</span><span class="ex">n</span> ou polo ueer</li>
-                     <li data-id="cal19"><span class="orig">no<span class="am">̄</span><span class="ex">n</span>lhı</span><span class="reg">no<span class="am">̄</span><span class="ex">n</span> lhı</span>
-                        <span class="orig">q<span class="am">̄</span><span class="ex">ue</span>reu</span><span class="reg">q<span class="am">̄</span><span class="ex">ue</span>r eu</span> leıxar morte p<span class="am">͛</span><span class="ex">re</span>nꝺer</li>
+                     <li data-id="cal16" data-hand="b"><span class="orig">Eantelhı</span><span class="reg">E ante lhı</span>
+                        <span class="orig"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>ralg<span class="am">ū</span><span class="expan">u<span class="ex">n</span></span></span><span class="reg"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>r alg<span class="am">ū</span><span class="expan">u<span class="ex">n</span></span></span> b<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span> faʒer</li>
+                     <li data-id="cal17" data-hand="b"><span class="orig">cao</span><span class="reg">ca o</span> leixar como moıre moırer</li>
+                     <li data-id="cal18" data-hand="b"><span class="orig"><span class="am">p᷑</span><span class="expan">p<span class="ex">or</span></span>lhı</span><span class="reg"><span class="am">p᷑</span><span class="expan">p<span class="ex">or</span></span> lhı</span> falar b<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span> ou polo ueer</li>
+                     <li data-id="cal19" data-hand="b"><span class="orig">n<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span>lhı</span><span class="reg">n<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span> lhı</span>
+                        <span class="orig"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>reu</span><span class="reg"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>r eu</span> leıxar morte <span class="am">p͛</span><span class="expan">p<span class="ex">re</span></span>nꝺer</li>
                      <li> </li>
                      <li class="hasRight">
-                        <ins class="right marginalia" data-id="marg1">tōnel</ins>
+                        <ins class="right marginalia" data-id="marg1" data-hand="colocci">tōnel</ins>
                         </li>
                      <li>
-                        <span data-id="num1" class="metamark">728</span>
+                        <span data-id="num1" class="mark">728</span>
                         </li>
-                     <li data-id="cal23">O meu amigo <span class="orig">nona</span><span class="reg">non a</span>
+                     <li data-id="cal23" data-hand="b">O meu amigo <span class="orig">nona</span><span class="reg">non a</span>
                         <span class="orig">ꝺemȷ</span><span class="reg">&gt;ꝺe mȷ</span> al</li>
-                     <li data-id="cal24">ſenon gram coyta <span class="orig">quelhı</span><span class="reg">que lhı</span> uu<span class="am">̄</span><span class="ex">n</span>cafal</li>
-                     <li data-id="cal25">e amiga o coraçon lhi ſal</li>
-                     <li data-id="cal26">por me ueer e <span class="orig">ꝺıʒeꝺunha</span><span class="reg">ꝺıʒeꝺ unha</span> ren</li>
-                     <li data-id="cal27">poys <span class="orig">mel</span><span class="reg">m el</span> ben quer <span class="orig">eq<span class="am">̄</span><span class="ex">ue</span>lheu</span><span class="reg">e q<span class="am">̄</span><span class="ex">ue</span> lh eu</span> faca mal</li>
-                     <li>
-                        <span data-id="ang3" class="metamark">꜒</span><span data-id="cal28">Que faria <span class="orig">ſelheu</span><span class="reg">ſe lh eu</span> feʒeſſe ben</span>
+                     <li data-id="cal24" data-hand="b">ſenon gram coyta<span class="orig">quelhı</span><span class="reg">que lhı</span> u<span class="am">ū</span><span class="expan">u<span class="ex">n</span></span>cafal</li>
+                     <li data-id="cal25" data-hand="b">e amiga o coraçon lhi ſal</li>
+                     <li data-id="cal26" data-hand="b">por me ueer e <span class="orig">ꝺıʒeꝺunha</span><span class="reg">ꝺıʒeꝺ unha</span> ren</li>
+                     <li data-id="cal27" data-hand="b">poys <span class="orig">mel</span><span class="reg">m el</span> ben quer <span class="orig">e<span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>lheu</span><span class="reg">e <span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span> lh eu</span> faca mal</li>
+                     <li data-hand="b">
+                        <span data-id="ang3" class="mark">꜒</span><span data-id="cal28">Que faria <span class="orig">ſelheu</span><span class="reg">ſe lh eu</span> feʒeſſe ben</span>
                         </li>
                      <li> </li>
                      <li> </li>
-                     <li data-id="cal31"><span class="orig">Ꝺeſque</span><span class="reg">Ꝺeſ que</span> eu naçi <span class="orig">nu<span class="am">̄</span><span class="ex">n</span>calhı</span><span class="reg">nu<span class="am">̄</span><span class="ex">n</span>ca lhı</span> fıʒ praʒer</li>
-                     <li data-id="cal32"><span class="orig">eo</span><span class="reg">e o</span> mays mal <span class="orig">q<span class="am">̄</span><span class="ex">ue</span>lheu</span><span class="reg">q<span class="am">̄</span><span class="ex">ue</span> lh eu</span> puꝺı faʒer</li>
-                     <li data-id="cal33">lhı fıʒ amıga e q<span class="am">̄</span><span class="ex">ue</span>ro ſaber</li>
-                     <li data-id="cal34"><span class="orig">ꝺeuos</span><span class="reg">ꝺe uos</span> poys eſte mal p<span class="am">᷑</span><span class="ex">or</span> mal no<span class="am">̄</span><span class="ex">n</span> ten</li>
-                     <li data-id="cal35"><span class="orig">elheu</span><span class="reg">e lh eu</span> mal <span class="orig">face</span><span class="reg">fac e</span>
-                        <span class="orig">p<span class="am">᷑</span><span class="ex">or</span>mj</span><span class="reg">p<span class="am">᷑</span><span class="ex">or</span> mj</span> q<span class="am">̄</span><span class="ex">ue</span>r moırer</li>
-                     <li>
-                        <span data-id="ang4" class="metamark">꜒</span><span data-id="cal36">Que fa.</span>
+                     <li data-id="cal31" data-hand="b"><span class="orig">Ꝺeſque</span><span class="reg">Ꝺeſ que</span> eu naçi <span class="orig">n<span class="am">ū</span><span class="expan">u<span class="ex">n</span></span>calhı</span><span class="reg">n<span class="am">ū</span><span class="expan">u<span class="ex">n</span></span>ca lhı</span> fıʒ praʒer</li>
+                     <li data-id="cal32" data-hand="b"><span class="orig">eo</span><span class="reg">e o</span> mays mal <span class="orig"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>lheu</span><span class="reg"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span> lh eu</span> puꝺı faʒer</li>
+                     <li data-id="cal33" data-hand="b">lhı fıʒ amıga e <span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>ro ſaber</li>
+                     <li data-id="cal34" data-hand="b"><span class="orig">ꝺeuos</span><span class="reg">ꝺe uos</span> poys eſte mal <span class="am">p᷑</span><span class="expan">p<span class="ex">or</span></span> mal n<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span> ten</li>
+                     <li data-id="cal35" data-hand="b"><span class="orig">elheu</span><span class="reg">e lh eu</span> mal<span class="orig">face</span><span class="reg">fac e</span>
+                        <span class="orig"><span class="am">p᷑</span><span class="expan">p<span class="ex">or</span></span>mj</span><span class="reg"><span class="am">p᷑</span><span class="expan">p<span class="ex">or</span></span> mj</span> <span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>r moırer</li>
+                     <li data-hand="b">
+                        <span data-id="ang4" class="mark">꜒</span><span data-id="cal36">Que fa.</span>
                         </li>
                      <li> </li>
                   </ol>
@@ -81,68 +87,69 @@
                <div class="column-b">
                   <ol class="lines">
                      <li> </li>
-                     <li data-id="cbl02"><span class="orig">Ele</span><span class="reg">El e</span> q<span class="am"></span><span class="ex">ui</span>te <span class="orig">p<span class="am">᷑</span><span class="ex">or</span>mj</span><span class="reg">p<span class="am">᷑</span><span class="ex">or</span> mj</span>
-                        <span class="orig">ꝺout<span class="am">ᷓ</span><span class="ex">ra</span></span><span class="reg">ꝺ out<span class="am">ᷓ</span><span class="ex">ra</span></span> ſenhor</li>
-                     <li data-id="cbl03">e <span class="orig">facolheu</span><span class="reg">faco lh eu</span> caꝺa ꝺıa peẏor</li>
-                     <li data-id="cbl04">
-                        <span class="am">ꝑ</span><span class="ex">p<span class="ex">er</span></span>o amıga <span class="orig">amȷ<span class="am">̄</span><span class="ex">n</span></span><span class="reg">a mȷ<span class="am">̄</span><span class="ex">n</span></span> q<span class="am">̄</span><span class="ex">ue</span>r melhor</li>
-                     <li data-id="cbl05"><span class="orig">caaſſy</span><span class="reg">ca aſſy</span> ne<span class="am">̄</span><span class="ex">n</span> al <span class="orig">eporſlhaſſẏ</span><span class="reg">e porſ lh aſſẏ</span> auen</li>
-                     <li data-id="cbl06"><span class="orig">q<span class="am">̄</span><span class="ex">ue</span>lheu</span><span class="reg">q<span class="am">̄</span><span class="ex">ue</span> lh eu</span> mal <span class="orig">façe</span><span class="reg">faç e</span>
+                     <li data-id="cbl02" data-hand="b"><span class="orig">Ele</span><span class="reg">El e</span> <span class="am">q</span><span class="expan">q<span class="ex">ui</span></span>te <span class="orig"><span class="am">p᷑</span><span class="expan">p<span class="ex">or</span></span>mj</span><span class="reg"><span class="am">p᷑</span><span class="expan">p<span class="ex">or</span></span> mj</span>
+                        <span class="orig">ꝺou<span class="am">tᷓ</span><span class="expan">t<span class="ex">ra</span></span></span><span class="reg">ꝺ ou<span class="am">tᷓ</span><span class="expan">t<span class="ex">ra</span></span></span> ſenhor</li>
+                     <li data-id="cbl03" data-hand="b">e <span class="orig">facolheu</span><span class="reg">faco lh eu</span> caꝺa ꝺıa peẏor</li>
+                     <li data-id="cbl04" data-hand="b">
+                        
+                        <span class="am">ꝑ</span><span class="expan">p<span class="ex">er</span></span>o amıga<span class="orig">am<span class="am">ȷ̄</span><span class="expan">ȷ<span class="ex">n</span></span></span><span class="reg">a m<span class="am">ȷ̄</span><span class="expan">ȷ<span class="ex">n</span></span></span> <span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>r melhor</li>
+                     <li data-id="cbl05" data-hand="b"><span class="orig">caaſſy</span><span class="reg">ca aſſy</span> n<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span> al <span class="orig">eporſlhaſſẏ</span><span class="reg">e porſ lh aſſẏ</span> auen</li>
+                     <li data-id="cbl06" data-hand="b"><span class="orig"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>lheu</span><span class="reg"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span> lh eu</span> mal <span class="orig">façe</span><span class="reg">faç e</span>
                         <span class="orig">mel</span><span class="reg">m el</span> atal amor</li>
-                     <li>
-                        <span data-id="ang5" class="metamark">꜒</span><span data-id="cbl07">Que faria</span>
+                     <li data-hand="b">
+                        <span data-id="ang5" class="mark">꜒</span><span data-id="cbl07">Que faria</span>
                         </li>
                      <li> </li>
                      <li> </li>
                      <li> </li>
-                     <li data-id="cbl11"><ins class="inline marginalia" data-id="">Affonſo meendeʒ de beeſteryros</ins></li>
+                     <li data-id="cbl11"><ins class="inline marginalia" data-id="" data-hand="colocci">Affonſo meendeʒ de beeſteryros</ins></li>
                      <li> </li>
                      <li> </li>
                      <li> </li>
-                     <li data-id="cbl15">
-                        <span data-id="num2" class="metamark">729</span>
+                     <li>
+                        <span data-id="num2" class="mark">729</span>
                         </li>
                      <li data-id="cbl16" class="hasRight">
-                        <ins class="right marginalia" data-id="marg2">tōnel</ins>
+                        <ins class="right marginalia" data-id="marg2" data-hand="colocci">tōnel</ins>
                         </li>
                      <li> </li>
-                     <li data-id="cbl18"><span class="orig">Falſſamıgo</span><span class="reg">Falſſ amıgo</span> per boa fe</li>
-                     <li data-id="cbl19"><span class="orig">meu</span><span class="reg">m eu</span> ſey que quereꝺes gra<span class="am">̄</span><span class="ex">n</span> ben</li>
-                     <li data-id="cbl20">outra molher <span class="orig">epor</span><span class="reg">e por</span> mȷ ren</li>
-                     <li data-id="cbl21">no<span class="am">̄</span><span class="ex">n</span> ꝺaꝺes mays poys aſſẏ e</li>
-                     <li>
-                        <span data-id="ang6" class="metamark">꜒</span><span data-id="cbl22"><span class="orig">Oy mays</span><span class="reg">Oymays</span> faʒeꝺe <span class="orig">ꝺeſaquȷ</span><span class="reg">ꝺeſ aquȷ</span></span>
+                     <li data-id="cbl18" data-hand="b"><span class="orig">Falſſamıgo</span><span class="reg">Falſſ amıgo</span> per boa fe</li>
+                     <li data-id="cbl19" data-hand="b"><span class="orig">meu</span><span class="reg">m eu</span> ſey que quereꝺes gr<span class="am">ā</span><span class="expan">a<span class="ex">n</span></span> ben</li>
+                     <li data-id="cbl20" data-hand="b">outra molher <span class="orig">epor</span><span class="reg">e por</span> mȷ ren</li>
+                     <li data-id="cbl21" data-hand="b">n<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span> ꝺaꝺes mays poys aſſẏ e</li>
+                     <li data-hand="b">
+                        <span data-id="ang6" class="mark">꜒</span><span data-id="cbl22"><span class="orig">Oy mays</span><span class="reg">Oymays</span> faʒeꝺe <span class="orig">ꝺeſaquȷ</span><span class="reg">ꝺeſ aquȷ</span></span>
                         </li>
-                     <li data-id="cbl23">capa ꝺoutra ca no<span class="am">̄</span><span class="ex">n</span> ꝺe mȷ<span class="am">̄</span><span class="ex">n</span>
-                        </li>
-                     <li> </li>
-                     <li> </li>
-                     <li data-id="cbl26">E a noutro ꝺıa u<span class="am"></span><span class="ex">os</span> acheı</li>
-                     <li data-id="cbl27">falar no <span class="orig">uoſſe</span><span class="reg">uoſſ e</span> no<span class="am">̄</span><span class="ex">n</span> en al</li>
-                     <li data-id="cbl28">co<span class="am">̄</span><span class="ex">n</span> out<span class="am">ᷓ</span><span class="ex">ra</span>
-                        <span class="orig">efoyme<span class="am">̄</span><span class="ex">n</span>ꝺe</span><span class="reg">e foy m e<span class="am">̄</span><span class="ex">n</span>ꝺe</span> mal</li>
-                     <li data-id="cbl29">mays poys <span class="orig">q<span class="am">̄</span><span class="ex">ue</span>a</span><span class="reg">q<span class="am">̄</span><span class="ex">ue</span> a</span> uerꝺaꝺe ſey</li>
-                     <li>
-                        <span data-id="ang7" class="metamark">꜒</span><span data-id="cbl30"><span class="orig">Oy mays</span><span class="reg">Oymays</span> faʒe.</span>
+                     <li data-id="cbl23" data-hand="b">capa ꝺoutra ca n<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span> ꝺe m<span class="am">ȷ̄</span><span class="expan">ȷ<span class="ex">n</span></span>
                         </li>
                      <li> </li>
                      <li> </li>
-                     <li data-id="cbl33">E qua<span class="am">̄</span><span class="ex">n</span>ꝺo u<span class="am"></span><span class="ex">os</span> eu uȷ
+                     <li data-id="cbl26" data-hand="b">E a noutro ꝺıa <span class="am">u</span><span class="expan">u<span class="ex">os</span></span> acheı</li>
+                     <li data-id="cbl27" data-hand="b">falar no<span class="orig">uoſſe</span><span class="reg">uoſſ e</span> n<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span> en al</li>
+                     <li data-id="cbl28" data-hand="b">c<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span> ou<span class="am">tᷓ</span><span class="expan">t<span class="ex">ra</span></span>
+                        <span class="orig">efoym<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span>ꝺe</span><span class="reg">e foy m <span class="am">ē</span><span class="expan">e<span class="ex">n</span></span>ꝺe</span> mal</li>
+                     <li data-id="cbl29" data-hand="b">mays poys <span class="orig"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>a</span><span class="reg"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span> a</span> uerꝺaꝺe ſey</li>
+                     <li data-hand="b">
+                        <span data-id="ang7" class="mark">꜒</span><span data-id="cbl30"><span class="orig">Oy mays</span><span class="reg">Oymays</span> faʒe.</span>
+                        </li>
+                     <li> </li>
+                     <li> </li>
+                     <li data-id="cbl33" data-hand="b">E qu<span class="am">ā</span><span class="expan">a<span class="ex">n</span></span>ꝺo <span class="am">u</span><span class="expan">u<span class="ex">os</span></span> eu uȷ
                         falar</li>
-                     <li data-id="cbl34">co<span class="am">̄</span><span class="ex">n</span> out<span class="am">ᷓ</span><span class="ex">ra</span>
-                        <span class="orig">loguȷ</span><span class="reg">logu ȷ</span> be<span class="am">̄</span><span class="ex">n</span> uȷ eu</li>
-                     <li data-id="cbl35">q<span class="am">̄</span><span class="ex">ue</span> ſeu eraꝺes ca no<span class="am">̄</span><span class="ex">n</span>
+                     <li data-id="cbl34" data-hand="b">c<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span> ou<span class="am">tᷓ</span><span class="expan">t<span class="ex">ra</span></span>
+                        <span class="orig">loguȷ</span><span class="reg">logu ȷ</span> b<span class="am">ē</span><span class="expan">e<span class="ex">n</span></span> uȷ eu</li>
+                     <li data-id="cbl35" data-hand="b"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span> ſeu eraꝺes ca n<span class="am">ō</span><span class="expan">o<span class="ex">n</span></span>
                         meu</li>
-                     <li data-id="cbl36">mays <span class="orig">q<span class="am">̄</span><span class="ex">ue</span>rou<span class="am"></span><span class="ex">os</span></span><span class="reg">q<span class="am">̄</span><span class="ex">ue</span>ro u<span class="am"></span><span class="ex">os</span></span> eu ꝺeſenganar</li>
-                     <li>
-                        <span data-id="ang8" class="metamark">꜒</span><span data-id="cbl37"><span class="orig">Oy mays</span><span class="reg">Oymays</span> faʒeꝺe</span>
+                     <li data-id="cbl36" data-hand="b">mays <span class="orig"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>ro<span class="am">u</span><span class="expan">u<span class="ex">os</span></span></span><span class="reg"><span class="am">q̄</span><span class="expan">q<span class="ex">ue</span></span>ro <span class="am">u</span><span class="expan">u<span class="ex">os</span></span></span> eu ꝺeſenganar</li>
+                     <li data-hand="b">
+                        <span data-id="ang8" class="mark">꜒</span><span data-id="cbl37"><span class="orig">Oy mays</span><span class="reg">Oymays</span> faʒeꝺe</span>
                         </li>
                   </ol>
                   <div id="outside">
                      <span class="cod" data-id="reclame">Mha madre</span>
                      </div>
                </div>
-            </div><img src="B158v.jpg" usemap="#158v" alt="f. 158v"/><button id="refresh">Effacer</button></div><map name="158v"><area href="#" shape="rect" alt="Corps du texte: colonne a, ligne 2" title="Corps du texte: colonne a, ligne 2" data-id="cal02" coords="294,194,601,232"/>
+            </div><img src="B158v.jpg" usemap="#158v" alt="f. 158v"/><button id="refresh">Réinitialiser</button></div><map name="158v"><area href="#" shape="rect" alt="Corps du texte: colonne a, ligne 2" title="Corps du texte: colonne a, ligne 2" data-id="cal02" coords="294,194,601,232"/>
             
             <area href="#" shape="rect" alt="Corps du texte: colonne a, ligne 3" title="Corps du texte: colonne a, ligne 3" data-id="cal03" coords="291,227,670,263"/>
             
