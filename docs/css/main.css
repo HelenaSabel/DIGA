@@ -1,9 +1,9 @@
 /*#6d4949 */
 
 body {
-    margin: 3%;
+    margin: 2%;
     background-color: white;
-    padding:3%;
+    padding:1.5%;
 }
 
 #edition {
@@ -25,6 +25,12 @@ body {
     font-weight: normal;
     font-style: italic;
 
+}
+
+.criteria {
+    display:flex;
+    align-items: center;
+    
 }
 
 #refresh {
