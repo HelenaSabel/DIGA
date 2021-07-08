@@ -8,19 +8,18 @@
       <main>
          <h1>Prototype: édition hyperdiplomatique</h1>
          <h2>Édition</h2>
-         <p>Survolez la transcription pour voir le texte correspondant dans le fac-simil et survolez
-            l’image pour voir sa transcription.</p>
+         <p>Survolez la transcription pour voir le texte correspondant dans le
+            fac-simil et survolez l’image pour voir sa transcription.</p>
          <h3>Modifier les critères d’édition</h3>
-         <form id="criteria">
-            <fieldset><input type="radio" name="abbreviation" value="ex" id="ex"/><label for="ex">Abréviations développées</label><input type="radio" checked="checked" name="abbreviation" value="abb" id="abb"/><label for="abb">Marques d’abréviation</label></fieldset>
-            <fieldset><input type="radio" id="reg" value="reg" name="unite"/><label for="reg">Union / séparation des éléments selon les unités
-                  lexicales</label><input checked="checked" type="radio" value="orig" id="orig" name="unite"/><label for="orig">Disposition originale</label></fieldset>
-            <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="mark" id="mark" checked="checked"/><label for="mark">Visualiser éléments fonctionnels de la
-                  copie</label><input type="checkbox" value="marginalia" id="marginalia" checked="checked"/><label for="marginalia">Visualiser annotations</label></fieldset>
-            <fieldset><input type="checkbox" value="b" id="b"/><label for="b">Visualiser
-                  copiste <em>b</em> (<span class="b">magenta</span>)</label><input type="checkbox" value="colocci" id="colocci"/><label for="colocci">Visualiser
-                  la main d’A. Colocci (<span class="colocci">olive</span>)</label></fieldset>
-         </form>
+         <div class="criteria">
+            <form id="criteria">
+               <fieldset><input type="radio" name="abbreviation" value="ex" id="ex"/><label for="ex">Abréviations développées</label><input type="radio" checked="checked" name="abbreviation" value="abb" id="abb"/><label for="abb">Marques d’abréviation</label></fieldset>
+               <fieldset><input type="radio" id="reg" value="reg" name="unite"/><label for="reg">Union / séparation des éléments selon les
+                     unités lexicales</label><input checked="checked" type="radio" value="orig" id="orig" name="unite"/><label for="orig">Disposition originale</label></fieldset>
+               <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="mark" id="mark" checked="checked"/><label for="mark">Visualiser éléments fonctionnels de la
+                     copie</label><input type="checkbox" value="marginalia" id="marginalia" checked="checked"/><label for="marginalia">Visualiser annotations</label></fieldset>
+               <fieldset><input type="checkbox" value="b" id="b"/><label for="b">Visualiser copiste <em>b</em> (<span class="b">magenta</span>)</label><input type="checkbox" value="colocci" id="colocci"/><label for="colocci">Visualiser la main d’A. Colocci (<span class="colocci">olive</span>)</label></fieldset>
+            </form><button id="refresh">Réinitialiser</button></div>
          <div id="edition">
             <div id="boundList">
                <div class="column-a">
@@ -152,7 +151,7 @@
                      <span class="cod" data-id="reclame">Mha madre</span>
                      </div>
                </div>
-            </div><img src="B158v.jpg" usemap="#158v" alt="f. 158v"/><button id="refresh">Réinitialiser</button></div><map name="158v"><area href="#" shape="rect" alt="Corps du texte: colonne a, ligne 2" title="Corps du texte: colonne a, ligne 2" data-id="cal02" coords="294,194,601,232"/>
+            </div><img src="B158v.jpg" usemap="#158v" alt="f. 158v"/></div><map name="158v"><area href="#" shape="rect" alt="Corps du texte: colonne a, ligne 2" title="Corps du texte: colonne a, ligne 2" data-id="cal02" coords="294,194,601,232"/>
             
             <area href="#" shape="rect" alt="Corps du texte: colonne a, ligne 3" title="Corps du texte: colonne a, ligne 3" data-id="cal03" coords="291,227,670,263"/>
             
