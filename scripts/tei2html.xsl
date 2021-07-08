@@ -179,6 +179,9 @@
     </xsl:template>
     <xsl:template match="pc|num">
         <span data-id="{substring(@facs, 2)}" class="mark">
+            <xsl:if test="@hand">
+                <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
+            </xsl:if>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
