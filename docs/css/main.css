@@ -9,7 +9,7 @@ body {
 #edition {
     display: flex;
     font-family: 'Junicode', 'Free Serif', 'EversonMono';
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 @font-face {
