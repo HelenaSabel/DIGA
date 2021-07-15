@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tei_hyperdiplomatic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Prototype de édition hyperdiplomatique (lyrique galicien-portugais)</title>
+            <principal>Helena Bermúdez Sabel</principal>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centro Ramón Piñeiro para a Investigación en Humanidades</authority>
+            <availability>
+               <licence>
+                  <ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
+                     Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <institution>
+                     <name>Biblioteca Nacional de Portugal</name>
+                     <address>
+                        <addrLine>Campo Grande 83, 1749-081 Lisboa, Portugal</addrLine>
+                     </address>
+                  </institution>
+                  <idno>10991</idno>
+                  <msName>Cancioneiro da Biblioteca Nacional</msName>
+               </msIdentifier>
+               <msPart>
+                  <msIdentifier>
+                     <idno>f. 158v</idno>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem>
+                        <title>O meu amigo non á de mí al</title>
+                        <idno>B728</idno>
+                        <bibl>
+                           <link target="m"/>
+                        </bibl>
+                     </msItem>
+                     <msItem>
+                        <title/>
+                     </msItem>
+                  </msContents>
+               </msPart>
+            </msDesc>
+            <bibl>
+               <ref target="https://purl.pt/15000/1/index.html#/348/html"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p>Reproduite le plus fidèlement possible à l'original.</p>
+            </punctuation>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="gl"/>
+            <language ident="pt"/>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface type="edition">
+         <graphic url="B158v.jpg" source="https://purl.pt/15000/1/index.html#/348/html"/>
+         <zone xml:id="cal02" type="rect" ulx="294" uly="194" lrx="601" lry="232">
+            <note>Corps du texte: colonne a, ligne 2</note>
+         </zone>
+         <zone xml:id="cal03" type="rect" ulx="291" uly="227" lrx="670" lry="263">
+            <note>Corps du texte: colonne a, ligne 3</note>
+         </zone>
+         <zone xml:id="cal04" type="rect" ulx="288" uly="263" lrx="711" lry="298">
+            <note>Corps du texte: colonne a, ligne 4</note>
+         </zone>
+         <zone xml:id="cal05" type="rect" ulx="275" uly="298" lrx="430" lry="328">
+            <note>Corps du texte: colonne a, ligne 5</note>
+         </zone>
+         <zone xml:id="cal08" type="rect" ulx="241" uly="395" lrx="684" lry="440">
+            <note>Corps du texte: colonne a, ligne 8</note>
+         </zone>
+         <zone xml:id="cal09" type="rect" ulx="285" uly="434" lrx="631" lry="480">
+            <note>Corps du texte: colonne a, ligne 9</note>
+         </zone>
+         <zone xml:id="cal10" type="rect" ulx="291" uly="478" lrx="596" lry="513">
+            <note>Corps du texte: colonne a, ligne 10</note>
+         </zone>
+         <zone xml:id="cal11" type="rect" ulx="292" uly="507" lrx="659" lry="545">
+            <note>Corps du texte: colonne a, ligne 11</note>
+         </zone>
+         <zone xml:id="cal12" type="rect" ulx="291" uly="539" lrx="714" lry="580">
+            <note>Corps du texte: colonne a, ligne 12</note>
+         </zone>
+         <zone xml:id="cal13" type="rect" ulx="285" uly="582" lrx="571" lry="618">
+            <note>Corps du texte: colonne a, ligne 13</note>
+         </zone>
+         <zone xml:id="cal16" type="rect" ulx="255" uly="677" lrx="634" lry="725">
+            <note>Corps du texte: colonne a, ligne 16</note>
+         </zone>
+         <zone xml:id="cal17" type="rect" ulx="291" uly="719" lrx="698" lry="748">
+            <note>Corps du texte: colonne a, ligne 17</note>
+         </zone>
+         <zone xml:id="cal18" type="rect" ulx="289" uly="751" lrx="639" lry="792">
+            <note>Corps du texte: colonne a, ligne 18</note>
+         </zone>
+         <zone xml:id="cal19" type="rect" ulx="284" uly="787" lrx="714" lry="843">
+            <note>Corps du texte: colonne a, ligne 19</note>
+         </zone>
+         <zone xml:id="cal23" type="poly"
+            points="307,891 238,940 307,1005 362,957 455,961 470,974 496,962 700,954 700,915 376,918">
+            <note>Corps du texte: colonne a, ligne 23</note>
+         </zone>
+         <zone xml:id="cal24" type="rect" ulx="330" uly="966" lrx="747" lry="1009">
+            <note>Corps du texte: colonne a, ligne 24</note>
+         </zone>
+         <zone xml:id="cal25" type="rect" ulx="293" uly="1005" lrx="656" lry="1047">
+            <note>Corps du texte: colonne a, ligne 25</note>
+         </zone>
+         <zone xml:id="cal26" type="rect" ulx="292" uly="1045" lrx="678" lry="1076">
+            <note>Corps du texte: colonne a, ligne 26</note>
+         </zone>
+         <zone xml:id="cal27" type="rect" ulx="293" uly="1074" lrx="762" lry="1110">
+            <note>Corps du texte: colonne a, ligne 27</note>
+         </zone>
+         <zone xml:id="cal28" type="rect" ulx="288" uly="1106" lrx="729" lry="1164">
+            <note>Corps du texte: colonne a, ligne 28</note>
+         </zone>
+         <zone xml:id="cal31" type="rect" ulx="270" uly="1194" lrx="724" lry="1255">
+            <note>Corps du texte: colonne a, ligne 31</note>
+         </zone>
+         <zone xml:id="cal32" type="rect" ulx="298" uly="1251" lrx="682" lry="1289">
+            <note>Corps du texte: colonne a, ligne 32</note>
+         </zone>
+         <zone xml:id="cal33" type="rect" ulx="285" uly="1286" lrx="601" lry="1327">
+            <note>Corps du texte: colonne a, ligne 33</note>
+         </zone>
+         <zone xml:id="cal34" type="rect" ulx="287" uly="1326" lrx="719" lry="1360">
+            <note>Corps du texte: colonne a, ligne 34</note>
+         </zone>
+         <zone xml:id="cal35" type="rect" ulx="288" uly="1361" lrx="702" lry="1394">
+            <note>Corps du texte: colonne a, ligne 35</note>
+         </zone>
+         <zone xml:id="cal36" type="rect" ulx="289" uly="1394" lrx="422" lry="1435">
+            <note>Corps du texte: colonne a, ligne 36</note>
+         </zone>
+         <zone xml:id="cbl02" type="rect" ulx="728" uly="175" lrx="1103" lry="229">
+            <note>Corps du texte: colonne b, ligne 2</note>
+         </zone>
+         <zone xml:id="cbl03" type="rect" ulx="752" uly="230" lrx="1096" lry="260">
+            <note>Corps du texte: colonne b, ligne 3</note>
+         </zone>
+         <zone xml:id="cbl04" type="rect" ulx="755" uly="255" lrx="1060" lry="298">
+            <note>Corps du texte: colonne b, ligne 4</note>
+         </zone>
+         <zone xml:id="cbl05" type="rect" ulx="749" uly="296" lrx="1154" lry="330">
+            <note>Corps du texte: colonne b, ligne 5</note>
+         </zone>
+         <zone xml:id="cbl06" type="rect" ulx="747" uly="331" lrx="1159" lry="365">
+            <note>Corps du texte: colonne b, ligne 6</note>
+         </zone>
+         <zone xml:id="cbl07" type="rect" ulx="751" uly="359" lrx="915" lry="408">
+            <note>Corps du texte: colonne b, ligne 7</note>
+         </zone>
+         <zone xml:id="cbl11" type="rect" ulx="752" uly="472" lrx="1230" lry="531">
+            <note>Corps du texte: colonne b, ligne 11</note>
+         </zone>
+         <zone xml:id="cbl18" type="poly"
+            points="719,683 720,800 845,787 1110,783 1104,744 927,747 927,676">
+            <note>Corps du texte: colonne b, ligne 18</note>
+         </zone>
+         <zone xml:id="cbl19" type="rect" ulx="763" uly="789" lrx="1170" lry="818">
+            <note>Corps du texte: colonne b, ligne 19</note>
+         </zone>
+         <zone xml:id="cbl20" type="rect" ulx="761" uly="819" lrx="1129" lry="861">
+            <note>Corps du texte: colonne b, ligne 20</note>
+         </zone>
+         <zone xml:id="cbl21" type="rect" ulx="767" uly="858" lrx="1148" lry="895">
+            <note>Corps du texte: colonne b, ligne 21</note>
+         </zone>
+         <zone xml:id="cbl22" type="rect" ulx="764" uly="893" lrx="1089" lry="935">
+            <note>Corps du texte: colonne b, ligne 22</note>
+         </zone>
+         <zone xml:id="cbl23" type="rect" ulx="764" uly="929" lrx="1142" lry="989">
+            <note>Corps du texte: colonne b, ligne 23</note>
+         </zone>
+         <zone xml:id="cbl26" type="rect" ulx="751" uly="1027" lrx="1120" lry="1072">
+            <note>Corps du texte: colonne b, ligne 26</note>
+         </zone>
+         <zone xml:id="cbl27" type="rect" ulx="776" uly="1069" lrx="1087" lry="1109">
+            <note>Corps du texte: colonne b, ligne 27</note>
+         </zone>
+         <zone xml:id="cbl28" type="rect" ulx="782" uly="1108" lrx="1053" lry="1145">
+            <note>Corps du texte: colonne b, ligne 28</note>
+         </zone>
+         <zone xml:id="cbl29" type="rect" ulx="780" uly="1145" lrx="1113" lry="1179">
+            <note>Corps du texte: colonne b, ligne 29</note>
+         </zone>
+         <zone xml:id="cbl30" type="rect" ulx="781" uly="1178" lrx="985" lry="1227">
+            <note>Corps du texte: colonne b, ligne 30</note>
+         </zone>
+         <zone xml:id="cbl33" type="rect" ulx="750" uly="1272" lrx="1097" lry="1330">
+            <note>Corps du texte: colonne b, ligne 33</note>
+         </zone>
+         <zone xml:id="cbl34" type="rect" ulx="770" uly="1324" lrx="1050" lry="1361">
+            <note>Corps du texte: colonne b, ligne 34</note>
+         </zone>
+         <zone xml:id="cbl35" type="rect" ulx="769" uly="1358" lrx="1068" lry="1404">
+            <note>Corps du texte: colonne b, ligne 35</note>
+         </zone>
+         <zone xml:id="cbl36" type="rect" ulx="780" uly="1398" lrx="1126" lry="1439">
+            <note>Corps du texte: colonne b, ligne 36</note>
+         </zone>
+         <zone xml:id="cbl37" type="rect" ulx="774" uly="1426" lrx="1000" lry="1488">
+            <note>Corps du texte: colonne b, ligne 37</note>
+         </zone>
+         <zone xml:id="reclame" type="rect" ulx="1013" uly="1582" lrx="1231" lry="1659">
+            <note>Réclame</note>
+         </zone>
+         <zone xml:id="ang1" type="poly" points="258,282 236,350 266,352 276,300 289,286">
+            <note>Angle de délimitation du refrain</note>
+         </zone>
+         <zone xml:id="ang2" type="poly" points="260,568 263,630 280,626 279,588 303,572">
+            <note>Angle de délimitation du refrain</note>
+         </zone>
+         <zone xml:id="ang3" type="rect" ulx="252" uly="1108" lrx="287" lry="1147">
+            <note>Angle de délimitation du refrain</note>
+         </zone>
+         <zone xml:id="ang4" type="rect" ulx="256" uly="1400" lrx="291" lry="1450">
+            <note>Angle de délimitation du refrain</note>
+         </zone>
+         <zone xml:id="ang5" type="rect" ulx="724" uly="365" lrx="758" lry="410">
+            <note>Angle de délimitation du refrain</note>
+         </zone>
+         <zone xml:id="ang6" type="rect" ulx="733" uly="891" lrx="764" lry="929">
+            <note>Angle de délimitation du refrain</note>
+         </zone>
+         <zone xml:id="ang7" type="rect" ulx="752" uly="1179" lrx="776" lry="1218">
+            <note>Angle de délimitation du refrain</note>
+         </zone>
+         <zone xml:id="ang8" type="rect" ulx="753" uly="1424" lrx="774" lry="1474">
+            <note>Angle de délimitation du refrain</note>
+         </zone>
+         <zone xml:id="num1" type="rect" ulx="102" uly="909" lrx="183" lry="946">
+            <note>Numéro de chanson</note>
+         </zone>
+         <zone xml:id="num2" type="rect" ulx="733" uly="656" lrx="802" lry="688">
+            <note>Numéro de chanson</note>
+         </zone>
+         <zone xml:id="marg1" type="rect" ulx="606" uly="869" lrx="679" lry="904">
+            <note>Marginalium</note>
+         </zone>
+         <zone xml:id="marg2" type="rect" ulx="1115" uly="677" lrx="1184" lry="723">
+            <note>Marginalium</note>
+         </zone>
+         <zone xml:id="metamark" type="rect" ulx="758" uly="1066" lrx="775" lry="1139">
+            <note>Trait</note>
+         </zone>
+         <surface type="characters">
+            <zone xml:id="er_z1" ulx="427" uly="190" lrx="446" lry="209" type="rect"/>
+            <zone xml:id="or_21" ulx="881" uly="182" lrx="917" lry="201" type="rect"/>
+            <zone xml:id="or_22" ulx="522" uly="434" lrx="541" lry="451" type="rect"/>
+            <zone xml:id="i_ui" ulx="837" uly="187" lrx="850" lry="205" type="rect"/>
+            <zone xml:id="ra1" ulx="976" uly="178" lrx="1014" lry="200" type="rect"/>
+            <zone xml:id="os_91" ulx="919" uly="1402" lrx="936" lry="1424" type="rect"/>
+            <zone xml:id="er_z2" ulx="629" uly="782" lrx="655" lry="801" type="rect"/>
+            <zone xml:id="er_z3" ulx="302" uly="435" lrx="322" lry="452" type="rect"/>
+            <zone xml:id="or_23" ulx="298" uly="748" lrx="319" lry="768" type="rect"/>
+            <zone xml:id="or_24" ulx="553" uly="1319" lrx="587" lry="1339" type="rect"/>
+            <zone xml:id="or_25" ulx="497" uly="1359" lrx="541" lry="1371" type="rect"/>
+            <zone xml:id="os_92" ulx="927" uly="1297" lrx="950" lry="1325" type="rect"/>
+            <zone xml:id="ra2" ulx="847" uly="1102" lrx="880" lry="1118" type="rect"/>
+            <zone xml:id="per" ulx="752" uly="265" lrx="776" lry="303" type="rect"/>
+            <zone xml:id="os_93" ulx="1014" uly="1039" lrx="1034" lry="1068" type="rect"/>
+            <zone xml:id="ra3" ulx="839" uly="1322" lrx="873" lry="1338" type="rect"/>
+         </surface>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <pb n="158v"/>
+         <div type="column-a" hand="#b">
+            <cb n="a"/>
+            <lb n="01"/>
+            <l n="02" facs="#cal02"><choice>
+                  <orig>epoſſolho</orig>
+                  <reg>e poſſo lho</reg>
+               </choice> faʒ<am>͛</am><ex>er</ex> muȷ <choice>
+                  <orig>co<am>̄</am><ex>n</ex>raʒo<am>̄</am><ex>n</ex></orig>
+                  <reg>co<am>̄</am><ex>n</ex> raʒo<am>̄</am><ex>n</ex></reg>
+               </choice>
+            </l>
+            <l n="03" facs="#cal03">mais ꝺiʒe<am>̄</am><ex>n</ex> logo q<am>̄</am><ex>ue</ex> mal
+               ſen farey</l>
+            <l n="04" facs="#cal04">mhas amıgas mays hu<am>̄</am><ex>̃</ex>a couſa ſey</l>
+            <l n="05">
+               <pc facs="#ang1">꜒</pc><seg facs="#cal05">Poys meu</seg>
+            </l>
+            <lb n="06"/>
+            <lb n="07"/>
+            <l n="08" facs="#cal08"><choice>
+                  <orig>Eulhı</orig>
+                  <reg>Eu lhı</reg>
+               </choice> farey be<am>̄</am><ex>n</ex> e elas ueıra<am>̄</am><ex>n</ex>
+            </l>
+            <l n="09" facs="#cal09">p<am>͛</am><ex>re</ex>gu<am>̄</am><ex>n</ex>tar <choice>
+                  <orig>ma<am>̄</am><ex>n</ex>te</orig>
+                  <reg>m a<am>̄</am><ex>n</ex>te</reg>
+               </choice> uos p<am>᷑</am><ex>or</ex>
+               <choice>
+                  <orig>q<am>̄</am><ex>ue</ex>o</orig>
+                  <reg>q<am>̄</am><ex>ue</ex> o</reg>
+               </choice> fıʒ</l>
+            <l n="10" facs="#cal10">e ꝺırey eu qual est <choice>
+                  <orig>aq<am>̄</am><ex>ue</ex>o</orig>
+                  <reg>a q<am>̄</am><ex>ue</ex> o</reg>
+               </choice> ꝺiʒ</l>
+            <l n="11" facs="#cal11"><choice>
+                  <orig>epoyſ</orig>
+                  <reg>e poyſ</reg>
+               </choice>
+               <choice>
+                  <orig>moyre<am>̄</am><ex>n</ex></orig>
+                  <reg>m oyre<am>̄</am><ex>n</ex></reg>
+               </choice>
+               <choice>
+                  <orig>outorgarmho</orig>
+                  <reg>outorgar mh o</reg>
+               </choice> an</l>
+            <l n="12" facs="#cal12"><choice>
+                  <orig>calhis</orig>
+                  <reg>ca lhis</reg>
+               </choice> ꝺireı mhas amıgas ꝺe pra<am>̄</am><ex>n</ex>
+            </l>
+            <l n="13">
+               <pc facs="#ang2">꜒</pc><seg facs="#cal13">Poys meu amıgo mo</seg></l>
+            <lb n="14"/>
+            <lb n="15"/>
+            <l n="16" facs="#cal16"><choice>
+                  <orig>Eantelhı</orig>
+                  <reg>E ante lhı</reg>
+               </choice>
+               <choice>
+                  <orig>q<am>̄</am><ex>ue</ex>ralgu<am>̄</am><ex>n</ex></orig>
+                  <reg>q<am>̄</am><ex>ue</ex>r algu<am>̄</am><ex>n</ex></reg>
+               </choice> be<am>̄</am><ex>n</ex> faʒer</l>
+            <l n="17" facs="#cal17"><choice>
+                  <orig>cao</orig>
+                  <reg>ca o</reg>
+               </choice> leixar como moıre moırer</l>
+            <l n="18" facs="#cal18"><choice>
+                  <orig>p<am>᷑</am><ex>or</ex>lhı</orig>
+                  <reg>p<am>᷑</am><ex>or</ex> lhı</reg>
+               </choice> falar be<am>̄</am><ex>n</ex> ou polo ueer</l>
+            <l n="19" facs="#cal19"><choice>
+                  <orig>no<am>̄</am><ex>n</ex>lhı</orig>
+                  <reg>no<am>̄</am><ex>n</ex> lhı</reg>
+               </choice>
+               <choice>
+                  <orig>q<am>̄</am><ex>ue</ex>reu</orig>
+                  <reg>q<am>̄</am><ex>ue</ex>r eu</reg>
+               </choice> leıxar morte p<am>͛</am><ex>re</ex>nꝺer</l>
+            <lb n="20"/>
+            <l n="21">
+               <add place="right" facs="#marg1" hand="#colocci">tōnel</add>
+            </l>
+            <l n="22">
+               <num facs="#num1" hand="#colocci">728</num>
+            </l>
+            <l n="23" facs="#cal23">O meu amigo <choice>
+                  <orig>nona</orig>
+                  <reg>non a</reg>
+               </choice>
+               <choice>
+                  <orig>ꝺemȷ</orig>
+                  <reg>ꝺe mȷ</reg>
+               </choice> al</l>
+            <l n="24" facs="#cal24">ſenon gram coyta <choice>
+                  <orig>quelhı</orig>
+                  <reg>que lhı</reg>
+               </choice> uu<am>̄</am><ex>n</ex>cafal</l>
+            <l n="25" facs="#cal25">e amiga o coraçon lhi ſal</l>
+            <l n="26" facs="#cal26">por me ueer e <choice>
+                  <orig>ꝺıʒeꝺunha</orig>
+                  <reg>ꝺıʒeꝺ unha</reg>
+               </choice> ren</l>
+            <l n="27" facs="#cal27">poys <choice>
+                  <orig>mel</orig>
+                  <reg>m el</reg>
+               </choice> ben quer <choice>
+                  <orig>eq<am>̄</am><ex>ue</ex>lheu</orig>
+                  <reg>e q<am>̄</am><ex>ue</ex> lh eu</reg>
+               </choice> faca mal</l>
+            <l n="28">
+               <pc facs="#ang3">꜒</pc><seg facs="#cal28">Que faria <choice>
+                     <orig>ſelheu</orig>
+                     <reg>ſe lh eu</reg>
+                  </choice> feʒeſſe ben</seg>
+            </l>
+            <lb n="29"/>
+            <lb n="30"/>
+            <l n="31" facs="#cal31"><choice>
+                  <orig>Ꝺeſque</orig>
+                  <reg>Ꝺeſ que</reg>
+               </choice> eu naçi <choice>
+                  <orig>nu<am>̄</am><ex>n</ex>calhı</orig>
+                  <reg>nu<am>̄</am><ex>n</ex>ca lhı</reg>
+               </choice> fıʒ praʒer</l>
+            <l n="32" facs="#cal32"><choice>
+                  <orig>eo</orig>
+                  <reg>e o</reg>
+               </choice> mays mal <choice>
+                  <orig>q<am>̄</am><ex>ue</ex>lheu</orig>
+                  <reg>q<am>̄</am><ex>ue</ex> lh eu</reg>
+               </choice> puꝺı faʒer</l>
+            <l n="33" facs="#cal33">lhı fıʒ amıga e q<am>̄</am><ex>ue</ex>ro ſaber</l>
+            <l n="34" facs="#cal34"><choice>
+                  <orig>ꝺeuos</orig>
+                  <reg>ꝺe uos</reg>
+               </choice> poys eſte mal p<am>᷑</am><ex>or</ex> mal no<am>̄</am><ex>n</ex> ten</l>
+            <l n="35" facs="#cal35"><choice>
+                  <orig>elheu</orig>
+                  <reg>e lh eu</reg>
+               </choice> mal <choice>
+                  <orig>face</orig>
+                  <reg>fac e</reg>
+               </choice>
+               <choice>
+                  <orig>p<am>᷑</am><ex>or</ex>mj</orig>
+                  <reg>p<am>᷑</am><ex>or</ex> mj</reg>
+               </choice> q<am>̄</am><ex>ue</ex>r moırer</l>
+            <l n="36">
+               <pc facs="#ang4">꜒</pc><seg facs="#cal36">Que fa.</seg>
+            </l>
+            <lb n="37"/>
+         </div>
+         <div type="column-b" hand="#b">
+            <cb n="b"/>
+            <lb n="01"/>
+            <l n="02" facs="#cbl02"><choice>
+                  <orig>Ele</orig>
+                  <reg>El e</reg>
+               </choice> q<am></am><ex>ui</ex>te <choice>
+                  <orig>p<am>᷑</am><ex>or</ex>mj</orig>
+                  <reg>p<am>᷑</am><ex>or</ex> mj</reg>
+               </choice>
+               <choice>
+                  <orig>ꝺout<am>ᷓ</am><ex>ra</ex></orig>
+                  <reg>ꝺ out<am>ᷓ</am><ex>ra</ex></reg>
+               </choice> ſenhor</l>
+            <l n="03" facs="#cbl03">e <choice>
+                  <orig>facolheu</orig>
+                  <reg>faco lh eu</reg>
+               </choice> caꝺa ꝺıa peẏor</l>
+            <l n="04" facs="#cbl04">
+               <am>ꝑ</am><expan>p<ex>er</ex></expan>o amıga <choice>
+                  <orig>amȷ<am>̄</am><ex>n</ex></orig>
+                  <reg>a mȷ<am>̄</am><ex>n</ex></reg>
+               </choice> q<am>̄</am><ex>ue</ex>r melhor</l>
+            <l n="05" facs="#cbl05"><choice>
+                  <orig>caaſſy</orig>
+                  <reg>ca aſſy</reg>
+               </choice> ne<am>̄</am><ex>n</ex> al <choice>
+                  <orig>eporſlhaſſẏ</orig>
+                  <reg>e porſ lh aſſẏ</reg>
+               </choice> auen</l>
+            <l n="06" facs="#cbl06"><choice>
+                  <orig>q<am>̄</am><ex>ue</ex>lheu</orig>
+                  <reg>q<am>̄</am><ex>ue</ex> lh eu</reg>
+               </choice> mal <choice>
+                  <orig>façe</orig>
+                  <reg>faç e</reg>
+               </choice>
+               <choice>
+                  <orig>mel</orig>
+                  <reg>m el</reg>
+               </choice> atal amor</l>
+            <l n="07">
+               <pc facs="#ang5">꜒</pc><seg facs="#cbl07">Que faria</seg>
+            </l>
+            <lb n="08"/>
+            <lb n="09"/>
+            <lb n="10"/>
+            <l n="11" facs="#cbl11"><add place="inline" hand="#colocci">Affonſo meendeʒ de
+                  beeſteryros</add></l>
+            <lb n="12"/>
+            <lb n="13"/>
+            <lb n="14"/>
+            <l n="15">
+               <num facs="#num2" hand="#colocci">729</num>
+            </l>
+            <l n="16" facs="#cbl16">
+               <add place="right" facs="#marg2" hand="#colocci">tōnel</add>
+            </l>
+            <lb n="17"/>
+            <l n="18" facs="#cbl18"><choice>
+                  <orig>Falſſamıgo</orig>
+                  <reg>Falſſ amıgo</reg>
+               </choice> per boa fe</l>
+            <l n="19" facs="#cbl19"><choice>
+                  <orig>meu</orig>
+                  <reg>m eu</reg>
+               </choice> ſey que quereꝺes gra<am>̄</am><ex>n</ex> ben</l>
+            <l n="20" facs="#cbl20">outra molher <choice>
+                  <orig>epor</orig>
+                  <reg>e por</reg>
+               </choice> mȷ ren</l>
+            <l n="21" facs="#cbl21">no<am>̄</am><ex>n</ex> ꝺaꝺes mays poys aſſẏ e</l>
+            <l n="22">
+               <pc facs="#ang6">꜒</pc><seg facs="#cbl22"><choice>
+                     <orig>Oy mays</orig>
+                     <reg>Oymays</reg>
+                  </choice> faʒeꝺe <choice>
+                     <orig>ꝺeſaquȷ</orig>
+                     <reg>ꝺeſ aquȷ</reg>
+                  </choice></seg>
+            </l>
+            <l n="23" facs="#cbl23">capa ꝺoutra ca no<am>̄</am><ex>n</ex> ꝺe mȷ<am>̄</am><ex>n</ex>
+            </l>
+            <lb n="24"/>
+            <lb n="25"/>
+            <l n="26" facs="#cbl26">E a noutro ꝺıa u<am></am><ex>os</ex> acheı</l>
+            <l n="27" facs="#cbl27">falar no <choice>
+                  <orig>uoſſe</orig>
+                  <reg>uoſſ e</reg>
+               </choice> no<am>̄</am><ex>n</ex> en al</l>
+            <l n="28" facs="#cbl28">co<am>̄</am><ex>n</ex> out<am>ᷓ</am><ex>ra</ex>
+               <choice>
+                  <orig>efoyme<am>̄</am><ex>n</ex>ꝺe</orig>
+                  <reg>e foy m e<am>̄</am><ex>n</ex>ꝺe</reg>
+               </choice> mal</l>
+            <l n="29" facs="#cbl29">mays poys <choice>
+                  <orig>q<am>̄</am><ex>ue</ex>a</orig>
+                  <reg>q<am>̄</am><ex>ue</ex> a</reg>
+               </choice> uerꝺaꝺe ſey</l>
+            <l n="30">
+               <pc facs="#ang7">꜒</pc><seg facs="#cbl30"><choice>
+                     <orig>Oy mays</orig>
+                     <reg>Oymays</reg>
+                  </choice> faʒe.</seg>
+            </l>
+            <lb n="31"/>
+            <lb n="32"/>
+            <l n="33" facs="#cbl33">E qua<am>̄</am><ex>n</ex>ꝺo u<am></am><ex>os</ex> eu uȷ
+               falar</l>
+            <l n="34" facs="#cbl34">co<am>̄</am><ex>n</ex> out<am>ᷓ</am><ex>ra</ex>
+               <choice>
+                  <orig>loguȷ</orig>
+                  <reg>logu ȷ</reg>
+               </choice> be<am>̄</am><ex>n</ex> uȷ eu</l>
+            <l n="35" facs="#cbl35">q<am>̄</am><ex>ue</ex> ſeu eraꝺes ca no<am>̄</am><ex>n</ex>
+               meu</l>
+            <l n="36" facs="#cbl36">mays <choice>
+                  <orig>q<am>̄</am><ex>ue</ex>rou<am></am><ex>os</ex></orig>
+                  <reg>q<am>̄</am><ex>ue</ex>ro u<am></am><ex>os</ex></reg>
+               </choice> eu ꝺeſenganar</l>
+            <l n="37">
+               <pc facs="#ang8">꜒</pc><seg facs="#cbl37"><choice>
+                     <orig>Oy mays</orig>
+                     <reg>Oymays</reg>
+                  </choice> faʒeꝺe</seg>
+            </l>
+            <ab>
+               <catchwords facs="#reclame">Mha madre</catchwords>
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
