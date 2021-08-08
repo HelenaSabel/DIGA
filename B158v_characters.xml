@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tei_hyperdiplomatic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Prototype de édition hyperdiplomatique (lyrique galicien-portugais)</title>
+            <principal>Helena Bermúdez Sabel</principal>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Centro Ramón Piñeiro para a Investigación en Humanidades</authority>
+            <availability>
+               <licence>
+                  <ref target="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
+                     Attribution-NonCommercial-ShareAlike 4.0 International</ref>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <institution>
+                     <name>Biblioteca Nacional de Portugal</name>
+                     <address>
+                        <addrLine>Campo Grande 83, 1749-081 Lisboa, Portugal</addrLine>
+                     </address>
+                  </institution>
+                  <idno>10991</idno>
+                  <msName>Cancioneiro da Biblioteca Nacional</msName>
+               </msIdentifier>
+               <msPart>
+                  <msIdentifier>
+                     <idno>f. 158v</idno>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem>
+                        <title>O meu amigo non á de mí al</title>
+                        <idno>B728</idno>
+                        <bibl>
+                           <link target="m"/>
+                        </bibl>
+                     </msItem>
+                     <msItem>
+                        <title/>
+                     </msItem>
+                  </msContents>
+               </msPart>
+            </msDesc>
+            <bibl>
+               <ref target="https://purl.pt/15000/1/index.html#/348/html"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <normalization>
+               <p/>
+            </normalization>
+            <punctuation>
+               <p>Reproduite le plus fidèlement possible à l'original.</p>
+            </punctuation>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="gl"/>
+            <language ident="pt"/>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+         <surface type="characters">
+            <zone xml:id="er_z1" ulx="427" uly="190" lrx="446" lry="209" type="rect"/>
+            <zone xml:id="or_21" ulx="881" uly="182" lrx="917" lry="201" type="rect"/>
+            <zone xml:id="or_22" ulx="522" uly="434" lrx="541" lry="451" type="rect"/>
+            <zone xml:id="i_ui" ulx="837" uly="187" lrx="850" lry="205" type="rect"/>
+            <zone xml:id="ra1" ulx="976" uly="178" lrx="1014" lry="200" type="rect"/>
+            <zone xml:id="os_91" ulx="919" uly="1402" lrx="936" lry="1424" type="rect"/>
+            <zone xml:id="er_z2" ulx="629" uly="782" lrx="655" lry="801" type="rect"/>
+            <zone xml:id="er_z3" ulx="302" uly="435" lrx="322" lry="452" type="rect"/>
+            <zone xml:id="or_23" ulx="298" uly="748" lrx="319" lry="768" type="rect"/>
+            <zone xml:id="or_24" ulx="553" uly="1319" lrx="587" lry="1339" type="rect"/>
+            <zone xml:id="or_25" ulx="497" uly="1359" lrx="541" lry="1371" type="rect"/>
+            <zone xml:id="os_92" ulx="927" uly="1297" lrx="950" lry="1325" type="rect"/>
+            <zone xml:id="ra2" ulx="847" uly="1102" lrx="880" lry="1118" type="rect"/>
+            <zone xml:id="per" ulx="752" uly="265" lrx="776" lry="303" type="rect"/>
+            <zone xml:id="os_93" ulx="1014" uly="1039" lrx="1034" lry="1068" type="rect"/>
+            <zone xml:id="ra3" ulx="839" uly="1322" lrx="873" lry="1338" type="rect"/>
+         </surface>
+   </facsimile>
+</TEI>
