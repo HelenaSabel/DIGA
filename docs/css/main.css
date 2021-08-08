@@ -77,7 +77,7 @@ ins{
 visibility:hidden;
 }
 
-.column-a {
+.a {
     margin-right:4%;
 }
 
@@ -96,7 +96,7 @@ visibility:hidden;
     width:100%;
 }
 
-.column-a li::before{
+.a li::before{
     content: counter(numbers) '   ';
     font-size: 80%;
     color: #838383;
@@ -108,7 +108,7 @@ visibility:hidden;
     padding:0;
 
 }
-.column-b li::after{
+.b li::after{
     content: counter(numbers);
     font-size: 80%;
     color: #838383;
