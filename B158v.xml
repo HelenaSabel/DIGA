@@ -198,7 +198,7 @@
                ><note>Marginalium</note></zone>
          <zone xml:id="metamark" type="rect" ulx="758" uly="1066" lrx="775" lry="1139"
                ><note>Trait</note></zone>
-         <zone hand="#b" type="column-a"><line n="01"/>
+         <zone hand="#b" type="column" subtype="a"><line n="01"/>
             <line n="02" facs="#cal02"><choice>
                   <orig>epoſſolho</orig>
                   <reg>e poſſo lho</reg>
@@ -229,7 +229,7 @@
                   <expan>hu<ex>̃</ex>a</expan>
                </choice> couſa ſey</line>
             <line n="05">
-               <pc facs="#ang1">꜒</pc><seg facs="#cal05">Poys meu</seg>
+               <metamark facs="#ang1">꜒</metamark><seg facs="#cal05">Poys meu</seg>
             </line>
             <line n="06"/>
             <line n="07"/>
@@ -308,7 +308,7 @@
                </choice>
             </line>
             <line n="13">
-               <pc facs="#ang2">꜒</pc><seg facs="#cal13">Poys meu amıgo mo</seg></line>
+               <metamark facs="#ang2">꜒</metamark><seg facs="#cal13">Poys meu amıgo mo</seg></line>
             <line n="14"/>
             <line n="15"/>
             <line n="16" facs="#cal16"><choice>
@@ -480,11 +480,11 @@
                   <expan>q<ex>ue</ex>r</expan>
                </choice> moırer</line>
             <line n="36">
-               <pc facs="#ang4">꜒</pc><seg facs="#cal36">Que fa.</seg>
+               <metamark facs="#ang4">꜒</metamark><seg facs="#cal36">Que fa.</seg>
             </line>
             <line n="37"/>
          </zone>
-         <zone hand="#b" type="column-b">
+         <zone hand="#b" type="column" subtype="b">
             <line n="01"/>
             <line n="02" facs="#cbl02"><choice>
                   <orig>Ele</orig>
@@ -565,7 +565,7 @@
                   <reg>m el</reg>
                </choice> atal amor</line>
             <line n="07">
-               <pc facs="#ang5">꜒</pc><seg facs="#cbl07">Que faria</seg>
+               <metamark facs="#ang5">꜒</metamark><seg facs="#cbl07">Que faria</seg>
             </line>
             <line n="08"/>
             <line n="09"/>
@@ -602,7 +602,7 @@
                   <expan>no<ex>n</ex></expan>
                </choice> ꝺaꝺes mays poys aſſẏ e</line>
             <line n="22">
-               <pc facs="#ang6">꜒</pc><seg facs="#cbl22"><choice>
+               <metamark facs="#ang6">꜒</metamark><seg facs="#cbl22"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒeꝺe <choice>
@@ -662,7 +662,7 @@
                      </choice></reg>
                </choice> uerꝺaꝺe ſey</line>
             <line n="30">
-               <pc facs="#ang7">꜒</pc><seg facs="#cbl30"><choice>
+               <metamark facs="#ang7">꜒</metamark><seg facs="#cbl30"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒe.</seg>
@@ -713,7 +713,7 @@
                      </choice></reg>
                </choice> eu ꝺeſenganar</line>
             <line n="37">
-               <pc facs="#ang8">꜒</pc><seg facs="#cbl37"><choice>
+               <metamark facs="#ang8">꜒</metamark><seg facs="#cbl37"><choice>
                      <orig>Oy mays</orig>
                      <reg>Oymays</reg>
                   </choice> faʒeꝺe</seg>

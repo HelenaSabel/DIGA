@@ -5,31 +5,8 @@
     version="3.0">
     <xsl:output method="xhtml" indent="yes" omit-xml-declaration="yes" encoding="UTF-8"
         html-version="5.0"/>
-    <xsl:function name="functx:escape-for-regex" as="xs:string">
-        <xsl:param name="arg" as="xs:string?"/>
-
-        <xsl:sequence select="
-                replace($arg,
-                '(\.|\[|\]|\\|\||\-|\^|\$|\?|\*|\+|\{|\}|\(|\))', '\\$1')
-                "/>
-
-    </xsl:function>
-    <xsl:function name="functx:substring-before-last" as="xs:string">
-        <xsl:param name="arg" as="xs:string?"/>
-        <xsl:param name="delim" as="xs:string"/>
-
-        <xsl:sequence select="
-                if (matches($arg, functx:escape-for-regex($delim)))
-                then
-                    replace($arg,
-                    concat('^(.*)', functx:escape-for-regex($delim), '.*'),
-                    '$1')
-                else
-                    ''
-                "/>
-    </xsl:function>
     <xsl:template match="/">
-        <xsl:result-document href="../docs/index.html">
+        <xsl:result-document href="../docs/B158v.html">
             <html>
                 <head>
                     <title>Prototype: édition hyperdiplomatique</title>
@@ -89,13 +66,13 @@
                         </div>
                         <div id="edition">
                             <div id="boundList">
-                                <xsl:apply-templates select="//body/div"/>
+                                <xsl:apply-templates select="//zone[@type eq 'column']"/>
                             </div>
                             <img src="{descendant::graphic/@url}" usemap="#158v" alt="f. 158v"/>
                         </div>
 
                         <map name="158v">
-                            <xsl:apply-templates select="//zone"/>
+                            <xsl:apply-templates select="//zone[not(@type eq 'column')]"/>
                         </map>
                     </main>
                     <script>
@@ -144,21 +121,20 @@
             </html>
         </xsl:result-document>
     </xsl:template>
-    <xsl:template match="div">
-        <div class="{@type}">
+    <xsl:template match="zone[@type eq 'column']">
+        <div class="{@subtype}">
             <ol class="lines">
-                <xsl:apply-templates select="l | lb"/>
+                <xsl:apply-templates select="line"/>
             </ol>
-            <xsl:apply-templates select="ab"/>
-
+            <xsl:apply-templates select="witDetail"/>
         </div>
     </xsl:template>
-    <xsl:template match="ab">
+    <xsl:template match="witDetail">
         <div id="outside">
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-    <xsl:template match="l">
+    <xsl:template match="line">
         <li>
             <xsl:if test="@facs">
                 <xsl:attribute name="data-id" select="substring(@facs, 2)"/>
@@ -169,22 +145,18 @@
             <xsl:if test="add/@place eq 'right'">
                 <xsl:attribute name="class">hasRight</xsl:attribute>
             </xsl:if>
+            <xsl:if test="string-length(.) lt 1">
+                <xsl:text>&#8199;</xsl:text>
+            </xsl:if>
             <xsl:apply-templates/>
         </li>
-    </xsl:template>
-    <xsl:template match="text()[ancestor::l][following-sibling::am]">
-        <xsl:variable name="lastCharacter" select="substring(., string-length(.), 1)"/>
-        <xsl:value-of select="functx:substring-before-last(., $lastCharacter)"/>
-    </xsl:template>
-    <xsl:template match="lb">
-        <li>&#8199;</li>
     </xsl:template>
     <xsl:template match="seg">
         <span data-id="{substring(@facs, 2)}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="pc | num">
+    <xsl:template match="metamark | num">
         <span data-id="{substring(@facs, 2)}" class="mark">
             <xsl:if test="@hand">
                 <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
@@ -192,50 +164,8 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="choice">
-        <span class="orig">
-            <xsl:apply-templates select="orig"/>
-        </span>
-        <span class="reg">
-            <xsl:apply-templates select="reg"/>
-        </span>
-    </xsl:template>
-    <xsl:template match="ex">
-        <xsl:variable name="text" select="preceding-sibling::text()[1]"/>
-        <xsl:choose>
-            <xsl:when test="not(parent::expan)">
-                <span class="expan">
-                    <xsl:value-of select="substring($text, string-length($text), 1)"/>
-                    <span class="ex">
-                        <xsl:apply-templates/>
-                    </span>
-                </span>
-            </xsl:when>
-            <xsl:otherwise>
-                <span class="ex">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="am">
-        <xsl:variable name="text" select="preceding-sibling::text()[1]"/>
-        <xsl:choose>
-            <xsl:when test="not(following-sibling::*[1][name() eq 'expan'])">
-                <span class="am">
-                    <xsl:value-of select="substring($text, string-length($text), 1) || current()"/>
-                </span>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="$text"/>
-                <span class="am">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="expan">
-        <span class="expan">
+    <xsl:template match="orig | reg | abbr | expan | ex">
+        <span class="{name()}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -252,7 +182,7 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="zone[parent::surface/@type eq 'edition']">
+    <xsl:template match="zone[not(@type eq 'column')]">
         <area href="#" shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}"
             data-id="{@xml:id}">
             <xsl:choose>
