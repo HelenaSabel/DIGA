@@ -10,12 +10,29 @@ function changeCriteria() {
     
     var id = this.getAttribute('value');
     var marks = document.getElementsByClassName('mark');
-    var notes = document.querySelectorAll('ins');
+    var corrs = document.getElementsByClassName('corr');
+    var notes = document.getElementsByClassName('marginalia');
     var reclames = document.getElementsByClassName('cod');
-    var handbs = document.querySelectorAll("[data-hand='b']");
-    var handcols = document.querySelectorAll("[data-hand='colocci']");
+    var handbs = document.querySelectorAll("[data-hand='b'], [data-hand='α']");
+    var handcols = document.querySelectorAll("[data-hand='colocci'], [data-hand='correcteur']");
+    var tardives = document.querySelectorAll("[data-hand='tardive']");
+    var reviseurs = document.querySelectorAll("[data-hand='reviseur']");
     
     switch (id) {
+        case 'corr':
+        
+        if (this.checked == true) { for (var i = 0; i < corrs.length; i++) {
+                corrs[i].classList.remove('hide');
+            }
+        } else { for (var i = 0; i < marks.length; i++) {
+                corrs[i].classList.add('hide');
+            }
+        }
+        
+        break;
+        
+        
+        
         case 'mark':
         
         if (this.checked == true) { for (var i = 0; i < marks.length; i++) {
@@ -65,6 +82,34 @@ function changeCriteria() {
             }
         } else { for (var i = 0; i < handcols.length; i++) {
                 handcols[i].style.color = 'initial';
+            }
+        }
+        
+        break;
+        
+        case 'tardive':
+        
+        if (this.checked == true) {
+            
+            for (var i = 0; i < tardives.length; i++) {
+                tardives[i].style.color = 'coral';
+            }
+        } else { for (var i = 0; i < tardives.length; i++) {
+                tardives[i].style.color = 'initial';
+            }
+        }
+        
+        break;
+        
+        case 'reviseur':
+        
+        if (this.checked == true) {
+            
+            for (var i = 0; i < reviseurs.length; i++) {
+                reviseurs[i].style.color = 'mediumturquoise';
+            }
+        } else { for (var i = 0; i < reviseurs.length; i++) {
+                reviseurs[i].style.color = 'initial';
             }
         }
         

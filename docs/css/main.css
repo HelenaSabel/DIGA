@@ -141,10 +141,18 @@ ins.right {
     padding-right:1em;
 }
 
-.colocci{
+.colocci, .correcteur{
     color: darkolivegreen;
 }
 
-.b{
+.b, .α{
     color:darkmagenta;
+}
+
+.tardive{
+    color: coral;
+}
+
+.reviseur{
+    color: mediumturquoise;
 }

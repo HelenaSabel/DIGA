@@ -1,0 +1,409 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <title>Prototype: édition hyperdiplomatique</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" type="text/css" href="css/main.css"/><script src="js/highlight.js"></script><script src="js/form_radio.js"></script><script src="js/form_checkboxes.js"></script><script src="js/jquery-1.7.1.min.js"></script><script src="js/jquery.imagemapster.min.js"></script></head>
+   <body>
+      <main>
+         <h1>Prototype: édition hyperdiplomatique</h1>
+         <h2>Édition</h2>
+         <p>Survolez la transcription pour voir le texte correspondant dans le
+            fac-simil et survolez l’image pour voir sa transcription.</p>
+         <h3>Modifier les critères d’édition</h3>
+         <div class="criteria">
+            <form id="criteria">
+               <fieldset><input type="radio" name="abbreviation" value="ex" id="ex"/><label for="ex">Abréviations développées</label><input type="radio" checked="checked" name="abbreviation" value="abb" id="abb"/><label for="abb">Marques d’abréviation</label></fieldset>
+               <fieldset><input type="radio" id="reg" value="reg" name="unite"/><label for="reg">Union / séparation des éléments selon les
+                     unités lexicales</label><input checked="checked" type="radio" value="orig" id="orig" name="unite"/><label for="orig">Disposition originale</label></fieldset>
+               <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="corr" id="corr" checked="checked"/><label for="corr">Visualiser corrections</label><input type="checkbox" value="marginalia" id="marginalia" checked="checked"/><label for="marginalia">Visualiser annotations</label></fieldset>
+               <fieldset><input type="checkbox" value="b" id="α"/><label for="b">Visualiser copiste <em>α</em> (<span class="α">magenta</span>)</label><input type="checkbox" value="correcteur" id="correcteur"/><label for="correcteur">Visualiser main correcteur (<span class="correcteur">olive</span>)</label><input type="checkbox" value="reviseur" id="reviseur"/><label for="reviseur">Visualiser main réviseur (<span class="reviseur">turquoise</span>)</label><input type="checkbox" value="tardive" id="tardive"/><label for="tardive">Visualiser main tardive (<span class="tardive">coral</span>)</label></fieldset>
+            </form><button id="refresh">Réinitialiser</button></div>
+         <div id="edition">
+            <div id="boundList">
+               <div class="left"><ins class="left marginalia" data-id="marg1" data-hand="reviseur">˝ɼen</ins><ins class="left marginalia" data-id="marg2" data-hand="tardive">Nta</ins></div>
+               <div class="a">
+                  <ol class="lines">
+                     <li data-id="cal01" data-hand="α">
+                        En guıſa ſoube mıa coıta
+                        dıʒer</li>
+                     <li data-id="cal02" data-hand="α">
+                        lgun ſaboꝛ pꝛenꝺ ome quanꝺo
+                        dıʒ</li>
+                     <li data-id="cal03" data-hand="α">ıa que ꝺa coıta que ſoffr e ꝺo mal</li>
+                     <li data-id="cal04" data-hand="α">
+                        
+                        <span class="orig">comeu</span>
+                        <span class="reg">com eu</span>
+                         ſoffro maıs eı 
+                        <span class="orig">atemer</span>
+                        <span class="reg">a temer</span>
+                         al.</li>
+                     <li data-id="cal05" data-hand="α">enos cantares que 
+                        <span class="reg">ꝺeſ enton</span>
+                        <span class="orig">ꝺeſenton</span>
+                         fıʒ</li>
+                     <li data-id="cal06" data-hand="α">
+                        En guıſa ſoube mıa coıta
+                        dıʒer.</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cal10" data-hand="α">
+                        p
+                        Poꝛ non ſaberen qual
+                        ben</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cal14" data-hand="α">ꝺeſegeı. e ꝺeseıo eno meu coꝛaçō</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cal18" data-hand="α">
+                        
+                        <span class="orig">neno</span>
+                        <span class="reg">nen o</span>
+                         meu mal aſſı ꝺeus me</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cal22" data-hand="α">perdon. 
+                        <span class="orig">dıgueu</span>
+                        <span class="reg">dıgu eu</span>
+                         aqueſt e 
+                        <span class="orig">a queſto</span>
+                        <span class="reg">aqueſto</span>
+                        
+                        </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cal26" data-hand="α">dıreı. Que ꝺeſeıo ben poꝛ que</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cal30" data-hand="α">non ꝺou ren. e que me uen</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cal34" data-hand="α">o mal que me non uen.</li>
+                     <li data-id="cal35" data-hand="α">
+                        
+                        
+                        <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">oꝛ nūca ıa ren ſaberen</ins><span class="corr">⸣</span>
+                         per mı</li>
+                     <li data-id="cal36" data-hand="α">os que me ueen 
+                        <span class="reg">poꝛ en</span>
+                        <span class="orig">poꝛen</span>
+                         pꝛeguntar.</li>
+                     <li data-id="cal37" data-hand="α">ꝺe que me ueen en gran coıt anꝺar.</li>
+                     <li data-id="cal38" data-hand="α">ıuro lles eu e dıgo lles aſſı</li>
+                     <li data-id="cal39" data-hand="α">
+                        q
+                        Que ꝺeſeıo ben poꝛ que 
+                        <span class="expan">no<span class="ex">n</span>
+                           </span>
+                        <span class="abbr">nō</span>
+                         ꝺou ren.</li>
+                     <li data-id="cal40" data-hand="α">
+                        E poꝛ eſto non poꝺeran
+                        ſaber</li>
+                     <li data-id="cal41" data-hand="α">nunca meu mal per 
+                        <span class="abbr">mı̄</span>
+                        <span class="expan">mı<span class="ex">n</span>
+                           </span>
+                        
+                        
+                        <span class="orig">
+                           
+                           <span class="abbr">mētreu</span>
+                           <span class="expan">me<span class="ex">n</span>treu</span>
+                           
+                           </span>
+                        <span class="reg">
+                           
+                           <span class="abbr">mētr</span>
+                           <span class="expan">me<span class="ex">n</span>tr</span>
+                            eu</span>
+                         poꝺer.</li>
+                     <li data-id="cal42" data-hand="α">e poꝺereı ſenp͛ se 
+                        <span class="abbr">d̕s</span>
+                        <span class="reg">d<span class="ex">eu</span>s</span>
+                         quıſer</li>
+                     <li data-id="cal43" data-hand="α">
+                        
+                        <span class="reg">mentr eu</span>
+                        <span class="orig">mentreu</span>
+                         feʒer as gentes entenꝺer.</li>
+                     <li data-id="cal44" data-hand="α">
+                        q
+                        Que ꝺeſeıo ben poꝛ que 
+                        <span class="expan">no<span class="ex">n</span>
+                           </span>
+                        <span class="abbr">nō</span>
+                         ꝺou ren</li>
+                  </ol>
+               </div>
+               <div class="right"></div>
+               <div class="left"></div>
+               <div class="b">
+                  <ol class="lines">
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl04" data-hand="α">
+                        E ſabe ꝺeus que muı́to
+                        mal</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl08" data-hand="α">me uen. maıs non 
+                        <span class="reg">ꝺ alı</span>
+                        <span class="orig">ꝺalı</span>
+                         ꝺonꝺe</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl12" data-hand="α">ſe cuıꝺ alguen</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl18" data-hand="α">
+                        A ꝺona que eu 
+                        
+                        <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">uı ſempꝛe poꝛ</ins><span class="corr">⸣</span>
+                        </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl22" data-hand="α">mal e que me gran coıta ꝺeu. e</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl26" data-hand="α">ꝺa 
+                        <span class="reg">poı la</span>
+                        <span class="orig">poıla</span>
+                         uı e 
+                        <span class="reg">poſ ſeu</span>
+                        <span class="orig">poſſeu</span>
+                        . non me</li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl30" data-hand="α">
+                        
+                        <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">t</ins><span class="corr">⸣</span>
+                        en nen me quer ualer. 
+                        <span class="orig">
+                           Nona</span>
+                        <span class="reg">
+                           Non a</span>
+                        
+                        </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl34" data-hand="α">ueg 
+                        <span class="reg">enon</span>
+                        <span class="orig">e non</span>
+                         ueg eu. no munꝺo ꝺon
+                        <span class="reg">-</span>
+                        </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-hand="α"> </li>
+                     <li data-id="cbl38" data-hand="α">
+                        
+                        <span class="orig">ꝺeu</span>
+                        <span class="reg">ꝺ eu</span>
+                         ueıa pꝛaʒer.</li>
+                     <li data-id="cbl39" data-hand="α">
+                        A que me faʒ uıuer en
+                        tal</li>
+                     <li data-id="cbl40" data-hand="α">affan e ſoffrer tanto mal</li>
+                     <li data-id="cbl41" data-hand="α">que moꝛrereı ſe me 
+                        <span class="expan">no<span class="ex">n</span>
+                           </span>
+                        <span class="abbr">nō</span>
+                         ual</li>
+                     <li data-id="cbl42" data-hand="α">e non quer mıa coıta creer</li>
+                     <li data-id="cbl43" data-hand="α">
+                        
+                        <span class="orig">
+                           Nona</span>
+                        <span class="reg">
+                           Non a</span>
+                         ueg e 
+                        <span class="expan">no<span class="ex">n</span>
+                           </span>
+                        <span class="abbr">nō</span>
+                        
+                        
+                        <span class="reg">ueg eu</span>
+                        <span class="orig">uegeu</span>
+                        
+                        
+                        
+                        <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">al</ins><span class="corr">⸣</span>
+                        </li>
+                     <li data-id="cbl44" data-hand="α">
+                        A que eu quero muı gran
+                        ben</li>
+                     <li data-id="cbl45" data-hand="α">e que 
+                        <span class="reg">mı aſſı</span>
+                        <span class="orig">
+                           
+                           <span class="expan">no<span class="ex">n</span>
+                              </span>
+                           <span class="abbr">nō</span>
+                           
+                           </span>
+                         coıtaꝺo ten</li>
+                     <li data-id="cbl46" data-hand="α">que non 
+                        <span class="reg">poſſ eu</span>
+                        <span class="orig">poſſeu</span>
+                         per nı́un ſen.</li>
+                  </ol>
+               </div>
+               <div class="right"><ins class="right marginalia" data-id="marg3" data-hand="reviseur">uȷ́</ins><ins class="right marginalia" data-id="arg4" data-hand="reviseur">˝al</ins></div>
+            </div><img src="A56r.jpg" usemap="#56r" alt="f. 56r"/></div><map name="A56r"><area href="#" shape="rect" alt="Corps du text: colonne a, ligne 1" title="Corps du text: colonne a, ligne 1" data-id="cal01" coords="204,20,535,56"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 2" title="Corps du text: colonne a, ligne 2" data-id="cal02" coords="230,63,230,85,348,91,560,80,562,56,284,59"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 3" title="Corps du text: colonne a, ligne 3" data-id="cal03" coords="208,90,210,114,543,111,540,85"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 4" title="Corps du text: colonne a, ligne 4" data-id="cal04" coords="214,120,214,148,531,137,530,112"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 5" title="Corps du text: colonne a, ligne 5" data-id="cal05" coords="214,151,215,173,533,168,527,138"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 6" title="Corps du text: colonne a, ligne 6" data-id="cal06" coords="210,177,210,205,250,208,550,201,546,171,247,174"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 10" title="Corps du text: colonne a, ligne 10" data-id="cal10" coords="175,213,181,470,220,476,219,329,320,323,583,323,579,290,334,288,328,212"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 14" title="Corps du text: colonne a, ligne 14" data-id="cal14" coords="220,411,226,442,588,440,595,398"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 18" title="Corps du text: colonne a, ligne 18" data-id="cal18" coords="212,521,212,554,589,549,581,521"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 22" title="Corps du text: colonne a, ligne 22" data-id="cal22" coords="213,641,211,675,596,673,599,634,433,642"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 26" title="Corps du text: colonne a, ligne 26" data-id="cal26" coords="211,755,210,792,597,788,590,754,334,754,329,686,274,685,268,754"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 30" title="Corps du text: colonne a, ligne 30" data-id="cal30" coords="213,869,212,907,578,903,573,873"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 34" title="Corps du text: colonne a, ligne 34" data-id="cal34" coords="206,993,208,1021,508,1022,499,991"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 35" title="Corps du text: colonne a, ligne 35" data-id="cal35" coords="215,1028,214,1051,509,1055,506,1029,368,1022"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 36" title="Corps du text: colonne a, ligne 36" data-id="cal36" coords="213,1057,212,1081,559,1080,555,1055"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 37" title="Corps du text: colonne a, ligne 37" data-id="cal37" coords="208,1083,209,1106,414,1112,569,1110,569,1087,388,1087"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 38" title="Corps du text: colonne a, ligne 38" data-id="cal38" coords="211,1110,212,1133,484,1135,485,1111"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 39" title="Corps du text: colonne a, ligne 39" data-id="cal39" coords="205,1132,194,1239,213,1225,217,1167,238,1161,367,1169,555,1163,552,1141,381,1141"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 40" title="Corps du text: colonne a, ligne 40" data-id="cal40" coords="217,1164,214,1196,240,1196,482,1191,487,1169"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 41" title="Corps du text: colonne a, ligne 41" data-id="cal41" coords="217,1201,219,1225,393,1229,582,1229,577,1196"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 42" title="Corps du text: colonne a, ligne 42" data-id="cal42" coords="208,1225,210,1250,331,1258,467,1253,466,1227"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 43" title="Corps du text: colonne a, ligne 43" data-id="cal43" coords="210,1259,211,1279,555,1285,558,1260"/>
+            
+            <area href="#" shape="poly" alt="Corps du text: colonne a, ligne 44" title="Corps du text: colonne a, ligne 44" data-id="cal44" coords="203,1283,209,1311,229,1426,240,1317,553,1313,551,1288,433,1286,394,1289"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 4" title="Corps du texte: colonne b, ligne 4" data-id="cbl04" coords="631,25,636,146,1023,140,1022,101,748,97,744,19"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 8" title="Corps du texte: colonne b, ligne 8" data-id="cbl08" coords="642,223,645,256,1022,250,1016,221"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 12" title="Corps du texte: colonne b, ligne 12" data-id="cbl12" coords="638,345,642,377,803,371,804,345"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 18" title="Corps du texte: colonne b, ligne 18" data-id="cbl18" coords="623,391,608,679,641,656,673,557,1034,546,1036,506,748,507,746,382"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 22" title="Corps du texte: colonne b, ligne 22" data-id="cbl22" coords="643,637,645,667,1014,663,1011,632"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 26" title="Corps du texte: colonne b, ligne 26" data-id="cbl26" coords="641,753,641,793,1016,789,1015,754"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 30" title="Corps du texte: colonne b, ligne 30" data-id="cbl30" coords="641,871,641,904,1003,901,1002,870,736,872"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 34" title="Corps du texte: colonne b, ligne 34" data-id="cbl34" coords="641,996,645,1029,1016,1021,1014,986"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 38" title="Corps du texte: colonne b, ligne 38" data-id="cbl38" coords="638,1109,639,1136,832,1136,831,1110"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 39" title="Corps du texte: colonne b, ligne 39" data-id="cbl39" coords="641,1138,638,1177,656,1167,911,1164,908,1138"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 40" title="Corps du texte: colonne b, ligne 40" data-id="cbl40" coords="647,1173,641,1192,883,1193,882,1169,745,1168,664,1168"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 41" title="Corps du texte: colonne b, ligne 41" data-id="cbl41" coords="637,1201,638,1229,903,1221,898,1191,789,1193"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 42" title="Corps du texte: colonne b, ligne 42" data-id="cbl42" coords="643,1229,643,1255,905,1250,905,1228"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 43" title="Corps du texte: colonne b, ligne 43" data-id="cbl43" coords="632,1253,634,1291,678,1286,876,1288,875,1250"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 44" title="Corps du texte: colonne b, ligne 44" data-id="cbl44" coords="639,1293,627,1329,648,1317,921,1313,918,1285,655,1284"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 45" title="Corps du texte: colonne b, ligne 45" data-id="cbl45" coords="641,1323,639,1342,871,1341,865,1314,745,1313"/>
+            
+            <area href="#" shape="poly" alt="Corps du texte: colonne b, ligne 46" title="Corps du texte: colonne b, ligne 46" data-id="cbl46" coords="639,1347,641,1374,910,1372,905,1341"/>
+            
+            <area href="#" shape="rect" alt="Lettre d’attente, c. a, l. 10" title="Lettre d’attente, c. a, l. 10" data-id="attente_a10" coords="298,303,321,325"/>
+            
+            <area href="#" shape="rect" alt="Note marginale : contenu d'une correction" title="Note marginale : contenu d'une correction" data-id="marg1" coords="156,1027,202,1054"/>
+            
+            <area href="#" shape="rect" alt="Lettre d’attente, c. a, l. 39" title="Lettre d’attente, c. a, l. 39" data-id="attente_a39" coords="215,1147,228,1161"/>
+            
+            <area href="#" shape="rect" alt="Note marginale" title="Note marginale" data-id="marg2" coords="76,1271,138,1322"/>
+            
+            <area href="#" shape="rect" alt="Lettre d’attente, c. a, l. 44" title="Lettre d’attente, c. a, l. 44" data-id="attente_a44" coords="222,1291,232,1304"/>
+            
+            <area href="#" shape="rect" alt="Note marginale : contenu d'une correction" title="Note marginale : contenu d'une correction" data-id="marg3" coords="1050,525,1077,543"/>
+            
+            <area href="#" shape="rect" alt="Note marginale : contenu d'une correction" title="Note marginale : contenu d'une correction" data-id="marg4" coords="991,1243,1034,1277"/>
+            
+            <area href="#" shape="rect" alt="Lettre d’attente, c. b, l. 30" title="Lettre d’attente, c. b, l. 30" data-id="attente_b30" coords="932,880,956,900"/>
+            
+            </map></main><script>
+                        $(document).ready(function () {
+                        var img = $('img'),
+                        list = $('#boundList');
+                        
+                        
+                        // bind selection of a data-id to the UL we created. The "listSelectedClass"
+                        // option causes the class "selected" to be added or removed
+                        // from the element in "boundList" whose "data-id" attribute has a value
+                        // matching the mapKey for the selected area.
+                        
+                        img.mapster({
+                        mapKey: 'data-id',
+                        boundList: list.find('*'),
+                        listKey: 'data-id',
+                        listSelectedClass: 'selected',
+                        fillColor: 'ffffff',
+                        stroke: true,
+                        singleSelect: true
+                        });
+                        
+                        // bind click event
+                        
+                        $(document).on('mouseenter', '#boundList *[data-id]', function (e) {
+                        
+                        var el = $(e.target);
+                        el.toggleClass('selected');
+                        //debugger;
+                        img.mapster('set', null, el.attr('data-id'));
+                        // changing selections manually doesn't result in the boundList
+                        // being fired, we still have to set the data-id on the list item
+                        }).on('mouseleave', '.selected', function (e) {
+                        e.preventDefault();
+                        
+                        img.mapster('set', false, img.mapster('get'));
+                        });
+                        });</script><script>
+                        $('#refresh').click(function() {
+                        location.reload(true);
+                        });
+                    </script></body>
+</html>
