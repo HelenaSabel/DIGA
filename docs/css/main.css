@@ -42,6 +42,10 @@ fieldset {
     border:0;
 }
 
+label {
+    margin-right:1em;
+}
+
 
 /*Edition*/
 
