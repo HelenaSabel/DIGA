@@ -374,7 +374,7 @@
                <add place="right" facs="#marg1" hand="#colocci">tōnel</add>
             </line>
             <line n="22">
-               <num facs="#num1" hand="#colocci">728</num>
+               <metamark facs="#num1" hand="#colocci">728</metamark>
             </line>
             <line n="23" facs="#cal23">O meu amigo <choice>
                   <orig>nona</orig>
@@ -576,7 +576,7 @@
             <line n="13"/>
             <line n="14"/>
             <line n="15">
-               <num facs="#num2" hand="#colocci">729</num>
+               <metamark facs="#num2" hand="#colocci">729</metamark>
             </line>
             <line n="16" facs="#cbl16">
                <add place="right" facs="#marg2" hand="#colocci">tōnel</add>
