@@ -73,7 +73,7 @@
                             <div id="boundList">
                                 <xsl:apply-templates select="//zone[@type eq 'column']"/>
                             </div>
-                            <img src="{descendant::graphic/@url}" usemap="#56r" alt="f. 56r"/>
+                            <img src="{descendant::graphic/@url}" usemap="#A56r" alt="f. 56r"/>
                         </div>
 
                         <map name="A56r">
@@ -173,7 +173,7 @@
         </ins><span class="corr">⸣</span>
     </xsl:template>
     <xsl:template match="add[not(parent::subst)]">
-        <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}">
+        <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}" style="display:block;position:absolute;top:{count(preceding-sibling::line)}em">
             <xsl:if test="@hand">
                 <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
             </xsl:if>
