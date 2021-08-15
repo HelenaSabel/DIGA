@@ -173,7 +173,7 @@
         </ins><span class="corr">⸣</span>
     </xsl:template>
     <xsl:template match="add[not(parent::subst)]">
-        <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}" style="display:block;position:absolute;top:{count(preceding-sibling::line)}em">
+        <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}" style="display:block;position:relative;top:{count(preceding-sibling::line)}em">
             <xsl:if test="@hand">
                 <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
             </xsl:if>
