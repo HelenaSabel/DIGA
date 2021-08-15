@@ -184,7 +184,7 @@
         <area href="#" shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}"
             data-id="{@xml:id}">
             <xsl:variable name="x" select="800 div 1270"/>
-            <xsl:variable name="y" select="1000.95 div 1589"/>
+            <xsl:variable name="y" select="1001 div 1589"/>
             <xsl:choose>
                 <xsl:when test="@type eq 'rect'">
                     <xsl:attribute name="coords"
