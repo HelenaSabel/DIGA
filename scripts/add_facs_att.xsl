@@ -7,9 +7,9 @@
     <xsl:mode on-no-match="shallow-copy"/>
 
     <!--   Add attributes to lines -->
-    <xsl:template match="l">
-        <xsl:variable name="n" select="format-number(count(preceding-sibling::l) + 1, '00')"/>
-        <xsl:element name="l">
+    <xsl:template match="line">
+        <xsl:variable name="n" select="format-number(count(preceding-sibling::line) + 1, '00')"/>
+        <line>
             <!--            Add the @n attribute with line number-->
             <xsl:attribute name="n">
                 <xsl:value-of select="$n"/>
@@ -18,18 +18,22 @@
             it is equal to the column letter followed by the line number-->
             <xsl:if test="string-length() gt 0">
                 <xsl:attribute name="facs">
-                    <xsl:value-of select="'#c' || preceding-sibling::cb/@n || 'l' || $n"/>
+                    <xsl:value-of select="'#c' || parent::zone/@n || 'l' || $n"/>
                 </xsl:attribute>
             </xsl:if>
             <xsl:copy-of select="node()"/>
-        </xsl:element>
+        </line>
     </xsl:template>
 
     <!--    Format the @coords and @shape attributes, created using Image Map generator
         (https://www.image-map.net/) to be compliant with TEI-->
-    <xsl:template match="zone">
+    <xsl:template match="area">
         <xsl:element name="zone">
-            <xsl:copy-of select="@xml:id"/>
+            <xsl:variable name="number" select="@title => replace('[^\d]+(\d+)', '$1') => number() => format-number('00')"/>
+            <xsl:attribute name="xml:id">
+               <xsl:value-of select="'cal' || $number"/>
+                <!--<xsl:value-of select="@href"/>-->
+            </xsl:attribute>
             <xsl:attribute name="type">
                 <xsl:value-of select="@shape"/>
             </xsl:attribute>
@@ -54,7 +58,7 @@
                     </xsl:attribute>
                 </xsl:otherwise>
             </xsl:choose>
-            <xsl:copy-of select="node()"/>
+            <note><xsl:value-of select="@title"/></note>
         </xsl:element>
     </xsl:template>
 </xsl:stylesheet>
