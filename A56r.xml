@@ -70,7 +70,7 @@
    </teiHeader>
    <sourceDoc>
       <surface>
-         <graphic url="A56r.jpg"/>
+         <graphic url="A56r.png"/>
          <zone xml:id="cal01" type="rect" ulx="204" uly="20" lrx="535" lry="56">
             <note>Corps du text: colonne a, ligne 1</note>
          </zone>
