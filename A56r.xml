@@ -20,9 +20,9 @@
             <msDesc>
                <msIdentifier>
                   <institution>
-                     <name>Biblioteca Nacional de Portugal</name>
+                     <name>Palácio Nacional da Ajuda</name>
                      <address>
-                        <addrLine>Campo Grande 83, 1749-081 Lisboa, Portugal</addrLine>
+                        <addrLine>Lisboa, Portugal</addrLine>
                      </address>
                   </institution>
                   <idno/>
@@ -70,49 +70,405 @@
    </teiHeader>
    <sourceDoc>
       <surface>
-         <zone type="column-a" hand="#b">
-            <line>En guıſa ſoube mıa coıta dıʒer</line>
-            <line>‹A›lgun ſaboꝛ pꝛenꝺ ome quanꝺo dıʒ</line>
-            <line>ıa que ꝺa coıta que ſoffr e ꝺo mal</line>
-            <line>comeu ſoffro maıs eı atemer al.</line>
-            <line>enos cantares que ꝺeſenton fıʒ</line>
-            <line>En guıſa ſoube mıa coıta dıʒer.</line>
-            <line>me uen. maıs non ꝺalı ꝺonꝺe</line>
-            <line>‹p›Poꝛ non ſaberen qual ben</line>
-            <line>ſe cuıꝺ alguen</line>
-            <line>ꝺeſegeı. e ꝺeseıo eno meu coꝛaçō</line>
-            <line>neno meu mal aſſı ꝺeus me</line>
-            <line>perdon. dıgueu aqueſt e a queſto</line>
-            <line>dıreı. Que ꝺeſeıo ben poꝛ que</line>
-            <line>non ꝺou ren. e que me uen</line>
-            <line>o mal que me non uen.</line>
-            <line>‹p›⸢oꝛ nūca ıa ren ſaberen⸣ per mı</line>
-            <line>os que me ueen poꝛen pꝛeguntar.</line>
-            <line>ꝺe que me ueen en gran coıt anꝺar.</line>
-            <line>ıuro lles eu e dıgo lles aſſı</line>
-            <line>‹q›Que ꝺeſeıo ben poꝛ que nō ꝺou ren.</line>
-            <line>E poꝛ eſto non poꝺeran ſaber</line>
-            <line>nunca meu mal per mı̄ mētreu poꝺer.</line>
-            <line>e poꝺereı ſenp͛ se d̕s quıſer</line>
-            <line>mentreu feʒer as gentes entenꝺer.</line>
-            <line>‹q›Que ꝺeſeıo ben poꝛ que nō ꝺou ren</line>
+         <graphic url="A56r.jpg"/>
+         <zone xml:id="cal01" type="rect" ulx="204" uly="20" lrx="535" lry="56">
+            <note>Corps du text: colonne a, ligne 1</note>
          </zone>
-         <zone type="column-b">
-            <line>‹e›E ſabe ꝺeus que muı́to mal</line>
-            <line>A ꝺona que eu ⸢uı ſempꝛe⸣ ⸢poꝛ⸣</line>
-            <line>mal e que me gran coıta ꝺeu. e</line>
-            <line>ꝺa poıla uı e poſſeu. non me</line>
-            <line>⸢t⸣en nen me quer ualer. ‹N›ona</line>
-            <line>ueg enon ueg eu. no munꝺo ꝺon-</line>
-            <line>ꝺeu ueıa pꝛaʒer.</line>
-            <line>‹A›A que me faʒ uıuer en tal</line>
-            <line>affan e ſoffrer tanto mal</line>
-            <line>que moꝛrereı ſe me nō ual</line>
-            <line>e non quer mıa coıta creer</line>
-            <line>‹N›Nona ueg e nō uegeu ⸢al⸣</line>
-            <line>A que eu quero muı gran ben</line>
-            <line>e que mıaſſı coıtaꝺo ten</line>
-            <line>que non poſſeu per nı́un ſen.</line>
+         <zone xml:id="cal02" type="poly" points="230,63 230,85 348,91 560,80 562,56 284,59">
+            <note>Corps du text: colonne a, ligne 2</note>
+         </zone>
+         <zone xml:id="cal03" type="poly" points="208,90 210,114 543,111 540,85">
+            <note>Corps du text: colonne a, ligne 3</note>
+         </zone>
+         <zone xml:id="cal04" type="poly" points="214,120 214,148 531,137 530,112">
+            <note>Corps du text: colonne a, ligne 4</note>
+         </zone>
+         <zone xml:id="cal05" type="poly" points="214,151 215,173 533,168 527,138">
+            <note>Corps du text: colonne a, ligne 5</note>
+         </zone>
+         <zone xml:id="cal06" type="poly" points="210,177 210,205 250,208 550,201 546,171 247,174">
+            <note>Corps du text: colonne a, ligne 6</note>
+         </zone>
+         <zone xml:id="cal10" type="poly"
+            points="175,213 181,470 220,476 219,329 320,323 583,323 579,290 334,288 328,212">
+            <note>Corps du text: colonne a, ligne 10</note>
+         </zone>
+         <zone xml:id="cal14" type="poly" points="220,411 226,442 588,440 595,398">
+            <note>Corps du text: colonne a, ligne 14</note>
+         </zone>
+         <zone xml:id="cal18" type="poly" points="212,521 212,554 589,549 581,521">
+            <note>Corps du text: colonne a, ligne 18</note>
+         </zone>
+         <zone xml:id="cal22" type="poly" points="213,641 211,675 596,673 599,634 433,642">
+            <note>Corps du text: colonne a, ligne 22</note>
+         </zone>
+         <zone xml:id="cal26" type="poly"
+            points="211,755 210,792 597,788 590,754 334,754 329,686 274,685 268,754">
+            <note>Corps du text: colonne a, ligne 26</note>
+         </zone>
+         <zone xml:id="cal30" type="poly" points="213,869 212,907 578,903 573,873">
+            <note>Corps du text: colonne a, ligne 30</note>
+         </zone>
+         <zone xml:id="cal34" type="poly" points="206,993 208,1021 508,1022 499,991">
+            <note>Corps du text: colonne a, ligne 34</note>
+         </zone>
+         <zone xml:id="cal35" type="poly" points="215,1028 214,1051 509,1055 506,1029 368,1022">
+            <note>Corps du text: colonne a, ligne 35</note>
+         </zone>
+         <zone xml:id="cal36" type="poly" points="213,1057 212,1081 559,1080 555,1055">
+            <note>Corps du text: colonne a, ligne 36</note>
+         </zone>
+         <zone xml:id="cal37" type="poly"
+            points="208,1083 209,1106 414,1112 569,1110 569,1087 388,1087">
+            <note>Corps du text: colonne a, ligne 37</note>
+         </zone>
+         <zone xml:id="cal38" type="poly" points="211,1110 212,1133 484,1135 485,1111">
+            <note>Corps du text: colonne a, ligne 38</note>
+         </zone>
+         <zone xml:id="cal39" type="poly"
+            points="205,1132 194,1239 213,1225 217,1167 238,1161 367,1169 555,1163 552,1141 381,1141">
+            <note>Corps du text: colonne a, ligne 39</note>
+         </zone>
+         <zone xml:id="cal40" type="poly" points="217,1164 214,1196 240,1196 482,1191 487,1169">
+            <note>Corps du text: colonne a, ligne 40</note>
+         </zone>
+         <zone xml:id="cal41" type="poly" points="217,1201 219,1225 393,1229 582,1229 577,1196">
+            <note>Corps du text: colonne a, ligne 41</note>
+         </zone>
+         <zone xml:id="cal42" type="poly" points="208,1225 210,1250 331,1258 467,1253 466,1227">
+            <note>Corps du text: colonne a, ligne 42</note>
+         </zone>
+         <zone xml:id="cal43" type="poly" points="210,1259 211,1279 555,1285 558,1260">
+            <note>Corps du text: colonne a, ligne 43</note>
+         </zone>
+         <zone xml:id="cal44" type="poly"
+            points="203,1283 209,1311 229,1426 240,1317 553,1313 551,1288 433,1286 394,1289">
+            <note>Corps du text: colonne a, ligne 44</note>
+         </zone>
+         <zone xml:id="cbl04" type="poly" points="631,25 636,146 1023,140 1022,101 748,97 744,19">
+            <note>Corps du texte: colonne b, ligne 4</note>
+         </zone>
+         <zone xml:id="cbl08" type="poly" points="642,223 645,256 1022,250 1016,221">
+            <note>Corps du texte: colonne b, ligne 8</note>
+         </zone>
+         <zone xml:id="cbl12" type="poly" points="638,345 642,377 803,371 804,345">
+            <note>Corps du texte: colonne b, ligne 12</note>
+         </zone>
+         <zone xml:id="cbl18" type="poly"
+            points="623,391 608,679 641,656 673,557 1034,546 1036,506 748,507 746,382">
+            <note>Corps du texte: colonne b, ligne 18</note>
+         </zone>
+         <zone xml:id="cbl22" type="poly" points="643,637 645,667 1014,663 1011,632">
+            <note>Corps du texte: colonne b, ligne 22</note>
+         </zone>
+         <zone xml:id="cbl26" type="poly" points="641,753 641,793 1016,789 1015,754">
+            <note>Corps du texte: colonne b, ligne 26</note>
+         </zone>
+         <zone xml:id="cbl30" type="poly" points="641,871 641,904 1003,901 1002,870 736,872">
+            <note>Corps du texte: colonne b, ligne 30</note>
+         </zone>
+         <zone xml:id="cbl34" type="poly" points="641,996 645,1029 1016,1021 1014,986">
+            <note>Corps du texte: colonne b, ligne 34</note>
+         </zone>
+         <zone xml:id="cbl38" type="poly" points="638,1109 639,1136 832,1136 831,1110">
+            <note>Corps du texte: colonne b, ligne 38</note>
+         </zone>
+         <zone xml:id="cbl39" type="poly" points="641,1138 638,1177 656,1167 911,1164 908,1138">
+            <note>Corps du texte: colonne b, ligne 39</note>
+         </zone>
+         <zone xml:id="cbl40" type="poly"
+            points="647,1173 641,1192 883,1193 882,1169 745,1168 664,1168">
+            <note>Corps du texte: colonne b, ligne 40</note>
+         </zone>
+         <zone xml:id="cbl41" type="poly" points="637,1201 638,1229 903,1221 898,1191 789,1193">
+            <note>Corps du texte: colonne b, ligne 41</note>
+         </zone>
+         <zone xml:id="cbl42" type="poly" points="643,1229 643,1255 905,1250 905,1228">
+            <note>Corps du texte: colonne b, ligne 42</note>
+         </zone>
+         <zone xml:id="cbl43" type="poly" points="632,1253 634,1291 678,1286 876,1288 875,1250">
+            <note>Corps du texte: colonne b, ligne 43</note>
+         </zone>
+         <zone xml:id="cbl44" type="poly"
+            points="639,1293 627,1329 648,1317 921,1313 918,1285 655,1284">
+            <note>Corps du texte: colonne b, ligne 44</note>
+         </zone>
+         <zone xml:id="cbl45" type="poly" points="641,1323 639,1342 871,1341 865,1314 745,1313">
+            <note>Corps du texte: colonne b, ligne 45</note>
+         </zone>
+         <zone xml:id="cbl46" type="poly" points="639,1347 641,1374 910,1372 905,1341">
+            <note>Corps du texte: colonne b, ligne 46</note>
+         </zone>
+         <zone xml:id="attente_a10" type="rect" ulx="298" uly="303" lrx="321" lry="325">
+            <note>Lettre d’attente, c. a, l. 10</note>
+         </zone>
+         <zone xml:id="marg1" type="rect" ulx="156" uly="1027" lrx="202" lry="1054">
+            <note>Note marginale : contenu d'une correction</note>
+         </zone>
+         <zone xml:id="attente_a39" type="rect" ulx="215" uly="1147" lrx="228" lry="1161">
+            <note>Lettre d’attente, c. a, l. 39</note>
+         </zone>
+         <zone xml:id="marg2" type="rect" ulx="76" uly="1271" lrx="138" lry="1322">
+            <note>Note marginale</note>
+         </zone>
+         <zone xml:id="attente_a44" type="rect" ulx="222" uly="1291" lrx="232" lry="1304">
+            <note>Lettre d’attente, c. a, l. 44</note>
+         </zone>
+         <zone xml:id="marg3" type="rect" ulx="1050" uly="525" lrx="1077" lry="543">
+            <note>Note marginale : contenu d'une correction</note>
+         </zone>
+         <zone xml:id="marg4" type="rect" ulx="991" uly="1243" lrx="1034" lry="1277">
+            <note>Note marginale : contenu d'une correction</note>
+         </zone>
+         <zone xml:id="attente_b30" type="rect" ulx="932" uly="880" lrx="956" lry="900">
+            <note>Lettre d’attente, c. b, l. 30</note>
+         </zone>
+      </surface>
+      <surface>
+         <zone type="column" hand="#α" subtype="a">
+            <line n="01" facs="#cal01">
+               <hi style="blue" rend="decorated" hand="#rubricateur">E</hi>n guıſa ſoube mıa coıta
+               dıʒer</line>
+            <line n="02" facs="#cal02">
+               <gap reason="illegible" extent="1" unit="char"/>lgun ſaboꝛ pꝛenꝺ ome quanꝺo
+               dıʒ</line>
+            <line n="03" facs="#cal03">ıa que ꝺa coıta que ſoffr e ꝺo mal</line>
+            <line n="04" facs="#cal04">
+               <choice>
+                  <orig>comeu</orig>
+                  <reg>com eu</reg>
+               </choice> ſoffro maıs eı <choice>
+                  <orig>atemer</orig>
+                  <reg>a temer</reg>
+               </choice> al.</line>
+            <line n="05" facs="#cal05">enos cantares que <choice>
+                  <reg>ꝺeſ enton</reg>
+                  <orig>ꝺeſenton</orig>
+               </choice> fıʒ</line>
+            <line n="06" facs="#cal06">
+               <hi style="blue" rend="decorated" hand="#rubricateur">E</hi>n guıſa ſoube mıa coıta
+               dıʒer.</line>
+            <line n="07"/>
+            <line n="08"/>
+            <line n="09"/>
+            <line n="10" facs="#cal10">
+               <hi rend="lettreAttente" facs="#attente_a10">p</hi>
+               <hi style="red" rend="decorated" hand="#rubricateur">P</hi>oꝛ non ſaberen qual
+               ben</line>
+            <line n="11"/>
+            <line n="12"/>
+            <line n="13"/>
+            <line n="14" facs="#cal14">ꝺeſegeı. e ꝺeseıo eno meu coꝛaçō</line>
+            <line n="15"/>
+            <line n="16"/>
+            <line n="17"/>
+            <line n="18" facs="#cal18">
+               <choice>
+                  <orig>neno</orig>
+                  <reg>nen o</reg>
+               </choice> meu mal aſſı ꝺeus me</line>
+            <line n="19"/>
+            <line n="20"/>
+            <line n="21"/>
+            <line n="22" facs="#cal22">perdon. <choice>
+                  <orig>dıgueu</orig>
+                  <reg>dıgu eu</reg>
+               </choice> aqueſt e <choice>
+                  <orig>a queſto</orig>
+                  <reg>aqueſto</reg>
+               </choice>
+            </line>
+            <line n="23"/>
+            <line n="24"/>
+            <line n="25"/>
+            <line n="26" facs="#cal26">dıreı. <hi style="blue" rend="decorated" hand="#rubricateur"
+                  >Q</hi>ue ꝺeſeıo ben poꝛ que</line>
+            <line n="27"/>
+            <line n="28"/>
+            <line n="29"/>
+            <line n="30" facs="#cal30">non ꝺou ren. e que me uen</line>
+            <line n="31"/>
+            <line n="32"/>
+            <line n="33"/>
+            <line n="34" facs="#cal34">o mal que me non uen.</line>
+            <add place="left" hand="#reviseur" facs="#marg1">˝ɼen</add>
+            <line n="35" facs="#cal35">
+               <gap reason="illegible" extent="1" unit="char"/><subst>
+                  <del rend="gratte"><gap reason="illegible"/></del>
+                  <add hand="#correcteur" place="inline">oꝛ nūca ıa ren ſaberen</add>
+               </subst> per mı</line>
+            <line n="36" facs="#cal36">os que me ueen <choice>
+                  <reg>poꝛ en</reg>
+                  <orig>poꝛen</orig>
+               </choice> pꝛeguntar.</line>
+            <line n="37" facs="#cal37">ꝺe que me ueen en gran coıt anꝺar.</line>
+            <line n="38" facs="#cal38">ıuro lles eu e dıgo lles aſſı</line>
+            <add hand="#tardive" place="left" facs="#marg2">N<hi rend="sup">ta</hi></add>
+            <line n="39" facs="#cal39">
+               <hi rend="lettreAttente" facs="#attente_a39">q</hi>
+               <hi style="blue" rend="decorated" hand="#rubricateur">Q</hi>ue ꝺeſeıo ben poꝛ que <choice>
+                  <expan>no<ex>n</ex>
+                  </expan>
+                  <abbr>nō</abbr>
+               </choice> ꝺou ren.</line>
+            <line n="40" facs="#cal40">
+               <hi style="red" rend="decorated" hand="#rubricateur">E</hi> poꝛ eſto non poꝺeran
+               ſaber</line>
+            <line n="41" facs="#cal41">nunca meu mal per <choice>
+                  <abbr>mı̄</abbr>
+                  <expan>mı<ex>n</ex>
+                  </expan>
+               </choice>
+               <choice>
+                  <orig>
+                     <choice>
+                        <abbr>mētreu</abbr>
+                        <expan>me<ex>n</ex>treu</expan>
+                     </choice>
+                  </orig>
+                  <reg>
+                     <choice>
+                        <abbr>mētr</abbr>
+                        <expan>me<ex>n</ex>tr</expan>
+                     </choice> eu</reg>
+               </choice> poꝺer.</line>
+            <line n="42" facs="#cal42">e poꝺereı ſenp͛ se <choice>
+                  <abbr>d̕s</abbr>
+                  <reg>d<ex>eu</ex>s</reg>
+               </choice> quıſer</line>
+            <line n="43" facs="#cal43">
+               <choice>
+                  <reg>mentr eu</reg>
+                  <orig>mentreu</orig>
+               </choice> feʒer as gentes entenꝺer.</line>
+            <line n="44" facs="#cal44">
+               <hi rend="lettreAttente" facs="#attente_a44">q</hi>
+               <hi style="blue" rend="decorated" hand="#rubricateur">Q</hi>ue ꝺeſeıo ben poꝛ que <choice>
+                  <expan>no<ex>n</ex>
+                  </expan>
+                  <abbr>nō</abbr>
+               </choice> ꝺou ren</line>
+         </zone>
+         <zone type="column" subtype="b" hand="#α">
+            <line n="01"/>
+            <line n="02"/>
+            <line n="03"/>
+            <line n="04" facs="#cbl04">
+               <hi style="blue" rend="decorated" hand="#rubricateur">E</hi> ſabe ꝺeus que muı́to
+               mal</line>
+            <line n="05"/>
+            <line n="06"/>
+            <line n="07"/>
+            <line n="08" facs="#cbl08">me uen. maıs non <choice>
+                  <reg>ꝺ alı</reg>
+                  <orig>ꝺalı</orig>
+               </choice> ꝺonꝺe</line>
+            <line n="09"/>
+            <line n="10"/>
+            <line n="11"/>
+            <line n="12" facs="#cbl12">ſe cuıꝺ alguen</line>
+            <line n="13"/>
+            <line n="14"/>
+            <line n="15"/>
+            <line n="16"/>
+            <line n="17"/>
+            <line n="18" facs="#cbl18">
+               <hi style="red" rend="decorated" hand="#rubricateur">A</hi> ꝺona que eu <subst>
+                  <del rend="gratte"><gap reason="illegible"/></del>
+                  <add hand="#correcteur" place="inline">uı ſempꝛe poꝛ</add>
+               </subst></line>
+            <add place="right" hand="#reviseur" facs="#marg3">uȷ&#769;</add>
+            <line n="19"/>
+            <line n="20"/>
+            <line n="21"/>
+            <line n="22" facs="#cbl22">mal e que me gran coıta ꝺeu. e</line>
+            <line n="23"/>
+            <line n="24"/>
+            <line n="25"/>
+            <line n="26" facs="#cbl26">ꝺa <choice>
+                  <reg>poı la</reg>
+                  <orig>poıla</orig>
+               </choice> uı e <choice>
+                  <reg>poſ ſeu</reg>
+                  <orig>poſſeu</orig>
+               </choice>. non me</line>
+            <line n="27"/>
+            <line n="28"/>
+            <line n="29"/>
+            <line n="30" facs="#cbl30"><subst>
+                  <del rend="gratte"><gap reason="illegible"/></del>
+                  <add hand="#correcteur" place="inline">t</add>
+               </subst>en nen me quer ualer. <choice>
+                  <orig>
+                     <hi rend="lettreAttente" facs="#attente_b30">N</hi>ona</orig>
+                  <reg>
+                     <hi rend="lettreAttente" facs="#attente_b30">N</hi>on a</reg>
+               </choice>
+            </line>
+            <line n="31"/>
+            <line n="32"/>
+            <line n="33"/>
+            <line n="34" facs="#cbl34">ueg <choice>
+                  <reg>enon</reg>
+                  <orig>e non</orig>
+               </choice> ueg eu. no munꝺo ꝺon<choice>
+                  <reg>-</reg>
+               </choice></line>
+            <line n="35"/>
+            <line n="36"/>
+            <line n="37"/>
+            <line n="38" facs="#cbl38">
+               <choice>
+                  <orig>ꝺeu</orig>
+                  <reg>ꝺ eu</reg>
+               </choice> ueıa pꝛaʒer.</line>
+            <line n="39" facs="#cbl39">
+               <hi style="blue" rend="decorated" hand="#rubricateur">A</hi> que me faʒ uıuer en
+               tal</line>
+            <line n="40" facs="#cbl40">affan e ſoffrer tanto mal</line>
+            <line n="41" facs="#cbl41">que moꝛrereı ſe me <choice>
+                  <expan>no<ex>n</ex>
+                  </expan>
+                  <abbr>nō</abbr>
+               </choice> ual</line>
+            <line n="42" facs="#cbl42">e non quer mıa coıta creer</line>
+            <line n="43" facs="#cbl43">
+               <choice>
+                  <orig>
+                     <hi style="red" rend="decorated" hand="#rubricateur">N</hi>ona</orig>
+                  <reg>
+                     <hi style="red" rend="decorated" hand="#rubricateur">N</hi>on a</reg>
+               </choice> ueg e <choice>
+                  <expan>no<ex>n</ex>
+                  </expan>
+                  <abbr>nō</abbr>
+               </choice>
+               <choice>
+                  <reg>ueg eu</reg>
+                  <orig>uegeu</orig>
+               </choice>
+               <subst>
+                  <del rend="gratte"><gap reason="illegible"/></del>
+                  <add hand="#correcteur" place="inline">al</add>
+               </subst></line>
+            <add hand="#reviseur" place="right" facs="marg4">˝al</add>
+            <line n="44" facs="#cbl44">
+               <hi style="blue" rend="decorated" hand="#rubricateur">A</hi> que eu quero muı gran
+               ben</line>
+            <line n="45" facs="#cbl45">e que <choice>
+                  <reg>mı aſſı</reg>
+                  <orig>
+                     <choice>
+                        <expan>no<ex>n</ex>
+                        </expan>
+                        <abbr>nō</abbr>
+                     </choice>
+                  </orig>
+               </choice> coıtaꝺo ten</line>
+            <line n="46" facs="#cbl46">que non <choice>
+                  <reg>poſſ eu</reg>
+                  <orig>poſſeu</orig>
+               </choice> per nı́un ſen.</line>
          </zone>
       </surface>
    </sourceDoc>
