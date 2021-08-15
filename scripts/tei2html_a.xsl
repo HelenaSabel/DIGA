@@ -53,7 +53,7 @@
                                 </fieldset>
                                 <fieldset>
                                     <input type="checkbox" value="b" id="α"/>
-                                    <label for="b">Visualiser copiste <em>α</em> (<span class="α"
+                                    <label for="α">Visualiser copiste <em>α</em> (<span class="α"
                                             >magenta</span>)</label>
                                     <input type="checkbox" value="correcteur" id="correcteur"/>
                                     <label for="correcteur">Visualiser main correcteur (<span
