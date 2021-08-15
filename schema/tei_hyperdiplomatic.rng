@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2021-06-21T13:30:41Z. .
+Schema generated from ODD source 2021-08-15T11:56:59Z. .
 TEI Edition: Version 4.2.2. Last updated on
 	9th April 2021, revision 609a109b1
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.2.2/
@@ -2048,6 +2048,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
          <ref name="tei_ex"/>
          <ref name="tei_am"/>
          <ref name="tei_subst"/>
+         <ref name="tei_line"/>
       </choice>
    </define>
    <define name="tei_model.pPart.editorial_alternation">
@@ -2058,6 +2059,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
          <ref name="tei_ex"/>
          <ref name="tei_am"/>
          <ref name="tei_subst"/>
+         <ref name="tei_line"/>
       </choice>
    </define>
    <define name="tei_model.pPart.editorial_sequence">
@@ -2067,6 +2069,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
       <ref name="tei_ex"/>
       <ref name="tei_am"/>
       <ref name="tei_subst"/>
+      <ref name="tei_line"/>
    </define>
    <define name="tei_model.pPart.editorial_sequenceOptional">
       <optional>
@@ -2086,6 +2089,9 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
       </optional>
       <optional>
          <ref name="tei_subst"/>
+      </optional>
+      <optional>
+         <ref name="tei_line"/>
       </optional>
    </define>
    <define name="tei_model.pPart.editorial_sequenceOptionalRepeatable">
@@ -2107,6 +2113,9 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
       <zeroOrMore>
          <ref name="tei_subst"/>
       </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_line"/>
+      </zeroOrMore>
    </define>
    <define name="tei_model.pPart.editorial_sequenceRepeatable">
       <oneOrMore>
@@ -2126,6 +2135,9 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
       </oneOrMore>
       <oneOrMore>
          <ref name="tei_subst"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_line"/>
       </oneOrMore>
    </define>
    <define name="tei_model.pPart.transcriptional">
@@ -4177,12 +4189,6 @@ Suggested values include: 1] cardinal; 2] ordinal; 3] fraction; 4] percentage</a
                      <param name="pattern">[^\p{C}\p{Z}]+</param>
                   </data>
                </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute name="hand">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Same as TEI @hand</a:documentation>
-               <text/>
             </attribute>
          </optional>
          <optional>
@@ -8533,6 +8539,7 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
       <element name="surface">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a written surface as a two-dimensional coordinate space, optionally grouping one or more graphic representations of that space, zones of interest within that space, and transcriptions of the writing within them. [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
          <group>
+      
             <zeroOrMore>
                <choice>
                   <ref name="tei_model.global"/>
@@ -8540,8 +8547,10 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                   <ref name="tei_model.graphicLike"/>
                </choice>
             </zeroOrMore>
+      
             <zeroOrMore>
                <group>
+        
                   <choice>
                      <ref name="tei_zone"/>
                      <ref name="tei_line"/>
@@ -8549,9 +8558,12 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
                      <ref name="tei_surface"/>
                      <ref name="tei_surfaceGrp"/>
                   </choice>
+        
+        
                   <zeroOrMore>
                      <ref name="tei_model.global"/>
                   </zeroOrMore>
+        
                </group>
             </zeroOrMore>
          </group>
@@ -8559,18 +8571,6 @@ Suggested values include: 1] main (main); 2] sub (subordinate); 3] alt (alternat
          <ref name="tei_att.coordinated.attributes"/>
          <ref name="tei_att.declaring.attributes"/>
          <ref name="tei_att.typed.attributes"/>
-         <optional>
-            <attribute name="coords">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Equivalent to HTML @coords attribute: used to specify the coordinates of each area in the image map</a:documentation>
-               <text/>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute name="shape">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Equivalent to HTML @shape attribute. The shape attribute specifies the shape of an area. The shape attribute is used together with the coords attribute to specify the size, shape, and placement of an area.</a:documentation>
-               <text/>
-            </attribute>
-         </optional>
          <optional>
             <attribute name="attachment">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the method by which this surface is or was connected to the main surface
@@ -8622,18 +8622,6 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <ref name="tei_att.coordinated.attributes"/>
          <ref name="tei_att.typed.attributes"/>
          <ref name="tei_att.written.attributes"/>
-         <optional>
-            <attribute name="coords">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Equivalent to HTML @coords attribute: used to specify the coordinates of each area in the image map</a:documentation>
-               <text/>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute name="shape">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Equivalent to HTML @shape attribute. The shape attribute specifies the shape of an area. The @shape attribute is used together with the @coords attribute to specify the size, shape, and placement of an area.</a:documentation>
-               <text/>
-            </attribute>
-         </optional>
          <optional>
             <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                        name="rotate"
@@ -9052,11 +9040,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number); 4] lineNu
                <ref name="tei_model.global"/>
                <ref name="tei_model.gLike"/>
                <ref name="tei_model.linePart"/>
+               <ref name="tei_model.pPart.editorial"/>
             </choice>
          </zeroOrMore>
-         <ref name="tei_att.typed.attributes"/>
-         <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.coordinated.attributes"/>
+         <ref name="tei_att.global.attributes"/>
+         <ref name="tei_att.typed.attributes"/>
          <ref name="tei_att.written.attributes"/>
          <empty/>
       </element>
@@ -9083,6 +9072,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum (page number); 4] lineNu
          <ref name="tei_att.spanning.attributes"/>
          <ref name="tei_att.placement.attributes"/>
          <ref name="tei_att.global.attributes"/>
+         <optional>
+            <attribute name="hand">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a handNote element describing the hand considered responsible for the content of the element concerned.</a:documentation>
+               <text/>
+            </attribute>
+         </optional>
          <optional>
             <attribute name="function">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the function (for example status, insertion, deletion, transposition) of the metamark.</a:documentation>
