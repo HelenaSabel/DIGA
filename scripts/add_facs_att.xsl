@@ -31,7 +31,7 @@
         <xsl:element name="zone">
             <xsl:variable name="number" select="@title => replace('[^\d]+(\d+)', '$1') => number() => format-number('00')"/>
             <xsl:attribute name="xml:id">
-               <xsl:value-of select="'cal' || $number"/>
+               <xsl:value-of select="'cbl' || $number"/>
                 <!--<xsl:value-of select="@href"/>-->
             </xsl:attribute>
             <xsl:attribute name="type">

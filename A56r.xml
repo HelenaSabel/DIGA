@@ -71,157 +71,244 @@
    <sourceDoc>
       <surface>
          <graphic url="A56r.png"/>
-         <zone xml:id="cal01" type="rect" ulx="204" uly="20" lrx="535" lry="56">
+         <zone xml:id="cal01"
+            type="poly"
+            points="115,15 115,37 165,36 331,31 330,14 147,16">
             <note>Corps du text: colonne a, ligne 1</note>
          </zone>
-         <zone xml:id="cal02" type="poly" points="230,63 230,85 348,91 560,80 562,56 284,59">
+         <zone xml:id="cal02"
+            type="poly"
+            points="123,41 123,55 345,53 345,34 175,37">
             <note>Corps du text: colonne a, ligne 2</note>
          </zone>
-         <zone xml:id="cal03" type="poly" points="208,90 210,114 543,111 540,85">
+         <zone xml:id="cal03"
+            type="poly"
+            points="120,58 120,75 331,69 332,54 256,53">
             <note>Corps du text: colonne a, ligne 3</note>
          </zone>
-         <zone xml:id="cal04" type="poly" points="214,120 214,148 531,137 530,112">
+         <zone xml:id="cal04"
+            type="poly"
+            points="122,76 122,92 328,87 328,70 183,73">
             <note>Corps du text: colonne a, ligne 4</note>
          </zone>
-         <zone xml:id="cal05" type="poly" points="214,151 215,173 533,168 527,138">
+         <zone xml:id="cal05"
+            type="poly"
+            points="124,95 124,112 328,107 327,90 287,89">
             <note>Corps du text: colonne a, ligne 5</note>
          </zone>
-         <zone xml:id="cal06" type="poly" points="210,177 210,205 250,208 550,201 546,171 247,174">
+         <zone xml:id="cal06"
+            type="poly"
+            points="122,111 122,133 172,132 338,127 337,108">
             <note>Corps du text: colonne a, ligne 6</note>
          </zone>
-         <zone xml:id="cal10" type="poly"
-            points="175,213 181,470 220,476 219,329 320,323 583,323 579,290 334,288 328,212">
+         <zone xml:id="cal10"
+            type="poly"
+            points="103,143 104,305 129,304 126,206 361,202 361,183 195,182 194,132 150,132">
             <note>Corps du text: colonne a, ligne 10</note>
          </zone>
-         <zone xml:id="cal14" type="poly" points="220,411 226,442 588,440 595,398">
+         <zone xml:id="cal14"
+            type="poly"
+            points="126,259 125,279 153,282 192,278 335,275 345,281 362,274 364,251 339,256 230,257">
             <note>Corps du text: colonne a, ligne 14</note>
          </zone>
-         <zone xml:id="cal18" type="poly" points="212,521 212,554 589,549 581,521">
+         <zone xml:id="cal18"
+            type="poly"
+            points="118,333 120,350 355,350 355,330 278,329">
             <note>Corps du text: colonne a, ligne 18</note>
          </zone>
-         <zone xml:id="cal22" type="poly" points="213,641 211,675 596,673 599,634 433,642">
+         <zone xml:id="cal22"
+            type="poly"
+            points="121,405 121,431 216,427 373,422 372,402">
             <note>Corps du text: colonne a, ligne 22</note>
          </zone>
-         <zone xml:id="cal26" type="poly"
-            points="211,755 210,792 597,788 590,754 334,754 329,686 274,685 268,754">
+         <zone xml:id="cal26"
+            type="poly"
+            points="123,477 123,497 178,502 270,498 319,499 367,495 366,481 204,479 196,433 163,435 156,476">
             <note>Corps du text: colonne a, ligne 26</note>
          </zone>
-         <zone xml:id="cal30" type="poly" points="213,869 212,907 578,903 573,873">
+         <zone xml:id="cal30"
+            type="poly"
+            points="121,556 122,572 258,571 354,570 353,553">
             <note>Corps du text: colonne a, ligne 30</note>
          </zone>
-         <zone xml:id="cal34" type="poly" points="206,993 208,1021 508,1022 499,991">
+         <zone xml:id="cal34" type="poly" points="119,629 119,647 307,646 306,627">
             <note>Corps du text: colonne a, ligne 34</note>
          </zone>
-         <zone xml:id="cal35" type="poly" points="215,1028 214,1051 509,1055 506,1029 368,1022">
+         <zone xml:id="cal35"
+            type="poly"
+            points="121,653 121,667 311,666 311,650 219,646 152,648">
             <note>Corps du text: colonne a, ligne 35</note>
          </zone>
-         <zone xml:id="cal36" type="poly" points="213,1057 212,1081 559,1080 555,1055">
+         <zone xml:id="cal36"
+            type="poly"
+            points="121,670 121,683 294,684 344,680 343,665">
             <note>Corps du text: colonne a, ligne 36</note>
          </zone>
-         <zone xml:id="cal37" type="poly"
-            points="208,1083 209,1106 414,1112 569,1110 569,1087 388,1087">
+         <zone xml:id="cal37"
+            type="poly"
+            points="121,684 121,702 249,702 349,701 348,684 229,686 185,687">
             <note>Corps du text: colonne a, ligne 37</note>
          </zone>
-         <zone xml:id="cal38" type="poly" points="211,1110 212,1133 484,1135 485,1111">
+         <zone xml:id="cal38"
+            type="poly"
+            points="121,702 122,716 230,720 297,717 297,702 284,702">
             <note>Corps du text: colonne a, ligne 38</note>
          </zone>
-         <zone xml:id="cal39" type="poly"
-            points="205,1132 194,1239 213,1225 217,1167 238,1161 367,1169 555,1163 552,1141 381,1141">
+         <zone xml:id="cal39"
+            type="poly"
+            points="114,718 111,789 124,771 122,747 128,733 152,735 206,736 222,739 339,738 339,722 279,720 229,721 172,720 131,717">
             <note>Corps du text: colonne a, ligne 39</note>
          </zone>
-         <zone xml:id="cal40" type="poly" points="217,1164 214,1196 240,1196 482,1191 487,1169">
+         <zone xml:id="cal40"
+            type="poly"
+            points="123,741 123,752 130,757 141,756 151,755 212,756 297,756 296,741 262,738 168,738 141,741 139,734 130,734">
             <note>Corps du text: colonne a, ligne 40</note>
          </zone>
-         <zone xml:id="cal41" type="poly" points="217,1201 219,1225 393,1229 582,1229 577,1196">
+         <zone xml:id="cal41"
+            type="poly"
+            points="124,762 125,775 233,776 321,776 355,773 353,758 293,757">
             <note>Corps du text: colonne a, ligne 41</note>
          </zone>
-         <zone xml:id="cal42" type="poly" points="208,1225 210,1250 331,1258 467,1253 466,1227">
+         <zone xml:id="cal42"
+            type="poly"
+            points="122,779 122,793 134,794 198,795 245,791 288,793 287,778 264,775">
             <note>Corps du text: colonne a, ligne 42</note>
          </zone>
-         <zone xml:id="cal43" type="poly" points="210,1259 211,1279 555,1285 558,1260">
+         <zone xml:id="cal43"
+            type="poly"
+            points="120,798 119,811 236,813 341,811 340,793">
             <note>Corps du text: colonne a, ligne 43</note>
          </zone>
-         <zone xml:id="cal44" type="poly"
-            points="203,1283 209,1311 229,1426 240,1317 553,1313 551,1288 433,1286 394,1289">
+         <zone xml:id="cal44"
+            type="poly"
+            points="120,815 120,826 128,899 139,859 136,827 217,833 333,827 332,815 276,810 235,815 172,812 131,810">
             <note>Corps du text: colonne a, ligne 44</note>
          </zone>
-         <zone xml:id="cbl04" type="poly" points="631,25 636,146 1023,140 1022,101 748,97 744,19">
-            <note>Corps du texte: colonne b, ligne 4</note>
-         </zone>
-         <zone xml:id="cbl08" type="poly" points="642,223 645,256 1022,250 1016,221">
-            <note>Corps du texte: colonne b, ligne 8</note>
-         </zone>
-         <zone xml:id="cbl12" type="poly" points="638,345 642,377 803,371 804,345">
-            <note>Corps du texte: colonne b, ligne 12</note>
-         </zone>
-         <zone xml:id="cbl18" type="poly"
-            points="623,391 608,679 641,656 673,557 1034,546 1036,506 748,507 746,382">
-            <note>Corps du texte: colonne b, ligne 18</note>
-         </zone>
-         <zone xml:id="cbl22" type="poly" points="643,637 645,667 1014,663 1011,632">
-            <note>Corps du texte: colonne b, ligne 22</note>
-         </zone>
-         <zone xml:id="cbl26" type="poly" points="641,753 641,793 1016,789 1015,754">
-            <note>Corps du texte: colonne b, ligne 26</note>
-         </zone>
-         <zone xml:id="cbl30" type="poly" points="641,871 641,904 1003,901 1002,870 736,872">
-            <note>Corps du texte: colonne b, ligne 30</note>
-         </zone>
-         <zone xml:id="cbl34" type="poly" points="641,996 645,1029 1016,1021 1014,986">
-            <note>Corps du texte: colonne b, ligne 34</note>
-         </zone>
-         <zone xml:id="cbl38" type="poly" points="638,1109 639,1136 832,1136 831,1110">
-            <note>Corps du texte: colonne b, ligne 38</note>
-         </zone>
-         <zone xml:id="cbl39" type="poly" points="641,1138 638,1177 656,1167 911,1164 908,1138">
-            <note>Corps du texte: colonne b, ligne 39</note>
-         </zone>
-         <zone xml:id="cbl40" type="poly"
-            points="647,1173 641,1192 883,1193 882,1169 745,1168 664,1168">
-            <note>Corps du texte: colonne b, ligne 40</note>
-         </zone>
-         <zone xml:id="cbl41" type="poly" points="637,1201 638,1229 903,1221 898,1191 789,1193">
-            <note>Corps du texte: colonne b, ligne 41</note>
-         </zone>
-         <zone xml:id="cbl42" type="poly" points="643,1229 643,1255 905,1250 905,1228">
-            <note>Corps du texte: colonne b, ligne 42</note>
-         </zone>
-         <zone xml:id="cbl43" type="poly" points="632,1253 634,1291 678,1286 876,1288 875,1250">
-            <note>Corps du texte: colonne b, ligne 43</note>
-         </zone>
-         <zone xml:id="cbl44" type="poly"
-            points="639,1293 627,1329 648,1317 921,1313 918,1285 655,1284">
-            <note>Corps du texte: colonne b, ligne 44</note>
-         </zone>
-         <zone xml:id="cbl45" type="poly" points="641,1323 639,1342 871,1341 865,1314 745,1313">
-            <note>Corps du texte: colonne b, ligne 45</note>
-         </zone>
-         <zone xml:id="cbl46" type="poly" points="639,1347 641,1374 910,1372 905,1341">
-            <note>Corps du texte: colonne b, ligne 46</note>
-         </zone>
-         <zone xml:id="attente_a10" type="rect" ulx="298" uly="303" lrx="321" lry="325">
-            <note>Lettre d’attente, c. a, l. 10</note>
-         </zone>
-         <zone xml:id="marg1" type="rect" ulx="156" uly="1027" lrx="202" lry="1054">
-            <note>Note marginale : contenu d'une correction</note>
-         </zone>
-         <zone xml:id="attente_a39" type="rect" ulx="215" uly="1147" lrx="228" lry="1161">
-            <note>Lettre d’attente, c. a, l. 39</note>
-         </zone>
-         <zone xml:id="marg2" type="rect" ulx="76" uly="1271" lrx="138" lry="1322">
+         <zone xml:id="marg2"
+            type="rect"
+            ulx="41"
+            uly="804"
+            lrx="71"
+            lry="837">
             <note>Note marginale</note>
          </zone>
-         <zone xml:id="attente_a44" type="rect" ulx="222" uly="1291" lrx="232" lry="1304">
-            <note>Lettre d’attente, c. a, l. 44</note>
-         </zone>
-         <zone xml:id="marg3" type="rect" ulx="1050" uly="525" lrx="1077" lry="543">
+         <zone xml:id="marg1"
+            type="rect"
+            ulx="87"
+            uly="647"
+            lrx="113"
+            lry="666">
             <note>Note marginale : contenu d'une correction</note>
          </zone>
-         <zone xml:id="marg4" type="rect" ulx="991" uly="1243" lrx="1034" lry="1277">
+         
+         
+         <zone xml:id="cbl04"
+            type="poly"
+            points="382,13 384,86 424,98 456,88 639,84 638,68 462,65 455,11">
+            <note>Corps du texte: colonne b, ligne 4</note>
+         </zone>
+         <zone xml:id="cbl08" type="poly" points="393,140 396,163 634,161 630,139">
+            <note>Corps du texte: colonne b, ligne 8</note>
+         </zone>
+         <zone xml:id="cbl12"
+            type="poly"
+            points="393,218 393,239 464,239 498,234 496,219 413,219">
+            <note>Corps du texte: colonne b, ligne 12</note>
+         </zone>
+         <zone xml:id="cbl18"
+            type="poly"
+            points="382,249 384,396 369,429 393,414 402,399 414,351 645,349 644,324 465,324 462,240">
+            <note>Corps du texte: colonne b, ligne 18</note>
+         </zone>
+         <zone xml:id="cbl22" type="poly" points="393,405 395,424 631,422 630,401">
+            <note>Corps du texte: colonne b, ligne 22</note>
+         </zone>
+         <zone xml:id="cbl26"
+            type="poly"
+            points="389,476 390,498 502,498 629,495 626,480 526,476">
+            <note>Corps du texte: colonne b, ligne 26</note>
+         </zone>
+         <zone xml:id="cbl30" type="poly" points="392,552 390,573 621,571 620,552">
+            <note>Corps du texte: colonne b, ligne 30</note>
+         </zone>
+         <zone xml:id="cbl34" type="poly" points="393,627 393,648 633,646 630,624">
+            <note>Corps du texte: colonne b, ligne 34</note>
+         </zone>
+         <zone xml:id="cbl38"
+            type="poly"
+            points="391,700 392,718 469,720 517,713 514,700 453,701">
+            <note>Corps du texte: colonne b, ligne 38</note>
+         </zone>
+         <zone xml:id="cbl39"
+            type="poly"
+            points="389,718 388,745 401,739 470,735 564,736 564,720">
+            <note>Corps du texte: colonne b, ligne 39</note>
+         </zone>
+         <zone xml:id="cbl40"
+            type="poly"
+            points="391,745 391,756 549,754 545,739 459,739 409,738">
+            <note>Corps du texte: colonne b, ligne 40</note>
+         </zone>
+         <zone xml:id="cbl41"
+            type="poly"
+            points="390,759 391,776 560,774 558,756 487,755">
+            <note>Corps du texte: colonne b, ligne 41</note>
+         </zone>
+         <zone xml:id="cbl42" type="poly" points="392,777 393,792 564,790 563,776">
+            <note>Corps du texte: colonne b, ligne 42</note>
+         </zone>
+         <zone xml:id="cbl43"
+            type="poly"
+            points="387,792 388,814 412,814 551,812 549,794 480,793">
+            <note>Corps du texte: colonne b, ligne 43</note>
+         </zone>
+         <zone xml:id="cbl44"
+            type="poly"
+            points="391,814 384,840 399,834 409,833 569,829 568,811">
+            <note>Corps du texte: colonne b, ligne 44</note>
+         </zone>
+         <zone xml:id="cbl45"
+            type="poly"
+            points="392,837 391,852 537,848 536,833 460,832">
+            <note>Corps du texte: colonne b, ligne 45</note>
+         </zone>
+         <zone xml:id="cbl46"
+            type="poly"
+            points="388,853 388,869 449,870 493,869 561,865 560,850 463,849">
+            <note>Corps du texte: colonne b, ligne 46</note>
+         </zone>
+         
+         <zone xml:id="attente1"
+            type="rect"
+            ulx="179"
+            uly="188"
+            lrx="190"
+            lry="206">
+            <note>Lettre d’attente, c. a, l. 10</note>
+         </zone>
+         <zone xml:id="attente2"
+            type="rect"
+            ulx="126"
+            uly="724"
+            lrx="132"
+            lry="733">
+            <note>Lettre d’attente, c. a, l. 39</note>
+         </zone>
+         <zone xml:id="marg3"
+            type="rect"
+            ulx="654"
+            uly="331"
+            lrx="669"
+            lry="341">
             <note>Note marginale : contenu d'une correction</note>
          </zone>
-         <zone xml:id="attente_b30" type="rect" ulx="932" uly="880" lrx="956" lry="900">
-            <note>Lettre d’attente, c. b, l. 30</note>
+         <zone xml:id="marg4"
+            type="rect"
+            ulx="619"
+            uly="791"
+            lrx="639"
+            lry="808">
+            <note>Note marginale : contenu d'une correction</note>
          </zone>
       </surface>
       <surface>
