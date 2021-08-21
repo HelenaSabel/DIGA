@@ -160,12 +160,12 @@
     <xsl:template match="hi">
         <xsl:choose>
             <xsl:when test="@rend eq 'lettreAttente'">
-                <span data-id="{substring(@hand, 2)}" class="cod attente">
+                <span data-id="{substring(@facs, 2)}" class="cod attente">
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>
             <xsl:otherwise>
-                <span data-id="{substring(@hand, 2)}" class="{@rend} {@style} black"><xsl:apply-templates/></span>
+                <span data-hand="{substring(@hand, 2)}" class="{@rend} {@style} black"><xsl:apply-templates/></span>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
