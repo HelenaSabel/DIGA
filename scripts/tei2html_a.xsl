@@ -206,6 +206,9 @@
             <xsl:apply-templates/>
         </ins>
     </xsl:template>
+    <xsl:template match="gap[@reason eq 'unfinished']">
+        <xsl:text> </xsl:text>
+    </xsl:template>
     <xsl:template match="zone[not(@type eq 'column')]">
         <area href="#" shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}"
             data-id="{@xml:id}">

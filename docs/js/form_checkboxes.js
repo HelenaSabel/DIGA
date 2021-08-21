@@ -88,6 +88,20 @@ function changeCriteria() {
         
         break;
         
+        case 'correcteur':
+        
+        if (this.checked == true) {
+            
+            for (var i = 0; i < handcols.length; i++) {
+                handcols[i].style.color = 'darkolivegreen';
+            }
+        } else { for (var i = 0; i < handcols.length; i++) {
+                handcols[i].style.color = 'initial';
+            }
+        }
+        
+        break;
+        
         case 'tardive':
         
         if (this.checked == true) {

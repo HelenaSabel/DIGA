@@ -253,7 +253,7 @@
             <line n="08"/>
             <line n="09"/>
             <line n="10" facs="#cal10">
-               <hi rend="lettreAttente" facs="#attente_a10">p</hi>
+               <hi rend="lettreAttente" facs="#attente1">p</hi>
                <hi style="red" rend="initial" hand="#rubricateur">P</hi><seg hand="#α">oꝛ non ſaberen qual
                ben</seg></line>
             <line n="11"/>
@@ -306,7 +306,7 @@
             <line n="38" facs="#cal38">ıuro lles eu e dıgo lles aſſı</line>
             <add hand="#tardive" place="left" facs="#marg2">Nᵗᵃ</add>
             <line n="39" facs="#cal39">
-               <hi rend="lettreAttente" facs="#attente_a39">q</hi>
+               <hi rend="lettreAttente" facs="#attente2">q</hi>
                <hi style="blue" rend="initial" hand="#rubricateur">Q</hi><seg hand="#α">ue ꝺeſeıo ben poꝛ que <choice>
                   <expan>no<ex>n</ex>
                   </expan>
@@ -346,7 +346,6 @@
                   <orig>mentreu</orig>
                </choice> feʒer as gentes entenꝺer.</line>
             <line n="44" facs="#cal44">
-               <hi rend="lettreAttente" facs="#attente_a44" hand="#α">q</hi>
                <hi style="blue" rend="initial" hand="#rubricateur">Q</hi><seg hand="#α">ue ꝺeſeıo ben poꝛ que <choice>
                   <expan>no<ex>n</ex>
                   </expan>
@@ -404,9 +403,9 @@
                   <add hand="#correcteur" place="inline">t</add>
                </subst>en nen me quer ualer. <choice>
                   <orig>
-                     <hi rend="lettreAttente" facs="#attente_b30">N</hi>ona</orig>
+                     <hi rend="lettreAttente" facs="#attente3">N</hi><gap reason="unfinished"></gap>ona</orig>
                   <reg>
-                     <hi rend="lettreAttente" facs="#attente_b30">N</hi>on a</reg>
+                     <hi rend="lettreAttente" facs="#attente3">N</hi><gap reason="unfinished"></gap>on a</reg>
                </choice>
             </line>
             <line n="31"/>
