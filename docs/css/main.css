@@ -79,9 +79,7 @@ ins{
 visibility:hidden;
 }
 
-.ca {
-    margin-right:4%;
-}
+
 
 #edition ol {
     list-style-type: none;
@@ -98,6 +96,12 @@ visibility:hidden;
     margin-right:2%;
     width:100%;
 }
+
+.ca, .cb {
+    margin-right:4%;
+    width: 45%;
+}
+
 
 .ca li::before{
     content: counter(numbers) '   ';
