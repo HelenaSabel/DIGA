@@ -6,3 +6,7 @@ img {
 .mark {
     margin-left: -0.5em;
 }
+
+ins {
+     font-style: italic;
+}
