@@ -121,7 +121,7 @@ function changeCriteria() {
         if (this.checked == true) {
             
             for (var i = 0; i < rubricateurs.length; i++) {
-                reviseurs[i].classList.remove("black");
+                rubricateurs[i].classList.remove("black");
             }
         } else { for (var i = 0; i < rubricateurs.length; i++) {
                 rubricateurs[i].classList.add("black");
