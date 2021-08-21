@@ -131,7 +131,7 @@
         <div class="left">
             <xsl:apply-templates select="add[@place eq 'left']"/>
         </div>
-        <div class="{@subtype}">
+        <div class="c{@subtype}">
             <ol class="lines">
                 <xsl:apply-templates select="line"/>
             </ol>

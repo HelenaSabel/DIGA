@@ -123,7 +123,7 @@
         </xsl:result-document>
     </xsl:template>
     <xsl:template match="zone[@type eq 'column']">
-        <div class="{@subtype}">
+        <div class="c{@subtype}">
             <ol class="lines">
                 <xsl:apply-templates select="line"/>
             </ol>
@@ -179,7 +179,7 @@
         </ins>
     </xsl:template>
     <xsl:template match="catchwords">
-        <span class="cod" data-id="{substring(@facs,2)}">
+        <span data-hand="{substring(@hand, 2)}" class="cod" data-id="{substring(@facs,2)}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>

@@ -718,8 +718,8 @@
                      <reg>Oymays</reg>
                   </choice> faʒeꝺe</seg>
             </line>
-            <witDetail wit="#B">
-               <catchwords facs="#reclame">Mha madre</catchwords>
+            <witDetail wit="#B" >
+               <catchwords facs="#reclame" hand="#b">Mha madre</catchwords>
             </witDetail>
          </zone>
       </surface>

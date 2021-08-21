@@ -100,7 +100,7 @@ visibility:hidden;
     width:100%;
 }
 
-.a li::before{
+.ca li::before{
     content: counter(numbers) '   ';
     font-size: 80%;
     color: #838383;
@@ -112,7 +112,7 @@ visibility:hidden;
     padding:0;
 
 }
-.b li::after{
+.cb li::after{
     content: counter(numbers);
     font-size: 80%;
     color: #838383;
