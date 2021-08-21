@@ -58,13 +58,13 @@
                                             >magenta</span>)</label>
                                     <input type="checkbox" value="correcteur" id="correcteur"/>
                                     <label for="correcteur">Visualiser main correcteur (<span
-                                        class="correcteur">olive</span>)</label>
+                                            class="correcteur">olive</span>)</label>
                                     <input type="checkbox" value="reviseur" id="reviseur"/>
                                     <label for="reviseur">Visualiser main réviseur (<span
-                                        class="reviseur">turquoise</span>)</label>
+                                            class="reviseur">turquoise</span>)</label>
                                     <input type="checkbox" value="tardive" id="tardive"/>
                                     <label for="tardive">Visualiser main tardive (<span
-                                        class="tardive">coral</span>)</label>
+                                            class="tardive">coral</span>)</label>
                                 </fieldset>
 
                             </form>
@@ -74,7 +74,10 @@
                             <div id="boundList">
                                 <xsl:apply-templates select="//zone[@type eq 'column']"/>
                             </div>
-                            <div><img src="{descendant::graphic/@url}" usemap="#A56r" alt="f. 56r" style="width:783px;height:1001px"/></div>
+                            <div>
+                                <img src="{descendant::graphic/@url}" usemap="#A56r" alt="f. 56r"
+                                    style="width:783px;height:1001px"/>
+                            </div>
                         </div>
 
                         <map name="A56r">
@@ -145,7 +148,7 @@
             <xsl:if test="@facs">
                 <xsl:attribute name="data-id" select="substring(@facs, 2)"/>
             </xsl:if>
-                <xsl:attribute name="data-hand">α</xsl:attribute>           
+            <xsl:attribute name="data-hand">α</xsl:attribute>
             <xsl:if test="string-length(.) lt 1">
                 <xsl:text>&#8199;</xsl:text>
             </xsl:if>
@@ -160,21 +163,31 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+    <xsl:template match="hi">
+        <xsl:choose>
+            <xsl:when test="@rend eq 'lettreAttente'">
+                <span data-id="{substring(@hand, 2)}" class="cod"><xsl:value-of select="."/></span>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
     <xsl:template match="orig | reg | abbr | expan | ex">
         <span class="{name()}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
     <xsl:template match="add[parent::subst]">
-        <span class="corr">⸢</span><ins data-id="{substring(@facs, 2)}">
+        <span class="corr">⸢</span>
+        <ins data-id="{substring(@facs, 2)}">
             <xsl:if test="@hand">
                 <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
             </xsl:if>
             <xsl:apply-templates/>
-        </ins><span class="corr">⸣</span>
+        </ins>
+        <span class="corr">⸣</span>
     </xsl:template>
     <xsl:template match="add[not(parent::subst)]">
-        <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}" style="display:block;position:relative;top:{count(preceding-sibling::line)}em">
+        <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}"
+            style="display:block;position:relative;top:{count(preceding-sibling::line)}em">
             <xsl:if test="@hand">
                 <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
             </xsl:if>
