@@ -1,3 +1,11 @@
 img {
-    width:783px;height:1001px
+    width: 783px;
+    height: 1001px
 }
+
+.attente {
+    font-size: smaller;
+    margin-left: -0.5em;
+
+}
+
