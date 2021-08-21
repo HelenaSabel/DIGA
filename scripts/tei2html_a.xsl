@@ -63,7 +63,8 @@
                                     <label for="reviseur">Visualiser main réviseur (<span
                                             class="reviseur">turquoise</span>)</label>
                                     <input type="checkbox" value="rubricateur" id="rubricateur"/>
-                                    <label for="rubricateur">Visualiser main rubricateur (couleur de l’initiale)</label>
+                                    <label for="rubricateur">Visualiser main rubricateur (couleur de
+                                        l’initiale)</label>
                                     <input type="checkbox" value="tardive" id="tardive"/>
                                     <label for="tardive">Visualiser main tardive (<span
                                             class="tardive">coral</span>)</label>
@@ -150,7 +151,9 @@
             <xsl:if test="@facs">
                 <xsl:attribute name="data-id" select="substring(@facs, 2)"/>
             </xsl:if>
-            <xsl:attribute name="data-hand">α</xsl:attribute>
+            <xsl:if test="not(subst | hi[@rend eq 'rubricateur'])">
+                <xsl:attribute name="data-hand">α</xsl:attribute>
+            </xsl:if>
             <xsl:if test="string-length(.) lt 1">
                 <xsl:text>&#8199;</xsl:text>
             </xsl:if>
@@ -161,16 +164,26 @@
         <xsl:choose>
             <xsl:when test="@rend eq 'lettreAttente'">
                 <span data-id="{substring(@facs, 2)}" class="cod attente">
+                    <xsl:if test="@hand">
+                        <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
+                    </xsl:if>
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>
             <xsl:otherwise>
-                <span data-hand="{substring(@hand, 2)}" class="{@rend} {@style} black"><xsl:apply-templates/></span>
+                <span data-hand="{substring(@hand, 2)}" class="{@rend} {@style} black">
+                    <xsl:apply-templates/>
+                </span>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     <xsl:template match="orig | reg | abbr | expan | ex">
         <span class="{name()}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    <xsl:template match="seg">
+        <span data-id="{substring(@facs, 2)}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
