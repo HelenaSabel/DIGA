@@ -73,7 +73,7 @@
                             <div id="boundList">
                                 <xsl:apply-templates select="//zone[@type eq 'column']"/>
                             </div>
-                            <img src="{descendant::graphic/@url}" usemap="#A56r" alt="f. 56r" style="width:783px;height:1001"/>
+                            <div><img src="{descendant::graphic/@url}" usemap="#A56r" alt="f. 56r" style="width:783px;height:1001px"/></div>
                         </div>
 
                         <map name="A56r">
