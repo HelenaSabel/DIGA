@@ -297,7 +297,7 @@
                <gap reason="illegible" extent="1" unit="char"/><subst>
                   <del rend="gratte"><gap reason="illegible"/></del>
                   <add hand="#correcteur" place="inline">oꝛ nūca ıa ren ſaberen</add>
-               </subst> per mı</line>
+               </subst> <seg hand="#α">per mı</seg></line>
             <line n="36" facs="#cal36">os que me ueen <choice>
                   <reg>poꝛ en</reg>
                   <orig>poꝛen</orig>
@@ -401,12 +401,12 @@
             <line n="30" facs="#cbl30"><subst>
                   <del rend="gratte"><gap reason="illegible"/></del>
                   <add hand="#correcteur" place="inline">t</add>
-               </subst>en nen me quer ualer. <choice>
+            </subst><seg hand="#α">en nen me quer ualer. <choice>
                   <orig>
                      <hi rend="lettreAttente" facs="#attente3">N</hi><gap reason="unfinished"></gap>ona</orig>
                   <reg>
                      <hi rend="lettreAttente" facs="#attente3">N</hi><gap reason="unfinished"></gap>on a</reg>
-               </choice>
+               </choice></seg>
             </line>
             <line n="31"/>
             <line n="32"/>
