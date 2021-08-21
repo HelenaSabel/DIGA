@@ -376,7 +376,7 @@
             <line n="22">
                <metamark facs="#num1" hand="#colocci">728</metamark>
             </line>
-            <line n="23" facs="#cal23">O meu amigo <choice>
+            <line n="23" facs="#cal23"><hi rend="initial">O</hi> meu amigo <choice>
                   <orig>nona</orig>
                   <reg>non a</reg>
                </choice>
@@ -409,7 +409,7 @@
                         <abbr>e q<am>̄</am> lh eu</abbr>
                         <expan>e q<ex>ue</ex> lh eu</expan>
                      </choice></reg>
-               </choice> faca mal</line>
+               </choice> faca mal<metamark facs="#metamark">|</metamark></line>
             <line n="28">
                <metamark facs="#ang3">꜒</metamark><seg facs="#cal28">Que faria <choice>
                      <orig>ſelheu</orig>
@@ -583,8 +583,8 @@
             </line>
             <line n="17"/>
             <line n="18" facs="#cbl18"><choice>
-                  <orig>Falſſamıgo</orig>
-                  <reg>Falſſ amıgo</reg>
+                  <orig><hi rend="initial">F</hi>alſſamıgo</orig>
+                  <reg><hi rend="initial">F</hi>alſſ amıgo</reg>
                </choice> per boa fe</line>
             <line n="19" facs="#cbl19"><choice>
                   <orig>meu</orig>
@@ -718,7 +718,7 @@
                      <reg>Oymays</reg>
                   </choice> faʒeꝺe</seg>
             </line>
-            <witDetail wit="#B" >
+            <witDetail wit="#B">
                <catchwords facs="#reclame" hand="#colocci">Mha madre</catchwords>
             </witDetail>
          </zone>

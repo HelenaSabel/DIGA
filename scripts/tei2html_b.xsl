@@ -135,6 +135,9 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    <xsl:template match="hi">
+        <span class="{@rend}"><xsl:apply-templates/></span>
+    </xsl:template>
     <xsl:template match="line">
         <li>
             <xsl:if test="@facs">
