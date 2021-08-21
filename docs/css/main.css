@@ -99,7 +99,7 @@ visibility:hidden;
 
 .ca, .cb {
     margin-right:4%;
-    width: 45%;
+    /*width: 40%;*/
 }
 
 
@@ -128,9 +128,6 @@ visibility:hidden;
 }
 
 
-.lines {
-    width:100%;
-}
 
 li.hasRight{
 display:flex;
