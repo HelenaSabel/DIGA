@@ -183,7 +183,7 @@
         </span>
     </xsl:template>
     <xsl:template match="seg">
-        <span data-id="{substring(@facs, 2)}">
+        <span data-hand="{substring(@hand, 2)}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
