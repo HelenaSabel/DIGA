@@ -17,6 +17,7 @@ function changeCriteria() {
     var handcols = document.querySelectorAll("[data-hand='colocci'], [data-hand='correcteur']");
     var tardives = document.querySelectorAll("[data-hand='tardive']");
     var reviseurs = document.querySelectorAll("[data-hand='reviseur']");
+    var rubricateurs = document.querySelectorAll("[data-hand='rubricateur']");
     
     switch (id) {
         case 'corr':
@@ -110,6 +111,20 @@ function changeCriteria() {
             }
         } else { for (var i = 0; i < reviseurs.length; i++) {
                 reviseurs[i].style.color = 'initial';
+            }
+        }
+        
+        break;
+        
+        case 'rubricateur':
+        
+        if (this.checked == true) {
+            
+            for (var i = 0; i < rubricateurs.length; i++) {
+                reviseurs[i].classList.remove("black");
+            }
+        } else { for (var i = 0; i < rubricateurs.length; i++) {
+                rubricateurs[i].classList.add("black");
             }
         }
         

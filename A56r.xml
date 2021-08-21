@@ -228,7 +228,7 @@
       <surface>
          <zone type="column" hand="#α" subtype="a">
             <line n="01" facs="#cal01">
-               <hi style="blue" rend="decorated" hand="#rubricateur">E</hi>n guıſa ſoube mıa coıta
+               <hi style="blue" rend="initial" hand="#rubricateur">E</hi>n guıſa ſoube mıa coıta
                dıʒer</line>
             <line n="02" facs="#cal02">
                <gap reason="illegible" extent="1" unit="char"/>lgun ſaboꝛ pꝛenꝺ ome quanꝺo
@@ -247,14 +247,14 @@
                   <orig>ꝺeſenton</orig>
                </choice> fıʒ</line>
             <line n="06" facs="#cal06">
-               <hi style="blue" rend="decorated" hand="#rubricateur">E</hi>n guıſa ſoube mıa coıta
+               <hi style="blue" rend="initial" hand="#rubricateur">E</hi>n guıſa ſoube mıa coıta
                dıʒer.</line>
             <line n="07"/>
             <line n="08"/>
             <line n="09"/>
             <line n="10" facs="#cal10">
                <hi rend="lettreAttente" facs="#attente_a10">p</hi>
-               <hi style="red" rend="decorated" hand="#rubricateur">P</hi>oꝛ non ſaberen qual
+               <hi style="red" rend="initial" hand="#rubricateur">P</hi>oꝛ non ſaberen qual
                ben</line>
             <line n="11"/>
             <line n="12"/>
@@ -282,7 +282,7 @@
             <line n="23"/>
             <line n="24"/>
             <line n="25"/>
-            <line n="26" facs="#cal26">dıreı. <hi style="blue" rend="decorated" hand="#rubricateur"
+            <line n="26" facs="#cal26">dıreı. <hi style="blue" rend="initial" hand="#rubricateur"
                   >Q</hi>ue ꝺeſeıo ben poꝛ que</line>
             <line n="27"/>
             <line n="28"/>
@@ -307,13 +307,13 @@
             <add hand="#tardive" place="left" facs="#marg2">N<hi rend="sup">ta</hi></add>
             <line n="39" facs="#cal39">
                <hi rend="lettreAttente" facs="#attente_a39">q</hi>
-               <hi style="blue" rend="decorated" hand="#rubricateur">Q</hi>ue ꝺeſeıo ben poꝛ que <choice>
+               <hi style="blue" rend="initial" hand="#rubricateur">Q</hi>ue ꝺeſeıo ben poꝛ que <choice>
                   <expan>no<ex>n</ex>
                   </expan>
                   <abbr>nō</abbr>
                </choice> ꝺou ren.</line>
             <line n="40" facs="#cal40">
-               <hi style="red" rend="decorated" hand="#rubricateur">E</hi> poꝛ eſto non poꝺeran
+               <hi style="red" rend="initial" hand="#rubricateur">E</hi> poꝛ eſto non poꝺeran
                ſaber</line>
             <line n="41" facs="#cal41">nunca meu mal per <choice>
                   <abbr>mı̄</abbr>
@@ -347,7 +347,7 @@
                </choice> feʒer as gentes entenꝺer.</line>
             <line n="44" facs="#cal44">
                <hi rend="lettreAttente" facs="#attente_a44">q</hi>
-               <hi style="blue" rend="decorated" hand="#rubricateur">Q</hi>ue ꝺeſeıo ben poꝛ que <choice>
+               <hi style="blue" rend="initial" hand="#rubricateur">Q</hi>ue ꝺeſeıo ben poꝛ que <choice>
                   <expan>no<ex>n</ex>
                   </expan>
                   <abbr>nō</abbr>
@@ -358,7 +358,7 @@
             <line n="02"/>
             <line n="03"/>
             <line n="04" facs="#cbl04">
-               <hi style="blue" rend="decorated" hand="#rubricateur">E</hi> ſabe ꝺeus que muı́to
+               <hi style="blue" rend="initial" hand="#rubricateur">E</hi> ſabe ꝺeus que muı́to
                mal</line>
             <line n="05"/>
             <line n="06"/>
@@ -377,7 +377,7 @@
             <line n="16"/>
             <line n="17"/>
             <line n="18" facs="#cbl18">
-               <hi style="red" rend="decorated" hand="#rubricateur">A</hi> ꝺona que eu <subst>
+               <hi style="red" rend="initial" hand="#rubricateur">A</hi> ꝺona que eu <subst>
                   <del rend="gratte"><gap reason="illegible"/></del>
                   <add hand="#correcteur" place="inline">uı ſempꝛe poꝛ</add>
                </subst></line>
@@ -427,7 +427,7 @@
                   <reg>ꝺ eu</reg>
                </choice> ueıa pꝛaʒer.</line>
             <line n="39" facs="#cbl39">
-               <hi style="blue" rend="decorated" hand="#rubricateur">A</hi> que me faʒ uıuer en
+               <hi style="blue" rend="initial" hand="#rubricateur">A</hi> que me faʒ uıuer en
                tal</line>
             <line n="40" facs="#cbl40">affan e ſoffrer tanto mal</line>
             <line n="41" facs="#cbl41">que moꝛrereı ſe me <choice>
@@ -439,9 +439,9 @@
             <line n="43" facs="#cbl43">
                <choice>
                   <orig>
-                     <hi style="red" rend="decorated" hand="#rubricateur">N</hi>ona</orig>
+                     <hi style="red" rend="initial" hand="#rubricateur">N</hi>ona</orig>
                   <reg>
-                     <hi style="red" rend="decorated" hand="#rubricateur">N</hi>on a</reg>
+                     <hi style="red" rend="initial" hand="#rubricateur">N</hi>on a</reg>
                </choice> ueg e <choice>
                   <expan>no<ex>n</ex>
                   </expan>
@@ -457,7 +457,7 @@
                </subst></line>
             <add hand="#reviseur" place="right" facs="marg4">˝al</add>
             <line n="44" facs="#cbl44">
-               <hi style="blue" rend="decorated" hand="#rubricateur">A</hi> que eu quero muı gran
+               <hi style="blue" rend="initial" hand="#rubricateur">A</hi> que eu quero muı gran
                ben</line>
             <line n="45" facs="#cbl45">e que <choice>
                   <reg>mı aſſı</reg>

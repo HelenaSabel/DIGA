@@ -18,15 +18,15 @@
                <fieldset><input type="radio" id="reg" value="reg" name="unite"/><label for="reg">Union / séparation des éléments selon les
                      unités lexicales</label><input checked="checked" type="radio" value="orig" id="orig" name="unite"/><label for="orig">Disposition originale</label></fieldset>
                <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="corr" id="corr" checked="checked"/><label for="corr">Visualiser corrections</label><input type="checkbox" value="marginalia" id="marginalia" checked="checked"/><label for="marginalia">Visualiser annotations</label></fieldset>
-               <fieldset><input type="checkbox" value="b" id="α"/><label for="α">Visualiser copiste <em>α</em> (<span class="α">magenta</span>)</label><input type="checkbox" value="correcteur" id="correcteur"/><label for="correcteur">Visualiser main correcteur (<span class="correcteur">olive</span>)</label><input type="checkbox" value="reviseur" id="reviseur"/><label for="reviseur">Visualiser main réviseur (<span class="reviseur">turquoise</span>)</label><input type="checkbox" value="tardive" id="tardive"/><label for="tardive">Visualiser main tardive (<span class="tardive">coral</span>)</label></fieldset>
+               <fieldset><input type="checkbox" value="b" id="α"/><label for="α">Visualiser copiste <em>α</em> (<span class="α">magenta</span>)</label><input type="checkbox" value="correcteur" id="correcteur"/><label for="correcteur">Visualiser main correcteur (<span class="correcteur">olive</span>)</label><input type="checkbox" value="reviseur" id="reviseur"/><label for="reviseur">Visualiser main réviseur (<span class="reviseur">turquoise</span>)</label><input type="checkbox" value="rubricateur" id="rubricateur"/><label for="rubricateur">Visualiser main rubricateur (couleur de l’initiale)</label><input type="checkbox" value="tardive" id="tardive"/><label for="tardive">Visualiser main tardive (<span class="tardive">coral</span>)</label></fieldset>
             </form><button id="refresh">Réinitialiser</button></div>
          <div id="edition">
             <div id="boundList">
-               <div class="left"><ins class="left marginalia" data-id="marg1" style="display:block;position:relative;top:34em" data-hand="reviseur">˝ɼen</ins><ins class="left marginalia" data-id="marg2" style="display:block;position:relative;top:38em" data-hand="tardive">Nta</ins></div>
+               <div class="left"><ins class="left marginalia" data-id="marg1" style="display:block;position:relative;top:34em" data-hand="reviseur">˝ɼen</ins><ins class="left marginalia" data-id="marg2" style="display:block;position:relative;top:38em" data-hand="tardive">N<span data-id="" class="sup  black">ta</span></ins></div>
                <div class="ca">
                   <ol class="lines">
                      <li data-id="cal01" data-hand="α">
-                        En guıſa ſoube mıa coıta
+                        <span data-id="rubricateur" class="initial blue black">E</span>n guıſa ſoube mıa coıta
                         dıʒer</li>
                      <li data-id="cal02" data-hand="α">
                         lgun ſaboꝛ pꝛenꝺ ome quanꝺo
@@ -45,14 +45,14 @@
                         <span class="orig">ꝺeſenton</span>
                          fıʒ</li>
                      <li data-id="cal06" data-hand="α">
-                        En guıſa ſoube mıa coıta
+                        <span data-id="rubricateur" class="initial blue black">E</span>n guıſa ſoube mıa coıta
                         dıʒer.</li>
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
                      <li data-id="cal10" data-hand="α">
-                        p
-                        Poꝛ non ſaberen qual
+                        <span data-id="" class="cod attente">p</span>
+                        <span data-id="rubricateur" class="initial red black">P</span>oꝛ non ſaberen qual
                         ben</li>
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
@@ -80,7 +80,7 @@
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
-                     <li data-id="cal26" data-hand="α">dıreı. Que ꝺeſeıo ben poꝛ que</li>
+                     <li data-id="cal26" data-hand="α">dıreı. <span data-id="rubricateur" class="initial blue black">Q</span>ue ꝺeſeıo ben poꝛ que</li>
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
@@ -101,14 +101,14 @@
                      <li data-id="cal37" data-hand="α">ꝺe que me ueen en gran coıt anꝺar.</li>
                      <li data-id="cal38" data-hand="α">ıuro lles eu e dıgo lles aſſı</li>
                      <li data-id="cal39" data-hand="α">
-                        q
-                        Que ꝺeſeıo ben poꝛ que 
+                        <span data-id="" class="cod attente">q</span>
+                        <span data-id="rubricateur" class="initial blue black">Q</span>ue ꝺeſeıo ben poꝛ que 
                         <span class="expan">no<span class="ex">n</span>
                            </span>
                         <span class="abbr">nō</span>
                          ꝺou ren.</li>
                      <li data-id="cal40" data-hand="α">
-                        E poꝛ eſto non poꝺeran
+                        <span data-id="rubricateur" class="initial red black">E</span> poꝛ eſto non poꝺeran
                         ſaber</li>
                      <li data-id="cal41" data-hand="α">nunca meu mal per 
                         <span class="abbr">mı̄</span>
@@ -141,8 +141,8 @@
                         <span class="orig">mentreu</span>
                          feʒer as gentes entenꝺer.</li>
                      <li data-id="cal44" data-hand="α">
-                        q
-                        Que ꝺeſeıo ben poꝛ que 
+                        <span data-id="" class="cod attente">q</span>
+                        <span data-id="rubricateur" class="initial blue black">Q</span>ue ꝺeſeıo ben poꝛ que 
                         <span class="expan">no<span class="ex">n</span>
                            </span>
                         <span class="abbr">nō</span>
@@ -157,7 +157,7 @@
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
                      <li data-id="cbl04" data-hand="α">
-                        E ſabe ꝺeus que muı́to
+                        <span data-id="rubricateur" class="initial blue black">E</span> ſabe ꝺeus que muı́to
                         mal</li>
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
@@ -176,7 +176,7 @@
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
                      <li data-id="cbl18" data-hand="α">
-                        A ꝺona que eu 
+                        <span data-id="rubricateur" class="initial red black">A</span> ꝺona que eu 
                         
                         <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">uı ſempꝛe poꝛ</ins><span class="corr">⸣</span>
                         </li>
@@ -202,9 +202,9 @@
                         <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">t</ins><span class="corr">⸣</span>
                         en nen me quer ualer. 
                         <span class="orig">
-                           Nona</span>
+                           <span data-id="" class="cod attente">N</span>ona</span>
                         <span class="reg">
-                           Non a</span>
+                           <span data-id="" class="cod attente">N</span>on a</span>
                         
                         </li>
                      <li data-hand="α"> </li>
@@ -225,7 +225,7 @@
                         <span class="reg">ꝺ eu</span>
                          ueıa pꝛaʒer.</li>
                      <li data-id="cbl39" data-hand="α">
-                        A que me faʒ uıuer en
+                        <span data-id="rubricateur" class="initial blue black">A</span> que me faʒ uıuer en
                         tal</li>
                      <li data-id="cbl40" data-hand="α">affan e ſoffrer tanto mal</li>
                      <li data-id="cbl41" data-hand="α">que moꝛrereı ſe me 
@@ -237,9 +237,9 @@
                      <li data-id="cbl43" data-hand="α">
                         
                         <span class="orig">
-                           Nona</span>
+                           <span data-id="rubricateur" class="initial red black">N</span>ona</span>
                         <span class="reg">
-                           Non a</span>
+                           <span data-id="rubricateur" class="initial red black">N</span>on a</span>
                          ueg e 
                         <span class="expan">no<span class="ex">n</span>
                            </span>
@@ -254,7 +254,7 @@
                         <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">al</ins><span class="corr">⸣</span>
                         </li>
                      <li data-id="cbl44" data-hand="α">
-                        A que eu quero muı gran
+                        <span data-id="rubricateur" class="initial blue black">A</span> que eu quero muı gran
                         ben</li>
                      <li data-id="cbl45" data-hand="α">e que 
                         <span class="reg">mı aſſı</span>
