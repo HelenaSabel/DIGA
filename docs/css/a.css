@@ -6,7 +6,10 @@ img {
 .attente {
     font-size: smaller;
     margin-left: -0.5em;
+}
 
+#boundList {
+    margin-top:1em;
 }
 
 .blue {
