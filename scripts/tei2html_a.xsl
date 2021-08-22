@@ -48,8 +48,7 @@
                                     <label for="cod">Visualiser notices techniques</label>
                                     <input type="checkbox" value="corr" id="corr" checked="checked"/>
                                     <label for="corr">Visualiser corrections</label>
-                                    <input type="checkbox" value="marginalia" id="marginalia"
-                                        checked="checked"/>
+                                    <input type="checkbox" value="marginalia" id="marginalia"/>
                                     <label for="marginalia">Visualiser annotations</label>
                                 </fieldset>
                                 <fieldset>
@@ -188,14 +187,14 @@
         </span>
     </xsl:template>
     <xsl:template match="add[parent::subst]">
-        <span class="corr">⸢</span>
+        <span class="corr hide">⸢</span>
         <ins data-id="{substring(@facs, 2)}">
             <xsl:if test="@hand">
                 <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
             </xsl:if>
             <xsl:apply-templates/>
         </ins>
-        <span class="corr">⸣</span>
+        <span class="corr hide">⸣</span>
     </xsl:template>
     <xsl:template match="add[not(parent::subst)]">
         <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}"

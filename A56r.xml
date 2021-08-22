@@ -400,8 +400,7 @@
             <line n="29"/>
             <line n="30" facs="#cbl30"><subst>
                   <del rend="gratte"><gap reason="illegible"/></del>
-                  <add hand="#correcteur" place="inline">t</add>
-            </subst><seg hand="#α">en nen me quer ualer. <choice>
+                  <add hand="#correcteur" place="inline">t</add></subst><seg hand="#α">en nen me quer ualer. <choice>
                   <orig>
                      <hi rend="lettreAttente" facs="#attente3">N</hi><gap reason="unfinished"></gap>ona</orig>
                   <reg>

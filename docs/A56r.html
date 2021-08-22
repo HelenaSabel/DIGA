@@ -17,7 +17,7 @@
                <fieldset><input type="radio" name="abbreviation" value="ex" id="ex"/><label for="ex">Abréviations développées</label><input type="radio" checked="checked" name="abbreviation" value="abb" id="abb"/><label for="abb">Marques d’abréviation</label></fieldset>
                <fieldset><input type="radio" id="reg" value="reg" name="unite"/><label for="reg">Union / séparation des éléments selon les
                      unités lexicales</label><input checked="checked" type="radio" value="orig" id="orig" name="unite"/><label for="orig">Disposition originale</label></fieldset>
-               <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="corr" id="corr" checked="checked"/><label for="corr">Visualiser corrections</label><input type="checkbox" value="marginalia" id="marginalia" checked="checked"/><label for="marginalia">Visualiser annotations</label></fieldset>
+               <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="corr" id="corr" checked="checked"/><label for="corr">Visualiser corrections</label><input type="checkbox" value="marginalia" id="marginalia"/><label for="marginalia">Visualiser annotations</label></fieldset>
                <fieldset><input type="checkbox" value="b" id="α"/><label for="α">Visualiser copiste <em>α</em> (<span class="α">magenta</span>)</label><input type="checkbox" value="correcteur" id="correcteur"/><label for="correcteur">Visualiser main correcteur (<span class="correcteur">olive</span>)</label><input type="checkbox" value="reviseur" id="reviseur"/><label for="reviseur">Visualiser main réviseur (<span class="reviseur">turquoise</span>)</label><input type="checkbox" value="rubricateur" id="rubricateur"/><label for="rubricateur">Visualiser main rubricateur (couleur de
                      l’initiale)</label><input type="checkbox" value="tardive" id="tardive"/><label for="tardive">Visualiser main tardive (<span class="tardive">coral</span>)</label></fieldset>
             </form><button id="refresh">Réinitialiser</button></div>
@@ -93,7 +93,7 @@
                      <li data-id="cal35">
                         
                         
-                        <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">oꝛ nūca ıa ren ſaberen</ins><span class="corr">⸣</span>
+                        <span class="corr hide">⸢</span><ins data-id="" data-hand="correcteur">oꝛ nūca ıa ren ſaberen</ins><span class="corr hide">⸣</span>
                          <span data-hand="α">per mı</span></li>
                      <li data-id="cal36" data-hand="α">os que me ueen 
                         <span class="reg">poꝛ en</span>
@@ -178,7 +178,7 @@
                      <li data-id="cbl18">
                         <span data-hand="rubricateur" class="initial red black">A</span> <span data-hand="α">ꝺona que eu</span> 
                         
-                        <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">uı ſempꝛe poꝛ</ins><span class="corr">⸣</span>
+                        <span class="corr hide">⸢</span><ins data-id="" data-hand="correcteur">uı ſempꝛe poꝛ</ins><span class="corr hide">⸣</span>
                         </li>
                      <li data-hand="α"> </li>
                      <li data-hand="α"> </li>
@@ -199,8 +199,7 @@
                      <li data-hand="α"> </li>
                      <li data-id="cbl30">
                         
-                        <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">t</ins><span class="corr">⸣</span>
-                        <span data-hand="α">en nen me quer ualer. 
+                        <span class="corr hide">⸢</span><ins data-id="" data-hand="correcteur">t</ins><span class="corr hide">⸣</span><span data-hand="α">en nen me quer ualer. 
                            <span class="orig">
                               <span data-id="attente3" class="cod attente">N</span> ona</span>
                            <span class="reg">
@@ -251,7 +250,7 @@
                            </span>
                         
                         
-                        <span class="corr">⸢</span><ins data-id="" data-hand="correcteur">al</ins><span class="corr">⸣</span>
+                        <span class="corr hide">⸢</span><ins data-id="" data-hand="correcteur">al</ins><span class="corr hide">⸣</span>
                         </li>
                      <li data-id="cbl44" data-hand="α">
                         <span data-hand="rubricateur" class="initial blue black">A</span> <span data-hand="α">que eu quero muı gran
