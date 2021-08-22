@@ -28,8 +28,9 @@ ins {
 @media all and (max-width : 1460px) {
 
     body {
-        margin: 0.5%;
-        padding: 0.5%;
+        margin: 1% 0.5% 1% 0.5%;
+        padding: 1% 0.5% 1% 0.5%;
+        font-size: 11pt;
     }
 
     .ca li::before {
@@ -41,6 +42,8 @@ ins {
 
     body {
         font-size: 10pt;
+        margin: 1% 0.1% 1% 0.5%;
+        padding: 1% 0.1% 1% 0.5%;
 
     }
 }
