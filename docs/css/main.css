@@ -51,7 +51,7 @@ label {
 
 #boundList {
     display:flex;
-    width:37%;
+/*    width:37%;*/
 }
 
 .reg {
@@ -102,7 +102,6 @@ display:none;
 
 .ca, .cb {
     margin-right:4%;
-    /*width: 40%;*/
 }
 
 
@@ -114,7 +113,6 @@ display:none;
     text-align: right;
     position: absolute;
     left: -2.5em;
-    width: 2em;
     padding:0;
 
 }
@@ -125,7 +123,6 @@ display:none;
     font-weight: bold;
     text-align: right;
     float:right;
-    width: 2em;
     padding:0;
 
 }
@@ -167,3 +164,5 @@ ins.right {
 .reviseur{
     color: mediumturquoise;
 }
+
+

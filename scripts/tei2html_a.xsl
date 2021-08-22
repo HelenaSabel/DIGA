@@ -225,7 +225,7 @@
         </ins>
     </xsl:template>
     <xsl:template match="gap[@reason eq 'unfinished']">
-        <span class="gap">&#8199;&#8199;</span>
+        <span class="gap">&#8199;&#8239;</span>
         <span class="none gap-visible">[*]</span>
     </xsl:template>
     <xsl:template match="zone[not(@type eq 'column')]">

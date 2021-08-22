@@ -3,6 +3,14 @@ img {
     height: 1001px
 }
 
+.cb li {
+    padding-right:0.5em;
+}
+
+div.left {
+    margin-right:2.5em;
+}
+
 .attente {
     font-size: smaller;
     margin-left: -0.5em;
