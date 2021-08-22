@@ -336,13 +336,13 @@
                </choice> se <choice>
                   <abbr>d̕s</abbr>
                   <reg>d<ex>eu</ex>s</reg>
-               </choice> quıſer</line>
+               </choice> quıſer</line>            
+            <add hand="#tardive" place="left" facs="#marg2">Nᵗᵃ</add>
             <line n="43" facs="#cal43">
                <choice>
                   <reg>mentr eu</reg>
                   <orig>mentreu</orig>
                </choice> feʒer as gentes entenꝺer.</line>            
-            <add hand="#tardive" place="left" facs="#marg2">Nᵗᵃ</add>
             <line n="44" facs="#cal44">
                <hi style="blue" rend="initial" hand="#rubricateur">Q</hi><seg hand="#α">ue ꝺeſeıo ben poꝛ que <choice>
                   <expan>no<ex>n</ex>
@@ -431,7 +431,8 @@
                   </expan>
                   <abbr>nō</abbr>
                </choice> ual</line>
-            <line n="42" facs="#cbl42">e non quer mıa coıta creer</line>
+            <line n="42" facs="#cbl42">e non quer mıa coıta creer</line>            
+            <add hand="#reviseur" place="right" facs="marg4">˝al</add>
             <line n="43" facs="#cbl43">
                <choice>
                   <orig>
@@ -451,7 +452,6 @@
                   <del rend="gratte"><gap reason="illegible"/></del>
                   <add hand="#correcteur" place="inline">al</add>
                </subst></line>
-            <add hand="#reviseur" place="right" facs="marg4">˝al</add>
             <line n="44" facs="#cbl44">
                <hi style="blue" rend="initial" hand="#rubricateur">A</hi> <seg hand="#α">que eu quero muı gran
                ben</seg></line>

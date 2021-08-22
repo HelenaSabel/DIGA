@@ -50,11 +50,11 @@
                                         checked="checked"/>
                                     <label for="marginalia">Visualiser notes marginales</label>
                                 </fieldset>
-                                    <fieldset>
+                                <fieldset>
                                     <input type="checkbox" value="corr" id="corr"/>
-                                    <label for="corr">Indication des passages corrigés</label>                                        
-                                        <input type="checkbox" value="gap" id="gap"/>
-                                        <label for="gap">Indication des lacunes</label>
+                                    <label for="corr">Indication des passages corrigés</label>
+                                    <input type="checkbox" value="gap" id="gap"/>
+                                    <label for="gap">Indication des lacunes</label>
                                 </fieldset>
                                 <fieldset>
                                     <input type="checkbox" value="b" id="α"/>
@@ -140,17 +140,21 @@
         </xsl:result-document>
     </xsl:template>
     <xsl:template match="zone[@type eq 'column']">
-        <div class="left">
-            <xsl:apply-templates select="add[@place eq 'left']"/>
-        </div>
+        <xsl:if test="add[@place eq 'left']">
+            <div class="left">
+                <xsl:apply-templates select="add[@place eq 'left']"/>
+            </div>
+        </xsl:if>
         <div class="c{@subtype}">
             <ol class="lines">
                 <xsl:apply-templates select="line"/>
             </ol>
         </div>
-        <div class="right">
-            <xsl:apply-templates select="add[@place eq 'right']"/>
-        </div>
+        <xsl:if test="add[@place eq 'right']">
+            <div class="right">
+                <xsl:apply-templates select="add[@place eq 'right']"/>
+            </div>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="line">
         <li>
@@ -205,7 +209,7 @@
     </xsl:template>
     <xsl:template match="add[not(parent::subst)]">
         <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}"
-            style="display:block;position:relative;top:{count(preceding-sibling::line)}em">
+            style="display:block;position:relative;top:{count(preceding-sibling::line) * 1.1}em">
             <xsl:if test="@hand">
                 <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
             </xsl:if>
