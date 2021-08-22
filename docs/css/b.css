@@ -22,7 +22,18 @@ ins {
         margin: 1%;
     }
     
-    img {
-    width: 40em;
 }
+
+@media all and (max-width : 1450px) {
+    
+    body {
+        margin: 0.5%;
+        padding: 0.5%;
+    }
+    
+    .ca li::before {
+        left:-2em;
+    }
+    
+    
 }
