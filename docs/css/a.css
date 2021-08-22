@@ -37,3 +37,50 @@ div.left {
 .black {
     color: black;
 }
+
+
+
+
+@media all and (max-width : 1530px) {
+
+    body {
+        margin: 1%;
+        padding: 1%;
+    }
+
+}
+
+@media all and (max-width : 1460px) {
+
+    body {
+        margin: 1% 0.5% 1% 0.5%;
+        padding: 1% 0.5% 1% 0.5%;
+        font-size: 11pt;
+    }
+
+    .ca li::before {
+        left: -2em;
+    }
+}
+
+@media all and (max-width : 1450px) {
+
+    body {
+        font-size: 10pt;
+        margin: 1% 0.1% 1% 0.5%;
+        padding: 1% 0.1% 1% 0.5%;
+
+    }
+    #edition {
+        margin-left:0;
+        padding-left:0
+    }
+}
+
+@media all and (max-width : 1435px) {
+
+    body {
+        font-size: 9pt;
+
+    }
+}
