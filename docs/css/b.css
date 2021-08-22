@@ -46,4 +46,16 @@ ins {
         padding: 1% 0.1% 1% 0.5%;
 
     }
+    #edition {
+        margin-left:0;
+        padding-left:0
+    }
+}
+
+@media all and (max-width : 1435px) {
+
+    body {
+        font-size: 9pt;
+
+    }
 }
