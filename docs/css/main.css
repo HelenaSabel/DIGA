@@ -79,6 +79,10 @@ ins{
 visibility:hidden;
 }
 
+.none {
+display:none;
+}
+
 
 
 #edition ol {

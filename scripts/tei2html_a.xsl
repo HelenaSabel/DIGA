@@ -46,11 +46,11 @@
                                 <fieldset>
                                     <input type="checkbox" value="cod" id="cod" checked="checked"/>
                                     <label for="cod">Visualiser notices techniques</label>
-                                    <input type="checkbox" value="corr" id="corr" checked="checked"/>
-                                    <label for="corr">Visualiser corrections</label>
-                                    <input type="checkbox" value="marginalia" id="marginalia"/>
-                                    <label for="marginalia">Visualiser annotations</label>
-                                </fieldset>
+                                     <input type="checkbox" value="marginalia" id="marginalia" checked="checked"/>
+                                    <label for="marginalia">Visualiser notes marginales</label>
+                                    <input type="checkbox" value="corr" id="corr"/>
+                                    <label for="corr">Indication des passages corrigés</label>
+                                                                    </fieldset>
                                 <fieldset>
                                     <input type="checkbox" value="b" id="α"/>
                                     <label for="α">Visualiser copiste <em>α</em> (<span class="α"
@@ -60,7 +60,7 @@
                                             class="correcteur">olive</span>)</label>
                                     <input type="checkbox" value="reviseur" id="reviseur"/>
                                     <label for="reviseur">Visualiser main réviseur (<span
-                                            class="reviseur">turquoise</span>)</label>
+                                            class="reviseur">turquoise</span>)</label> <br/>
                                     <input type="checkbox" value="rubricateur" id="rubricateur"/>
                                     <label for="rubricateur">Visualiser main rubricateur (couleur de
                                         l’initiale)</label>
@@ -187,14 +187,14 @@
         </span>
     </xsl:template>
     <xsl:template match="add[parent::subst]">
-        <span class="corr hide">⸢</span>
+        <span class="corr none">⸢</span>
         <ins data-id="{substring(@facs, 2)}">
             <xsl:if test="@hand">
                 <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
             </xsl:if>
             <xsl:apply-templates/>
         </ins>
-        <span class="corr hide">⸣</span>
+        <span class="corr none">⸣</span>
     </xsl:template>
     <xsl:template match="add[not(parent::subst)]">
         <ins class="{@place} marginalia" data-id="{substring(@facs, 2)}"

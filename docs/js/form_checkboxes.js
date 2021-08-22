@@ -22,11 +22,11 @@ function changeCriteria() {
     switch (id) {
         case 'corr':
         
-        if (this.checked == true) { for (var i = 0; i < corrs.length; i++) {
-                corrs[i].classList.remove('hide');
+        if (this.checked == false) { for (var i = 0; i < corrs.length; i++) {
+                corrs[i].classList.add('none');
             }
         } else { for (var i = 0; i < marks.length; i++) {
-                corrs[i].classList.add('hide');
+                corrs[i].classList.add('none');
             }
         }
         
