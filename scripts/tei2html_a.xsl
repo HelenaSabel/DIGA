@@ -214,7 +214,7 @@
     </xsl:template>
     <xsl:template match="gap[@reason eq 'unfinished']">
         <span class="gap">&#8199;&#8199;</span>
-        <span class="hide gap-visible">[*]</span>
+        <span class="none gap-visible">[*]</span>
     </xsl:template>
     <xsl:template match="zone[not(@type eq 'column')]">
         <area href="#" shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}"
