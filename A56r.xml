@@ -292,17 +292,16 @@
             <line n="32"/>
             <line n="33"/>
             <line n="34" facs="#cal34">o mal que me non uen.</line>
-            <add place="left" hand="#reviseur" facs="#marg1">˝ɼen</add>
             <line n="35" facs="#cal35">
                <gap reason="unfinished" extent="1" unit="char"/><subst><del rend="gratte"><gap reason="illegible"/></del><add hand="#correcteur" place="inline">oꝛ nūca ıa ren ſaberen</add>
-               </subst> <seg hand="#α">per mı</seg></line>
+               </subst> <seg hand="#α">per mı</seg></line>            
+            <add place="left" hand="#reviseur" facs="#marg1">˝ɼen</add>
             <line n="36" facs="#cal36">os que me ueen <choice>
                   <reg>poꝛ en</reg>
                   <orig>poꝛen</orig>
                </choice> pꝛeguntar.</line>
             <line n="37" facs="#cal37">ꝺe que me ueen en gran coıt anꝺar.</line>
             <line n="38" facs="#cal38">ıuro lles eu e dıgo lles aſſı</line>
-            <add hand="#tardive" place="left" facs="#marg2">Nᵗᵃ</add>
             <line n="39" facs="#cal39">
                <hi rend="lettreAttente" facs="#attente2">q</hi>
                <hi style="blue" rend="initial" hand="#rubricateur">Q</hi><seg hand="#α">ue ꝺeſeıo ben poꝛ que <choice>
@@ -342,7 +341,8 @@
                <choice>
                   <reg>mentr eu</reg>
                   <orig>mentreu</orig>
-               </choice> feʒer as gentes entenꝺer.</line>
+               </choice> feʒer as gentes entenꝺer.</line>            
+            <add hand="#tardive" place="left" facs="#marg2">Nᵗᵃ</add>
             <line n="44" facs="#cal44">
                <hi style="blue" rend="initial" hand="#rubricateur">Q</hi><seg hand="#α">ue ꝺeſeıo ben poꝛ que <choice>
                   <expan>no<ex>n</ex>
