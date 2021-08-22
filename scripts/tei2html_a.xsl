@@ -46,11 +46,12 @@
                                 <fieldset>
                                     <input type="checkbox" value="cod" id="cod" checked="checked"/>
                                     <label for="cod">Visualiser notices techniques</label>
-                                     <input type="checkbox" value="marginalia" id="marginalia" checked="checked"/>
+                                    <input type="checkbox" value="marginalia" id="marginalia"
+                                        checked="checked"/>
                                     <label for="marginalia">Visualiser notes marginales</label>
                                     <input type="checkbox" value="corr" id="corr"/>
                                     <label for="corr">Indication des passages corrigés</label>
-                                                                    </fieldset>
+                                </fieldset>
                                 <fieldset>
                                     <input type="checkbox" value="b" id="α"/>
                                     <label for="α">Visualiser copiste <em>α</em> (<span class="α"
@@ -60,7 +61,9 @@
                                             class="correcteur">olive</span>)</label>
                                     <input type="checkbox" value="reviseur" id="reviseur"/>
                                     <label for="reviseur">Visualiser main réviseur (<span
-                                            class="reviseur">turquoise</span>)</label> <br/>
+                                            class="reviseur">turquoise</span>)</label>
+                                </fieldset>
+                                <fieldset>
                                     <input type="checkbox" value="rubricateur" id="rubricateur"/>
                                     <label for="rubricateur">Visualiser main rubricateur (couleur de
                                         l’initiale)</label>
