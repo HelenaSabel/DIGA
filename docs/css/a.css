@@ -8,6 +8,11 @@ img {
     margin-left: -0.5em;
 }
 
+.attente .inline {
+    margin-left: 0;
+}
+
+
 #boundList {
     margin-top: 1em;
 }

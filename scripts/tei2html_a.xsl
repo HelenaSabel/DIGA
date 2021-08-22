@@ -177,6 +177,14 @@
                     <xsl:if test="@hand">
                         <xsl:attribute name="data-hand" select="substring(@hand, 2)"/>
                     </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="@style eq 'inline'">
+                            <xsl:attribute name="class">cod attente inline</xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="class">cod attente</xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>

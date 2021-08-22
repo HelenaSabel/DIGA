@@ -400,9 +400,9 @@
                   <del rend="gratte"><gap reason="illegible"/></del>
                   <add hand="#correcteur" place="inline">t</add></subst><seg hand="#α">en nen me quer ualer. <choice>
                   <orig>
-                     <hi rend="lettreAttente" facs="#attente3">N</hi><gap reason="unfinished"></gap>ona</orig>
+                     <hi rend="lettreAttente" facs="#attente3" style="inline">N</hi><gap reason="unfinished"></gap>ona</orig>
                   <reg>
-                     <hi rend="lettreAttente" facs="#attente3">N</hi><gap reason="unfinished"></gap>on a</reg>
+                     <hi rend="lettreAttente" facs="#attente3" style="inline">N</hi><gap reason="unfinished"></gap>on a</reg>
                </choice></seg>
             </line>
             <line n="31"/>
@@ -432,7 +432,7 @@
                   <abbr>nō</abbr>
                </choice> ual</line>
             <line n="42" facs="#cbl42">e non quer mıa coıta creer</line>            
-            <add hand="#reviseur" place="right" facs="marg4">˝al</add>
+            <add hand="#reviseur" place="right" facs="#marg4">˝al</add>
             <line n="43" facs="#cbl43">
                <choice>
                   <orig>
