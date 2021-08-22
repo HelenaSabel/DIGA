@@ -17,24 +17,30 @@ ins {
 
 
 @media all and (max-width : 1530px) {
-    
+
     body {
         margin: 1%;
-        padding:1%;
+        padding: 1%;
     }
-    
+
 }
 
-@media all and (max-width : 1450px) {
-    
+@media all and (max-width : 1460px) {
+
     body {
         margin: 0.5%;
         padding: 0.5%;
     }
-    
+
     .ca li::before {
-        left:-2em;
+        left: -2em;
     }
-    
-    
+}
+
+@media all and (max-width : 1450px) {
+
+    body {
+        font-size: 10pt;
+
+    }
 }
