@@ -17,12 +17,12 @@ ins {
 
 
 @media all and (max-width : 1530px) {
-
-    img {
-        width: 40em;
-    }
     
     body {
         margin: 1%;
     }
+    
+    img {
+    width: 40em;
+}
 }
