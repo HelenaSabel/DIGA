@@ -9,9 +9,12 @@ img {
 }
 
 #boundList {
-    margin-top:1em;
+    margin-top: 1em;
 }
 
+#edition li {
+    line-height: 1.1em;
+}
 .blue {
     color: blue;
 }
