@@ -294,9 +294,7 @@
             <line n="34" facs="#cal34">o mal que me non uen.</line>
             <add place="left" hand="#reviseur" facs="#marg1">˝ɼen</add>
             <line n="35" facs="#cal35">
-               <gap reason="unfinished" extent="1" unit="char"/><subst>
-                  <del rend="gratte"><gap reason="illegible"/></del>
-                  <add hand="#correcteur" place="inline">oꝛ nūca ıa ren ſaberen</add>
+               <gap reason="unfinished" extent="1" unit="char"/><subst><del rend="gratte"><gap reason="illegible"/></del><add hand="#correcteur" place="inline">oꝛ nūca ıa ren ſaberen</add>
                </subst> <seg hand="#α">per mı</seg></line>
             <line n="36" facs="#cal36">os que me ueen <choice>
                   <reg>poꝛ en</reg>
