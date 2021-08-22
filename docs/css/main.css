@@ -104,6 +104,10 @@ display:none;
     margin-right:4%;
 }
 
+.cb li {
+    padding-right:1em;
+}
+
 
 .ca li::before{
     content: counter(numbers) '   ';
