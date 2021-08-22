@@ -49,8 +49,12 @@
                                     <input type="checkbox" value="marginalia" id="marginalia"
                                         checked="checked"/>
                                     <label for="marginalia">Visualiser notes marginales</label>
+                                </fieldset>
+                                    <fieldset>
                                     <input type="checkbox" value="corr" id="corr"/>
-                                    <label for="corr">Indication des passages corrigés</label>
+                                    <label for="corr">Indication des passages corrigés</label>                                        
+                                        <input type="checkbox" value="gap" id="gap"/>
+                                        <label for="gap">Indication des lacunes</label>
                                 </fieldset>
                                 <fieldset>
                                     <input type="checkbox" value="b" id="α"/>
@@ -209,7 +213,8 @@
         </ins>
     </xsl:template>
     <xsl:template match="gap[@reason eq 'unfinished']">
-        <span>&#8199;&#8199;</span>
+        <span class="gap">&#8199;&#8199;</span>
+        <span class="hide gap-visible">[*]</span>
     </xsl:template>
     <xsl:template match="zone[not(@type eq 'column')]">
         <area href="#" shape="{@type}" alt="{normalize-space(note)}" title="{normalize-space(note)}"

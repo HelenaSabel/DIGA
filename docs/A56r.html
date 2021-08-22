@@ -17,7 +17,8 @@
                <fieldset><input type="radio" name="abbreviation" value="ex" id="ex"/><label for="ex">Abréviations développées</label><input type="radio" checked="checked" name="abbreviation" value="abb" id="abb"/><label for="abb">Marques d’abréviation</label></fieldset>
                <fieldset><input type="radio" id="reg" value="reg" name="unite"/><label for="reg">Union / séparation des éléments selon les
                      unités lexicales</label><input checked="checked" type="radio" value="orig" id="orig" name="unite"/><label for="orig">Disposition originale</label></fieldset>
-               <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="marginalia" id="marginalia" checked="checked"/><label for="marginalia">Visualiser notes marginales</label><input type="checkbox" value="corr" id="corr"/><label for="corr">Indication des passages corrigés</label></fieldset>
+               <fieldset><input type="checkbox" value="cod" id="cod" checked="checked"/><label for="cod">Visualiser notices techniques</label><input type="checkbox" value="marginalia" id="marginalia" checked="checked"/><label for="marginalia">Visualiser notes marginales</label></fieldset>
+               <fieldset><input type="checkbox" value="corr" id="corr"/><label for="corr">Indication des passages corrigés</label><input type="checkbox" value="gap" id="gap"/><label for="gap">Indication des lacunes</label></fieldset>
                <fieldset><input type="checkbox" value="b" id="α"/><label for="α">Visualiser copiste <em>α</em> (<span class="α">magenta</span>)</label><input type="checkbox" value="correcteur" id="correcteur"/><label for="correcteur">Visualiser main correcteur (<span class="correcteur">olive</span>)</label><input type="checkbox" value="reviseur" id="reviseur"/><label for="reviseur">Visualiser main réviseur (<span class="reviseur">turquoise</span>)</label></fieldset>
                <fieldset><input type="checkbox" value="rubricateur" id="rubricateur"/><label for="rubricateur">Visualiser main rubricateur (couleur de
                      l’initiale)</label><input type="checkbox" value="tardive" id="tardive"/><label for="tardive">Visualiser main tardive (<span class="tardive">coral</span>)</label></fieldset>
@@ -31,7 +32,7 @@
                         <span data-hand="rubricateur" class="initial blue black">E</span><span data-hand="α">n guıſa ſoube mıa coıta
                            dıʒer</span></li>
                      <li data-id="cal02" data-hand="α">
-                        <span>  </span>lgun ſaboꝛ pꝛenꝺ ome quanꝺo
+                        <span class="gap">  </span><span class="hide gap-visible">[*]</span>lgun ſaboꝛ pꝛenꝺ ome quanꝺo
                         dıʒ</li>
                      <li data-id="cal03" data-hand="α">ıa que ꝺa coıta que ſoffr e ꝺo mal</li>
                      <li data-id="cal04" data-hand="α">
@@ -92,7 +93,7 @@
                      <li data-hand="α"> </li>
                      <li data-id="cal34" data-hand="α">o mal que me non uen.</li>
                      <li data-id="cal35">
-                        <span>  </span>
+                        <span class="gap">  </span><span class="hide gap-visible">[*]</span>
                         
                         <span class="corr none">⸢</span><ins data-id="" data-hand="correcteur">oꝛ nūca ıa ren ſaberen</ins><span class="corr none">⸣</span>
                          <span data-hand="α">per mı</span></li>
@@ -202,9 +203,9 @@
                         
                         <span class="corr none">⸢</span><ins data-id="" data-hand="correcteur">t</ins><span class="corr none">⸣</span><span data-hand="α">en nen me quer ualer. 
                            <span class="orig">
-                              <span data-id="attente3" class="cod attente">N</span><span>  </span>ona</span>
+                              <span data-id="attente3" class="cod attente">N</span><span class="gap">  </span><span class="hide gap-visible">[*]</span>ona</span>
                            <span class="reg">
-                              <span data-id="attente3" class="cod attente">N</span><span>  </span>on a</span>
+                              <span data-id="attente3" class="cod attente">N</span><span class="gap">  </span><span class="hide gap-visible">[*]</span>on a</span>
                            </span>
                         </li>
                      <li data-hand="α"> </li>

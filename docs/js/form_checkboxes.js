@@ -11,6 +11,8 @@ function changeCriteria() {
     var id = this.getAttribute('value');
     var marks = document.getElementsByClassName('mark');
     var corrs = document.getElementsByClassName('corr');
+    var gaps = document.getElementsByClassName('gap');
+    var gapTypes = document.getElementsByClassName('gap-visible');
     var notes = document.getElementsByClassName('marginalia');
     var reclames = document.getElementsByClassName('cod');
     var handbs = document.querySelectorAll("[data-hand='b'], [data-hand='α']");
@@ -25,14 +27,32 @@ function changeCriteria() {
         if (this.checked == false) { for (var i = 0; i < corrs.length; i++) {
                 corrs[i].classList.add('none');
             }
-        } else { for (var i = 0; i < marks.length; i++) {
-                corrs[i].classList.add('none');
+        } else { for (var i = 0; i < corrs.length; i++) {
+                corrs[i].classList.remove('none');
             }
         }
         
         break;
         
+         case 'gap':
         
+        if (this.checked == false) { for (var i = 0; i < gapTypes.length; i++) {
+                gapTypes[i].classList.add('none');
+            }
+            for (var i = 0; i < gaps.length; i++) {
+                gaps[i].classList.remove('none');
+            }
+        }
+        
+        else { for (var i = 0; i < gapTypes.length; i++) {
+                gapTypes[i].classList.remove('none');
+            }
+            for (var i = 0; i < gaps.length; i++) {
+                gaps[i].classList.add('none');
+            }
+        }
+        
+        break;
         
         case 'mark':
         
