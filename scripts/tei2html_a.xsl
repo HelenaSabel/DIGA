@@ -52,7 +52,7 @@
                                 </fieldset>
                                 <fieldset>
                                     <input type="checkbox" value="corr" id="corr"/>
-                                    <label for="corr">Indication des passages corrigés</label>
+                                    <label for="corr">Indication des passages modifiés</label>
                                     <input type="checkbox" value="gap" id="gap"/>
                                     <label for="gap">Indication des lacunes</label>
                                 </fieldset>
