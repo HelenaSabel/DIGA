@@ -49,6 +49,7 @@ section {
 
 .capa {
     margin-left: 5%;
+    width:30%;
 }
 #edition {
     display: flex;
