@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>hyperdiplomatic edition prototype</title>
+                <author>Helena Bermúdez Sabel</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>for use by whoever wants it</p>
+            </publicationStmt>
+            <notesStmt>
+                <note type="hd">https://helenasabel.github.io/DIGA</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>created on Saturday 12th June 2021 11:47:16 AM</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p>Schema for the development of hyperdiplomatic editions</p>
+            <schemaSpec ident="hyperdiplomatic" docLang="en" xml:lang="en">
+                <moduleRef key="core"/>
+                <moduleRef key="tei"/>
+                <moduleRef key="header"/>
+                <moduleRef key="textstructure"/>
+                <moduleRef key="transcr"/>
+                <moduleRef key="gaiji"/>
+                <moduleRef key="msdescription"/>
+                <moduleRef key="textcrit"/>
+                <moduleRef key="linking"/>
+                <moduleRef key="analysis"/>
+                <elementSpec ident="line" module="transcr" mode="change">
+                    <classes mode="replace">
+                        <memberOf key="model.linePart"/>
+                        <memberOf key="model.pPart.editorial" mode="add"/>
+                        <memberOf key="att.coordinated"/>
+                        <memberOf key="att.global"/>
+                        <memberOf key="att.typed"/>
+                        <memberOf key="att.written"/>
+                    </classes>
+                </elementSpec>
+                <elementSpec ident="metamark" module="transcr" mode="change">
+                    <attList>
+                        <attDef ident="hand" mode="add">                            
+                            <desc>points to a handNote element describing the hand considered
+                                responsible for the content of the element concerned</desc>
+                            <datatype>
+                                <dataRef key="teidata.pointer"/>
+                            </datatype>
+                        </attDef>
+                    </attList>
+                    <model behaviour="inline" cssClass="mark">
+                        <param value="substring(@facs, 2)" name="zone"/>
+                        <!-- on mouse over, fire JS function highlight() using the value of this param as target -->
+                        <param value="substring(@hand, 2)" name="hand"/>
+                        <outputRendition>margin-left: -0.5em;</outputRendition>
+                    </model>
+                </elementSpec>
+                <elementSpec mode="change" ident="choice">
+                    <model predicate="abbr and expan" behaviour="alternate">
+                        <param name="alternate" value="expan"/>
+                        <param name="default" value="abbr"/>
+                    </model>
+                    <model predicate="orig and reg" behaviour="alternate">
+                        <param name="alternate" value="reg"/>
+                        <param name="default" value="orig"/>
+                    </model>
+                </elementSpec>
+                <elementSpec ident="ex" mode="change">
+                    <model behaviour="inline" cssClass="ex">
+                        <outputRendition>font-style: italic;</outputRendition>
+                    </model>
+                </elementSpec>
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>
